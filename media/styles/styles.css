@@ -1,0 +1,155 @@
+/* RESET
+----------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* UTILITY
+----------------------------------------------------------------------------------------*/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; clear: both; }
+
+.left { float:left; }
+.right { float:right; }
+
+:after { content:""; position:absolute; }
+
+/* FONTS
+----------------------------------------------------------------------------------------*/
+body { font-family: 'Ropa Sans', sans-serif; font-size:12px; color:#000; }
+p { font-size:14px; text-transform:uppercase; line-height:20px; margin-bottom:20px; }
+h1, h2, h3, h4 { display:inline-block; color:#ffffff; }
+h1 { font-size:36px; text-transform:uppercase; background:#7f0000; padding:13px 25px; }
+h2 { font-size:14px; background:#000000; padding: 6px 10px; }
+h3 { }
+h4 { }
+
+a { cursor:pointer; }
+a:hover { }
+
+ul { }
+ul li { }
+
+/* MAIN LAYOUT
+----------------------------------------------------------------------------------------*/
+html { width:100%; height:100%; }
+body { width:100%; height:100%; overflow:hidden; background:url("../images/backings/backing.jpg") no-repeat; background-size:100% 100%; background-position: center center; }
+body:after { top:0; left:0; background:url("../images/backings/pattern_backing.png") repeat; width:100%; height:100%; }
+#content-wrapper { width:100%; height:100%; overflow:hidden; position:absolute; z-index:50; }
+
+/* scroll bar */
+#content-wrapper .scrollBar { width:23px; height:100%; background:#bfbfbf; position:absolute; right:0; }
+#content-wrapper .thumb { width:20px; min-height:100px; background:#ffffff; cursor:pointer; margin-left:2px; position:absolute; }
+#content-wrapper .thumb:after { width:5px; height:10px; content:""; position:absolute; background:url("../images/thumbGrip.png"); top:50%; margin-top:-5pxFallWinterCreative_Microsite_10_18_2012FallWinterCreative_Microsite_10_18_2012FallWinterCreative_Microsite_10_18_2012; left:8px; }
+
+/* PORTFOLIO CANVAS
+----------------------------------------------------------------------------------------*/
+.portfolio-piece { width:100%; height: inherit; background:#ffffff; z-index:45; display:block; overflow: auto; }
+.portfolio-piece .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:50px; height:50px; position:fixed; top:175px; right:0px; }
+.portfolio-piece .mask { position:absolute; width:100%; height:100%; }
+.portfolio-piece .content { width:100%; padding:40px 0 80px 0; }
+.portfolio-piece h1 { padding-right:40px; margin-bottom:4px; margin:0 0 4px 0; }
+.portfolio-piece h2 { margin:0 0 33px 0; }
+.portfolio-piece .body { padding:0 65px; margin:0 auto; }
+.portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; }
+.portfolio-piece .slideshow nav a { display:block; width:24px; height:19px; background:url('../images/slideNav_black.png') no-repeat; float:left;
+	color:#ffffff; padding-top:5px; text-align:center; }
+.portfolio-piece .slideshow nav a.active { margin-right:7px; background:url('../images/slideNav_red.png') no-repeat; }
+.portfolio-piece .slideshow { margin-bottom:20px; }
+.portfolio-piece .slideshow .region { margin:0 auto; position:relative; }
+.portfolio-piece .slideshow .slide { border:4px dashed #7f7f7f; width:100%; height:484px; position:relative; }
+.portfolio-piece .slideshow .under-size-error { position:absolute; z-index:10; color:#ffffff;  background:#7F0000; text-align:center; font-size:20px; width:100%; margin:4px; display:none; }
+.portfolio-piece .slideshow .under-size-error img { max-width: 100%; }
+.portfolio-piece .slideshow .under-size-error div { padding:60px 50px; }
+.portfolio-piece .slideshow .image img { width:100%; height:100%; }
+
+#portfolioCanvas { display:none; overflow:hidden; height:100%; position:absolute; }
+#portfolioCanvas .content { position:absolute; }
+
+/* PORTFOLIO CONTENT
+----------------------------------------------------------------------------------------*/
+/* FLASH */
+.portfolio-piece .region .flashAlternativeContent { text-align:center; padding:20px; font-size:14px; }
+
+/* HEADER
+----------------------------------------------------------------------------------------*/
+header { width:100%; height:50px; border-bottom:10px solid #7f0000; background:#000000; padding-top:10px; position:absolute; z-index:100; }
+header .logo { width:32px; height:40px; background:url("../images/logo.png") no-repeat; display:block; margin-left:15px; float:left; }
+header nav { float:right; margin:24px 15px 0 0; }
+header nav li { float:left; margin-left:20px; }
+header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
+
+/* PORTFOLIO CAROUSEL
+----------------------------------------------------------------------------------------*/
+#portfolioCarousel { position:absolute; top:40px; }
+#portfolioCarousel > a { width:70%; height:70%; max-width:728px; max-height:530px; border:20px solid #000000; float:left; background:#ffffff; margin-right:45px; 
+	position:relative; overflow:hidden; display:block; }
+#portfolioCarousel > a:last-child{ margin-right:0px; }
+#portfolioCarousel .headers { position:absolute; right:0; bottom:30px; }
+#portfolioCarousel h1, #portfolioCarousel h2 { float:right; }
+#portfolioCarousel h1 { margin-bottom:3px; padding-left:40px; }
+#portfolioCarousel .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
+
+
+/* ARROW NAV BTNS
+----------------------------------------------------------------------------------------*/
+#content-wrapper .nav { position:absolute; width:92px; height:100%; }
+#content-wrapper .nav .btn { width:92px; height:164px; display:block; top:50%; position:absolute; margin-top:-82px; }
+#content-wrapper .nav-right { right:0; box-shadow: inset -50px 0px 50px -50px #000000; }
+#content-wrapper .nav-left { left:0; box-shadow: inset 50px 0px 50px -50px #000000; display:none; opacity:0; }
+#content-wrapper .nav-down { width:100%; height:39px; bottom:0; }
+#content-wrapper .nav-right .btn { background: url('../images/navigate_right_btn.png') no-repeat; }
+#content-wrapper .nav-left .btn { background: url('../images/navigate_left_btn.png') no-repeat; }
+#content-wrapper .nav-down .btn { width:69px; height:39px; background: url('../images/navigate_down_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-19px; }
+
+
+
+/* MEDIA QUERIES
+----------------------------------------------------------------------------------------*/
+/*@media only screen and (min-width: X) {
+}*/
+
+/* MOBILE */
+@media only screen and (max-width: 600px), (max-height: 600px) {
+	/* FONTS */
+	h1 { font-size:20px; padding:5px 25px; }
+
+	/* MAIN LAYOUT */
+	html { height:inherit; }
+	body { overflow:inherit; background:none; }
+	body:after { background:none; position:static; }
+	#content-wrapper { overflow:inherit; position:inherit; }
+
+	/* PORTFOLIO CANVAS */
+	#portfolioCanvas, .portfolio-piece { position:static; height:inherit; }
+	.portfolio-piece .close-btn { display:block; }
+	.portfolio-piece .mask { position:static; height:inherit; }
+	#portfolioCanvas .content, .portfolio-piece .mask .content { position:static; padding:40px 0; }
+	.portfolio-piece .scrollBar { display:none; }
+	.portfolio-piece .body { padding:0 20px; margin:0 auto; }
+	.portfolio-piece .slideshow .under-size-error div { padding:20px 50px; }
+
+	/* HEADER */
+	header { position:inherit; height:inherit; padding:0; }
+	header .logo { float:inherit; margin:0; height:60px; width:100%; background-position:center center;}
+	header nav { float:inherit; margin:0; }
+	header nav li { float:inherit; width:100%; margin:0; text-align:center; border-top:2px solid #7f0000; }
+	header nav li a { display:block; height:25px; width:100%; padding-top:10px; }
+
+	/* PORTFOLIO CAROUSEL */
+	#portfolioCarousel { position:static; }
+	#portfolioCarousel > a { float:none; height:40px; max-width:none; border:inherit; border-right:inherit; border-bottom:5px solid #000000; }
+	#portfolioCarousel .headers { bottom:5px; }
+	#portfolioCarousel h1 { padding-left:30px; }
+
+	#content-wrapper .nav { display:none !important; }
+}
