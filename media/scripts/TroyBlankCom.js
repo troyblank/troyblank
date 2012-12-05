@@ -33,7 +33,7 @@ var TroyBlankCom = new function(){
 
         //portfolio standalone
         if($('body.portfolio-standalone').length > 0){
-            new portfolioCanvasMedia();
+            new portfolioCanvasMedia(false);
         }
     }
 
@@ -95,25 +95,45 @@ var TroyBlankCom = new function(){
             }
             i--;
         }
+        
     }
 
     this.dispatchEvent = function(type){
         if(TroyBlankCom.eventDispatcher[type] != undefined){
-            for(var i = 0; i<TroyBlankCom.eventDispatcher[type].length; i++){
-                TroyBlankCom.eventDispatcher[type][i].call();
+            var callList = TroyBlankCom.eventDispatcher[type].slice(0);
+            for(var i = 0; i<callList.length; i++){
+                callList[i].call();
             }
         }
     }
     //---------------------------------------------------------------------------------------------
     //PORTFOLIO CANVA MEDIA
     //---------------------------------------------------------------------------------------------
-    function portfolioCanvasMedia(){
+    function portfolioCanvasMedia(needsLoading, link){
 
         var slideIndex = 0;
+        var preloader = null;
+
+         var link = link;
 
         function init(){
+            if(needsLoading){
+                addPreloader();
+                loadContent();
+            }else{
+                postLoadInit();
+            }
+
+            addPermaListeners();
+        }
+
+        function postLoadInit(){
             sizeContent();
             addListeners();
+        }
+
+        function addPermaListeners(){
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvasMedia);
         }
 
         function addListeners(){
@@ -160,12 +180,45 @@ var TroyBlankCom = new function(){
 
         //destroy
         function destroy(){
+            removePermaListeners();
+            removeListeners();
+            removePreloader();
+        }
 
+        function removePermaListeners(){
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvasMedia);
+        }
+
+        function removeListeners(){
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
         }
 
         //handlers
+        function onSectionChangeHand_portfolioCanvasMedia(){
+            destroy();
+            console.log('change')
+        }
+
         function resizeHand(){
             sizeContent();
+        }
+
+        //LOADER
+        function loadContent(){
+
+            console.log(link);
+        }
+
+        function addPreloader(){
+            $('.portfolio-piece').prepend('<div id="preloader_specimen" class="atomic-preloader" />');
+            preloader = new atomicPreloader('preloader_specimen', true);
+        }
+
+        function removePreloader(){
+            if($('#preloader_specimen').length > 0){
+               preloader.destroy(); 
+               $('#preloader_specimen').remove();
+            }
         }
 
         init();
@@ -185,6 +238,7 @@ var TroyBlankCom = new function(){
             addScrollBar();
             addListeners();
 
+            new portfolioCanvasMedia(true, $(targ).attr('data-link'));
             animateOn();
         }
 
@@ -218,7 +272,7 @@ var TroyBlankCom = new function(){
 
         function addScrollBar(){
             $('#portfolioCanvas .scrollBar .thumb').css('top', 0);
-            scrollbar = new ScrollBar($('#portfolioCanvas'));
+            scrollbar = new ScrollBar($('#portfolioCanvas'), 60);
         }
 
         function keydownHand(e){

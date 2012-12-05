@@ -7,6 +7,8 @@ from django.conf import settings
 
 urlpatterns = patterns('',
 	(r'^$', 'views.index'),
+    #(r'^specimens/(\d{4})/(?P<specimen>)[a-zA-Z1-9]/$', 'views.specimen'),
+    url(r'^specimens/(?P<year>\d{4})/(?P<specimen>\w+)/$', 'specimens.views.specimen'),
     # Examples:
     # url(r'^$', 'troyblank_com.views.home', name='home'),
     # url(r'^troyblank_com/', include('troyblank_com.foo.urls')),
