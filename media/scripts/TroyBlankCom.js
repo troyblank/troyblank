@@ -196,7 +196,6 @@ var TroyBlankCom = new function(){
         //handlers
         function onSectionChangeHand_portfolioCanvasMedia(){
             destroy();
-            console.log('change')
         }
 
         function resizeHand(){
@@ -261,8 +260,10 @@ var TroyBlankCom = new function(){
             $(document).off('keydown', keydownHand);
 
             $('#portfolioCanvas .nav-down').off('click', exitHand);
+            $('#portfolioCanvas .close-btn').off('click', exitHand);
 
             TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvas);
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
         }
 
         function addContent(){

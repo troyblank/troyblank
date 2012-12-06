@@ -21,8 +21,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 .left { float:left; }
 .right { float:right; }
 
-:after { content:""; position:absolute; }
-
 /* FONTS
 ----------------------------------------------------------------------------------------*/
 body { font-family: 'Ropa Sans', sans-serif; font-size:12px; color:#000; }
