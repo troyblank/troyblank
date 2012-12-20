@@ -78,7 +78,10 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 /* PORTFOLIO CONTENT
 ----------------------------------------------------------------------------------------*/
 /* FLASH */
-.portfolio-piece .region .flashAlternativeContent { text-align:center; padding:20px; font-size:14px; }
+.portfolio-piece .region .flashContent { height:100%; }
+.portfolio-piece .region .flashReplacementDiv { height:100%; }
+.portfolio-piece .region .flashAlternativeContent { text-align:center; padding:0; font-size:14px; background:#7F0000; height:100%; color:#ffffff; }
+.portfolio-piece .region .flashAlternativeContent > div { padding:50px; }
 
 /* HEADER
 ----------------------------------------------------------------------------------------*/
@@ -152,4 +155,9 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 	#portfolioCarousel h1 { padding-left:30px; }
 
 	#content-wrapper .nav { display:none !important; }
+
+	/* PORTFOLIO CONTENT
+	----------------------------------------------------------------------------------------*/
+	/* FLASH */
+	.portfolio-piece .region .flashAlternativeContent > div { padding:30px; }
 }

@@ -78,6 +78,7 @@ var TroyBlankCom = new function(){
     this.eventDispatcher = new Object();
     this.ON_SECTION_CHANGE = 'onSectionChange';
     this.ON_RESIZE = 'onResize';
+    ON_SPECIMEN_READY = 'onSpecimenReady';
 
     this.addEventListener = function(type, handler){
         if(TroyBlankCom.eventDispatcher[type] == undefined){
@@ -130,6 +131,9 @@ var TroyBlankCom = new function(){
         function postLoadInit(){
             sizeContent();
             addListeners();
+            addContent();
+
+            TroyBlankCom.dispatchEvent(TroyBlankCom.ON_SPECIMEN_READY);
         }
 
         function addPermaListeners(){
@@ -138,6 +142,35 @@ var TroyBlankCom = new function(){
 
         function addListeners(){
             TroyBlankCom.addEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
+        }
+
+        //SLIDE SHOW
+        function addContent(){
+            var targ = $($('.portfolio-piece .slideshow .slide')[slideIndex]);
+
+            switch($(targ).attr('data-type')){
+                case 'flash':
+                    addFlash(targ);
+                    break;
+            }
+        }
+
+        function addFlash(targ){
+            var divId = $('.flashReplacementDiv', targ).attr('id');
+
+            var flashAttrs = new Object();
+            flashAttrs["vars"] = {};
+            flashAttrs["params"] = {
+                bgcolor: "0xffffff",
+                wmode: "transparent",
+                AllowScriptAccess: "always",
+                allowFullScreen: "true",
+                menu: "false"
+            };
+            flashAttrs["attributes"] = {};
+            console.log($(targ).attr('data-src'));
+            console.log(divId);
+            swfobject.embedSWF($(targ).attr('data-src'), divId, $(targ).attr('data-width'), $(targ).attr('data-height'), $(targ).attr('data-version'), "/media/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
         }
 
         //sizing
@@ -183,6 +216,8 @@ var TroyBlankCom = new function(){
             removePermaListeners();
             removeListeners();
             removePreloader();
+
+            $('#portfolioCanvas .content').empty();
         }
 
         function removePermaListeners(){
@@ -204,8 +239,12 @@ var TroyBlankCom = new function(){
 
         //LOADER
         function loadContent(){
+            $('#portfolioCanvas .mask').load(link+' .portfolio-piece .content', loadedContentHand);
+        }
 
-            console.log(link);
+        function loadedContentHand(){
+            removePreloader();
+            postLoadInit();
         }
 
         function addPreloader(){
@@ -233,8 +272,6 @@ var TroyBlankCom = new function(){
         var targ = targ;
 
         function init(){
-            addContent();
-            addScrollBar();
             addListeners();
 
             new portfolioCanvasMedia(true, $(targ).attr('data-link'));
@@ -244,7 +281,6 @@ var TroyBlankCom = new function(){
         function addListeners(){
             resizeActive = true;
 
-            //$(window).resize(resizeHand);
             $(document).on('keydown', keydownHand);
 
             $('#portfolioCanvas .nav-down').on('click', exitHand);
@@ -252,6 +288,8 @@ var TroyBlankCom = new function(){
 
             TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvas);
             TroyBlankCom.addEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
+
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_SPECIMEN_READY, specimenReadyHand);
         }
 
         function removeListeners(){
@@ -264,11 +302,7 @@ var TroyBlankCom = new function(){
 
             TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvas);
             TroyBlankCom.removeEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
-        }
-
-        function addContent(){
-            $('#portfolioCanvas .content > h1').html($('.headers h1', targ).html());
-            $('#portfolioCanvas .content > h2').html($('.headers h2', targ).html());
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SPECIMEN_READY, specimenReadyHand);
         }
 
         function addScrollBar(){
@@ -340,6 +374,10 @@ var TroyBlankCom = new function(){
                 exit();
                 ImageCenterer.centerImages();
             }
+        }
+
+        function specimenReadyHand(){
+            addScrollBar();
         }
 
         init();
