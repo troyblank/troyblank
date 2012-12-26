@@ -78,7 +78,8 @@ var TroyBlankCom = new function(){
     this.eventDispatcher = new Object();
     this.ON_SECTION_CHANGE = 'onSectionChange';
     this.ON_RESIZE = 'onResize';
-    ON_SPECIMEN_READY = 'onSpecimenReady';
+    this.ON_SPECIMEN_READY = 'onSpecimenReady';
+    this.ON_MEDIA_FLUSH_REQUEST = 'onMediaFlushRequest';
 
     this.addEventListener = function(type, handler){
         if(TroyBlankCom.eventDispatcher[type] == undefined){
@@ -115,7 +116,9 @@ var TroyBlankCom = new function(){
         var slideIndex = 0;
         var preloader = null;
 
-         var link = link;
+        var link = link;
+        var animating = false;
+        var FADE_SPEED = 500;
 
         function init(){
             if(needsLoading){
@@ -129,7 +132,10 @@ var TroyBlankCom = new function(){
         }
 
         function postLoadInit(){
-            sizeContent();
+            $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
+
+            addPagination();
+            sizeAllContent();
             addListeners();
             addContent();
 
@@ -137,11 +143,54 @@ var TroyBlankCom = new function(){
         }
 
         function addPermaListeners(){
-            TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvasMedia);
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST, onMediaFlushRequest);
         }
 
         function addListeners(){
+            $('.slideshow > nav a').on('click', slideShowPageClick);
+
             TroyBlankCom.addEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
+        }
+
+        //PAGINATION
+        function addPagination(){
+            if($('.slideshow .region .slide').length > 1){
+                $('.slideshow > nav').css('display', 'block');
+                var i = $('.slideshow .region .slide').length;
+                while(i > 0){
+                    $('.slideshow > nav').prepend('<a>'+i+'</a>');
+                    i--;
+                }
+
+                $($('.slideshow > nav a')[slideIndex]).addClass('active');
+            }
+
+            $($('.portfolio-piece .slideshow .slide')[slideIndex]).addClass('active');
+        }
+
+        function swapSlide(){
+            animating = true;
+
+            //old
+            var oldTarg = $($('.portfolio-piece .slideshow .slide')[slideIndex]);
+            $(oldTarg).stop().animate({'opacity':0}, FADE_SPEED, function(){
+                destroySlide(this);
+            });
+
+            //new
+            slideIndex = $('.slideshow > nav a.active').index();
+            var newTarg = $($('.portfolio-piece .slideshow .slide')[slideIndex]);
+
+            $('.portfolio-piece .slideshow .slide').removeClass('active');
+            $(newTarg).addClass('active');
+
+            $(newTarg).css('display', 'block');
+            $(newTarg).css('opacity', 0);
+            $(newTarg).stop().animate({'opacity':1}, FADE_SPEED, function(){
+                animating = false;
+            });
+
+            sizeContent($($('.portfolio-piece .slideshow .slide')[slideIndex]), true);
         }
 
         //SLIDE SHOW
@@ -194,45 +243,90 @@ var TroyBlankCom = new function(){
             swfobject.embedSWF($(targ).attr('data-src'), divId, $(targ).attr('data-width'), $(targ).attr('data-height'), $(targ).attr('data-version'), "/media/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
         }
 
+        function getSWF(movieName) {
+            if (navigator.appName.indexOf("Microsoft") != -1) {
+                return window[movieName];
+            } else {
+                return document[movieName];
+            }
+        }
+
         //sizing
-        function sizeContent(){
-            var targ = $($('.portfolio-piece .slideshow .slide')[slideIndex]);
+        function sizeAllContent(){
+            var i = $('.portfolio-piece .slideshow .slide').length-1;
+            while(i >= 0){
+                sizeContent($('.portfolio-piece .slideshow .slide')[i]);
+                i--;
+            }
+        }
+
+        function sizeContent(targ, animateIt){
+            animateIt == animateIt == undefined ? false : true;
+
             var targ_w = $(targ).attr('data-width');
             var targ_h = $(targ).attr('data-height');
 
-            var cur_w = $('.slideshow').width();
+            var cur_w = $('.body').width();
 
             if(cur_w > targ_w){
                 // normal set
-                $('.slideshow .region').width(targ_w);
-                $(targ).width(targ_w);
-                $(targ).height(targ_h);
+                setSlideShowDiminsions(targ, targ_w, targ_h, animateIt);
 
-                if($(targ).attr('data-resizeable') == 'false'){
+                if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
                     hideResizeError();
                 }
             }else{
-                $('.slideshow .region').width(cur_w);
-                $(targ).width(cur_w);
-                $(targ).height(Math.round(targ_h*cur_w/targ_w));
+                setSlideShowDiminsions(targ, cur_w, Math.round(targ_h*cur_w/targ_w), animateIt);
 
-                if($(targ).attr('data-resizeable') == 'false'){
+                if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
                     showResizeError();
                 }
             }
-            $(targ).width();
+
+            if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'true'){
+                hideResizeError();
+            }
+        }
+
+        function setSlideShowDiminsions(targ, w, h, animateIt){
+            if(!animateIt){
+                if($(targ).hasClass('active')){
+                    $('.slideshow .region').width(w);
+                    $('.slideshow .region').height(h);
+                    $('.slideshow').width($('.slideshow .region').outerWidth(true));
+                }
+                $(targ).width(w);
+                $(targ).height(h);
+            }else{
+                var borderWidth = Number($('.slideshow .region').css('border-left-width').split('px')[0])+Number($('.slideshow .region').css('border-right-width').split('px')[0]);
+                
+                $('.slideshow').stop().animate({'width':Number(w)+borderWidth}, FADE_SPEED);
+                $('.slideshow .region').stop().animate({'width':w, 'height':h}, FADE_SPEED);
+
+                $(targ).stop().animate({'width':w, 'height':h, 'opacity':1}, FADE_SPEED, function(){
+                    animating = false;
+                });
+
+                if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
+                    $('.portfolio-piece .slideshow .under-size-error').css('opacity', 0);
+                    $('.portfolio-piece .slideshow .under-size-error').stop().animate({'opacity':1}, FADE_SPEED);
+                }
+            }
         }
 
         function showResizeError(){
             $('.portfolio-piece .slideshow .under-size-error').height($($('.portfolio-piece .slideshow .slide')[slideIndex]).height());
             $('.portfolio-piece .slideshow .under-size-error').css('display', 'block');
+
+            $('.portfolio-piece .slideshow .flashContent').css('display', 'none');
         }
 
         function hideResizeError(){
             $('.portfolio-piece .slideshow .under-size-error').css('display', 'none');
+            $('.portfolio-piece .slideshow .flashContent').css('display', 'block');
         }
 
-        //destroy
+        //DESTROY
         function destroy(){
             removePermaListeners();
             removeListeners();
@@ -241,8 +335,28 @@ var TroyBlankCom = new function(){
             $('#portfolioCanvas .content').empty();
         }
 
+        function destroySlide(targ){
+            switch($(targ).attr('data-type')){
+                case 'flash':
+                    destroyFlashSlide(targ);
+                    break;
+            }
+
+            $(targ).css('display', 'none');
+        }
+
+        function destroyFlashSlide(targ){
+            //getSWF
+            var swf = getSWF($('object', targ).attr('id'));
+            if(swf != undefined){
+                if(swf.destroy != undefined){
+                    swf.destroy();
+                }
+            }
+        }
+
         function removePermaListeners(){
-            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvasMedia);
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST, onMediaFlushRequest);
         }
 
         function removeListeners(){
@@ -250,12 +364,20 @@ var TroyBlankCom = new function(){
         }
 
         //handlers
-        function onSectionChangeHand_portfolioCanvasMedia(){
+        function onMediaFlushRequest(){
             destroy();
         }
 
         function resizeHand(){
-            sizeContent();
+            sizeAllContent();
+        }
+
+        function slideShowPageClick(){
+            if(!$(this).hasClass('active') && !animating){
+                $('.slideshow > nav a').removeClass('active');
+                $(this).addClass('active');
+                swapSlide();
+            }
         }
 
         //LOADER
@@ -366,8 +488,9 @@ var TroyBlankCom = new function(){
 
         function animateOff(){
             if(TroyBlankCom.size == 'desktop'){
-                $('#portfolioCanvas').stop().animate({'top':$(window).height()}, 250, function(){
+                $('#portfolioCanvas').stop().animate({'top':$(window).height()}, 300, function(){
                     $(this).css('display', 'none');
+                    TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
                 });
             }else{
                 $('#portfolioCanvas').css('display', 'none');
@@ -680,7 +803,11 @@ var TroyBlankCom = new function(){
     }
 
     function homeClickHandler(){
-        TroyBlankCom.changeSection('main');
+        if($('body.portfolio-standalone').length <= 0){
+            TroyBlankCom.changeSection('main');
+        }else{
+            window.location.href = '/';
+        }
     }
 
     //PRELOAD PORTFOLIO THUMBS

@@ -52,20 +52,20 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 /* PORTFOLIO CANVAS
 ----------------------------------------------------------------------------------------*/
 .portfolio-piece { width:100%; height: inherit; background:#ffffff; z-index:45; display:block; overflow: auto; }
-.portfolio-piece .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:50px; height:50px; position:fixed; top:175px; right:0px; }
+.portfolio-piece .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:53px; height:56px; position:fixed; top:175px; right:0px; z-index:50; }
 .portfolio-piece .mask { position:absolute; width:100%; height:100%; }
 .portfolio-piece .content { width:100%; padding:20px 0 80px 0; }
 .portfolio-piece h1 { padding:6px 40px 6px 15px; margin-bottom:4px; margin:0 0 4px 0; font-size:30px; }
 .portfolio-piece h2 { margin:0 0 33px 0; padding:6px 10px 6px 15px; }
 .portfolio-piece .body { padding:0 65px; margin:0 auto; }
-.portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; }
+.portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; display:none; }
 .portfolio-piece .slideshow nav a { display:block; width:24px; height:19px; background:url('../images/slideNav_black.png') no-repeat; float:left;
-	color:#ffffff; padding-top:5px; text-align:center; }
-.portfolio-piece .slideshow nav a.active { margin-right:7px; background:url('../images/slideNav_red.png') no-repeat; }
-.portfolio-piece .slideshow { margin-bottom:20px; }
-.portfolio-piece .slideshow .region { margin:0 auto; position:relative; }
-.portfolio-piece .slideshow .slide { border:4px dashed #7f7f7f; width:100%; height:484px; position:relative; }
-.portfolio-piece .slideshow .under-size-error { position:absolute; z-index:10; color:#ffffff;  background:#7F0000; text-align:center; font-size:20px; width:100%; margin:4px; display:none; }
+	color:#ffffff; padding-top:5px; text-align:center; margin-right:7px; }
+.portfolio-piece .slideshow nav a.active { background:url('../images/slideNav_red.png') no-repeat; }
+.portfolio-piece .slideshow { margin:0 auto 20px auto; }
+.portfolio-piece .slideshow .region { position:relative; border:4px dashed #7f7f7f; }
+.portfolio-piece .slideshow .slide { width:100%; position:relative; position:absolute; display:none; }
+.portfolio-piece .slideshow .under-size-error { position:absolute; z-index:10; color:#ffffff;  background:#7F0000; text-align:center; font-size:20px; width:100%; display:none; }
 .portfolio-piece .slideshow .under-size-error img { max-width: 100%; }
 .portfolio-piece .slideshow .under-size-error div { padding:60px 50px; }
 .portfolio-piece .slideshow .image img { width:100%; height:100%; }
