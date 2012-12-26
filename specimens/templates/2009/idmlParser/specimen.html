@@ -3,8 +3,8 @@
 {% block main_content %}
     <section class="portfolio-piece">
         <div class="content">
-            <h1>Digital Header</h1><br />
-            <h2>Flash  ID 0011  Salva O’Renick  2010</h2>
+            <h1>IDML Parser</h1><br />
+            <h2>Flash | ID 001 | Salva O’Renick | 2009</h2>
             <div class="body">
                 <div class="slideshow"> 
                     <div class="region">
@@ -16,7 +16,7 @@
                             <div>The size of your browser is too small to properly display this content.</div>
                             <img src="{{ MEDIA_URL }}images/skull.png" />
                         </div>
-                        <div class="slide" data-src="/specimens/2009/idmlParser/swf/IDMLParser.swf" data-width="945" data-height="600" data-resizeable="false" data-type="flash" data-version="9.0.28" >
+                        <div class="slide" data-src="{{ MEDIA_URL }}specimens/2009/idmlParser/swf/IDMLParser.swf" data-width="945" data-height="600" data-resizeable="false" data-type="flash" data-version="9.0.28" data-flash-vars="name:IDML Test,IDMLPath:{{ MEDIA_URL }}specimens/2009/idmlParser/testIDML/,linksPath:{{ MEDIA_URL }}specimens/2009/idmlParser/testLinks/,jsonTemplates:{{ MEDIA_URL }}specimens/2009/idmlParser/testJSON/templates.json,layer_customization:,price_customization:,can_customize:true" data-flash-params="bgcolor:#C2C2C2,wmode:opaque" >
 
 
                             <div class="flashContent">
@@ -41,8 +41,8 @@
                         </div>-->
                     </div>
                 </div>
-                 <p>Sed massa est, pretium quis sodales eget, ultrices eu leo. Phasellus id lobortis purus. In a ligula a enim vulputate posuere. Maecenas suscipit accumsan turpis, ac vehicula libero aliquet et. Maecenas faucibus pharetra nunc, mollis consectetur velit commodo quis. Pellentesque a nisi elit, vitae congue ipsum. Donec nisl metus, faucibus ut rutrum quis, tempor ut tortor. In hac habitasse platea dictumst. Fusce non sapien nisi, posuere elementum metus.</p>
-                <p>Sed massa est, pretium quis sodales eget, ultrices eu leo. Phasellus id lobortis purus. In a ligula a enim vulputate posuere. Maecenas suscipit accumsan turpis, ac vehicula libero aliquet et. Maecenas faucibus pharetra nunc, mollis consectetur velit commodo quis. Pellentesque a nisi elit, vitae congue ipsum. Donec nisl metus, faucibus ut rutrum quis, tempor ut tortor. In hac habitasse platea dictumst. Fusce non sapien nisi, posuere elementum metus.</p>
+                 <p>The IDML Parser is something I developed while working at <a href="http://www.uncommonsense.com/" target="_blank">Salva O'Renick</a>, it was first created to circumvent the lengthy process of a designer having to customize a plethera of Adobe Indesign documents with orders from every branch of a national resturant chain. During a research phase the team I was working with discovered many applications that allowed this sort of customization, but without any impressive real-time visual feedback during the customization process. The application further made it's significance by using IDML (Indesign's new standard XML format) to almost completely recreate the Indesign document inside of flash. Also by communicating with Adobe during the Beta development of their Text Layout Framework for Flash I was able to insure that fonts could be produced almost indentically to they way they were laid out in Indesign.</p>
+                <p>Above is the application that is displaying a test Indesign document that I created for demonstration.</p>
             </div>
         </div>
     </section>

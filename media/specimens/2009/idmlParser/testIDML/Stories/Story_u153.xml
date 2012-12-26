@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<Story Self="u153" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection"/>
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/u174">
+				<Properties>
+					<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+				</Properties>
+				<Content>You can use the navigation controller on the far left of this pane to move or zoom in and out of this document. Also clicking and dragging on any space that does not have funcationalty will allow you to move the document. Further up on the left is a button that allows you to toggle to a preview mode to see how your print piece will look without the distraction of the edit functionality.</Content>
+				<Br/>
+				<Br/>
+				<Content>Note that all image masks in Indesign are recreated using the drawing API in Flash. On page 3 there is a </Content>
+				<Br/>
+				<Content>demonstration of shapes reproduced from Indesign that also use the same drawling method for display here.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

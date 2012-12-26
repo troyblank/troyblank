@@ -24,14 +24,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* FONTS
 ----------------------------------------------------------------------------------------*/
 body { font-family: 'Ropa Sans', sans-serif; font-size:12px; color:#000; }
-p { font-size:14px; text-transform:uppercase; line-height:20px; margin-bottom:20px; }
+p { font-size:14px; line-height:20px; margin-bottom:20px; }
 h1, h2, h3, h4 { display:inline-block; color:#ffffff; }
-h1 { font-size:36px; text-transform:uppercase; background:#7f0000; padding:13px 25px; }
+h1 { font-size:36px; text-transform:uppercase; background:#7f0000; padding:13px 10px 13px 25px; }
 h2 { font-size:14px; background:#000000; padding: 6px 10px; }
 h3 { }
 h4 { }
 
-a { cursor:pointer; }
+a { cursor:pointer; color:#7F0000; text-decoration:none; }
 a:hover { }
 
 ul { }
@@ -54,9 +54,9 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 .portfolio-piece { width:100%; height: inherit; background:#ffffff; z-index:45; display:block; overflow: auto; }
 .portfolio-piece .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:50px; height:50px; position:fixed; top:175px; right:0px; }
 .portfolio-piece .mask { position:absolute; width:100%; height:100%; }
-.portfolio-piece .content { width:100%; padding:40px 0 80px 0; }
-.portfolio-piece h1 { padding-right:40px; margin-bottom:4px; margin:0 0 4px 0; }
-.portfolio-piece h2 { margin:0 0 33px 0; }
+.portfolio-piece .content { width:100%; padding:20px 0 80px 0; }
+.portfolio-piece h1 { padding:6px 40px 6px 15px; margin-bottom:4px; margin:0 0 4px 0; font-size:30px; }
+.portfolio-piece h2 { margin:0 0 33px 0; padding:6px 10px 6px 15px; }
 .portfolio-piece .body { padding:0 65px; margin:0 auto; }
 .portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; }
 .portfolio-piece .slideshow nav a { display:block; width:24px; height:19px; background:url('../images/slideNav_black.png') no-repeat; float:left;

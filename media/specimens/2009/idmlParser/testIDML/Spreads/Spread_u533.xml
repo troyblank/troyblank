@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Spread xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<Spread Self="u533" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" FlattenerOverride="Default" ShowMasterItems="true" PageCount="1" BindingLocation="0" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 1360">
+		<FlattenerPreference LineArtAndTextResolution="300" GradientAndMeshResolution="150" ClipComplexRegions="false" ConvertAllStrokesToOutlines="false" ConvertAllTextToOutlines="false">
+			<Properties>
+				<RasterVectorBalance type="double">50</RasterVectorBalance>
+			</Properties>
+		</FlattenerPreference>
+		<Page Self="u53a" Name="3" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" AppliedMaster="uc0" OverrideList="" TabOrder="" GridStartingPoint="TopOutside" UseMasterGrid="true">
+			<Properties>
+				<Descriptor type="list">
+					<ListItem type="string"></ListItem>
+					<ListItem type="enumeration">Arabic</ListItem>
+					<ListItem type="boolean">true</ListItem>
+					<ListItem type="boolean">false</ListItem>
+					<ListItem type="long">3</ListItem>
+					<ListItem type="string"></ListItem>
+				</Descriptor>
+			</Properties>
+			<MarginPreference ColumnCount="1" ColumnGutter="12" Top="36" Bottom="36" Left="36" Right="36" ColumnDirection="Horizontal" ColumnsPositions="0 678"/>
+			<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
+				<Properties>
+					<AppliedFont type="string">Times New Roman</AppliedFont>
+				</Properties>
+			</GridDataInformation>
+		</Page>
+		<TextFrame Self="ua61" ParentStory="ua64" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -202.75 -182.95">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-147.25 -41.9500000000001" LeftDirection="-147.25 -41.9500000000001" RightDirection="-147.25 -41.9500000000001"/>
+							<PathPointType Anchor="-147.25 -2.0500000000000123" LeftDirection="-147.25 -2.0500000000000123" RightDirection="-147.25 -2.0500000000000123"/>
+							<PathPointType Anchor="545.25 -2.0500000000000123" LeftDirection="545.25 -2.0500000000000123" RightDirection="545.25 -2.0500000000000123"/>
+							<PathPointType Anchor="545.25 -41.9500000000001" LeftDirection="545.25 -41.9500000000001" RightDirection="545.25 -41.9500000000001"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="692.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<Polygon Self="ua7b" StoryTitle="$ID/" ContentType="Unassigned" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" ItemTransform="1 0 0 1 -8 -1337">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="true">
+						<PathPointArray>
+							<PathPointType Anchor="295 1292" LeftDirection="295 1292" RightDirection="295 1292"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<FrameFittingOption LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="TopLeftAnchor"/>
+		</Polygon>
+		<Polygon Self="ua80" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="-2.7755575615628914e-17 -0.9999999999999998 0.9999999999999998 -2.7755575615628914e-17 -214.18537627107912 -25.129403220152263">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-123.33749983958664 -81.93749794636483" LeftDirection="-123.33749983958664 -81.93749794636483" RightDirection="-123.33749983958664 -81.93749794636483"/>
+							<PathPointType Anchor="-123.33749983958664 2.765098119137464" LeftDirection="-81.07499991194094 -89.09837202155666" RightDirection="-165.59999976723236 94.62856825983158"/>
+							<PathPointType Anchor="-123.33749983958664 81.93749720662933" LeftDirection="-123.33749983958664 81.93749720662933" RightDirection="-123.33749983958664 81.93749720662933"/>
+							<PathPointType Anchor="-11.532007499362063 81.93749720662933" LeftDirection="-94.64746096063898 145.6243681367717" RightDirection="121.6124997410538 -20.083928347264315"/>
+							<PathPointType Anchor="123.33749973810058 81.93749720662933" LeftDirection="123.33749973810058 81.93749720662933" RightDirection="123.33749973810058 81.93749720662933"/>
+							<PathPointType Anchor="123.33749973810058 -4.882717666988722" LeftDirection="54.33749985623003 48.26849189082236" RightDirection="192.3374996199711 -58.0339272247998"/>
+							<PathPointType Anchor="123.33749973810058 -81.93749794636483" LeftDirection="123.33749973810058 -81.93749794636483" RightDirection="123.33749973810058 -81.93749794636483"/>
+							<PathPointType Anchor="0.364544284110809 -81.93749794636483" LeftDirection="78.354088486069 -35.116070759795505" RightDirection="-77.62499991784742 -128.7589251329341"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="ua7d" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="42 42" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1.725 0 0 1.725 -123.3375 -81.9375">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="ua7e" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136154422049 27960" LinkImportModificationTime="2009-08-18T19:00:15" LinkImportTime="2009-08-19T18:14:51"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Polygon>
+		<Polygon Self="uaa2" StoryTitle="$ID/" ContentType="Unassigned" FillColor="Color/ua8c" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" ItemTransform="0 1 -1 0 1383.9685624476567 52.75716066541827">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="true">
+						<PathPointArray>
+							<PathPointType Anchor="64.66666666666667 1385.5" LeftDirection="64.66683333333333 1372.7071190287586" RightDirection="64.66650000000001 1398.2928809712414"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<FrameFittingOption LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="TopLeftAnchor"/>
+		</Polygon>
+		<Polygon Self="uaa1" StoryTitle="$ID/" ContentType="Unassigned" FillColor="Color/uad6" StrokeWeight="0" StrokeColor="Swatch/None" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" ItemTransform="1 0 0 1 28.55324276595337 -1456.7724803471215">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-67.83333333333333 1397.5" LeftDirection="-67.83333333333333 1397.5" RightDirection="-71.83333333333333 1391.6666666666667"/>
+							<PathPointType Anchor="-63.833333333333336 1366" LeftDirection="-73.66666666666667 1378.1666666666667" RightDirection="-54 1353.8333333333333"/>
+							<PathPointType Anchor="-12 1296" LeftDirection="-12 1296" RightDirection="-12 1296"/>
+							<PathPointType Anchor="13.666666666666666 1292.5" LeftDirection="-1.5 1280" RightDirection="28.833333333333332 1305"/>
+							<PathPointType Anchor="7.833333333333333 1325.8333333333333" LeftDirection="13.666666666666666 1322.6666666666665" RightDirection="2 1329"/>
+							<PathPointType Anchor="-57.5 1375.5" LeftDirection="-57.5 1375.5" RightDirection="-57.5 1375.5"/>
+							<PathPointType Anchor="-58.5 1391.3333333333333" LeftDirection="-64.66650000000001 1384.8839024888907" RightDirection="-52.33349999999999 1397.7827641777758"/>
+							<PathPointType Anchor="-35.5 1395.5" LeftDirection="-35.5 1395.5" RightDirection="-35.5 1395.5"/>
+							<PathPointType Anchor="-8.666666666666666 1387.1666666666667" LeftDirection="-30.5 1396" RightDirection="13.166666666666668 1378.3333333333335"/>
+							<PathPointType Anchor="39.333333333333336 1372.3333333333333" LeftDirection="39.333333333333336 1372.3333333333333" RightDirection="39.333333333333336 1372.3333333333333"/>
+							<PathPointType Anchor="62.833333333333336 1383.6666666666667" LeftDirection="56.66666666666667 1367.3333333333335" RightDirection="69 1400"/>
+							<PathPointType Anchor="46.166666666666664 1407.1666666666667" LeftDirection="56.666666666666664 1407.3333333333335" RightDirection="35.666666666666664 1407"/>
+							<PathPointType Anchor="-46.000166666666644 1407.6694423902532" LeftDirection="-41.30702177374724 1407.7249233392265" RightDirection="-60.333333333333336 1407.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<FrameFittingOption LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="TopLeftAnchor"/>
+		</Polygon>
+		<Polygon Self="uaa3" StoryTitle="$ID/" ContentType="Unassigned" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" ItemTransform="-1 0 -0 -1 13.985104597539475 1381.6724803471216">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-67.83333333333333 1397.5" LeftDirection="-67.83333333333333 1397.5" RightDirection="-71.83333333333333 1391.6666666666667"/>
+							<PathPointType Anchor="-63.833333333333336 1366" LeftDirection="-73.66666666666667 1378.1666666666667" RightDirection="-54 1353.8333333333333"/>
+							<PathPointType Anchor="-12 1296" LeftDirection="-12 1296" RightDirection="-12 1296"/>
+							<PathPointType Anchor="13.666666666666666 1292.5" LeftDirection="-1.5 1280" RightDirection="28.833333333333332 1305"/>
+							<PathPointType Anchor="7.833333333333333 1325.8333333333333" LeftDirection="13.666666666666666 1322.6666666666665" RightDirection="2 1329"/>
+							<PathPointType Anchor="-57.5 1375.5" LeftDirection="-57.5 1375.5" RightDirection="-57.5 1375.5"/>
+							<PathPointType Anchor="-58.5 1391.3333333333333" LeftDirection="-64.66650000000001 1384.8839024888907" RightDirection="-52.33349999999999 1397.7827641777758"/>
+							<PathPointType Anchor="-35.5 1395.5" LeftDirection="-35.5 1395.5" RightDirection="-35.5 1395.5"/>
+							<PathPointType Anchor="-8.666666666666666 1387.1666666666667" LeftDirection="-30.5 1396" RightDirection="13.166666666666668 1378.3333333333335"/>
+							<PathPointType Anchor="39.333333333333336 1372.3333333333333" LeftDirection="39.333333333333336 1372.3333333333333" RightDirection="39.333333333333336 1372.3333333333333"/>
+							<PathPointType Anchor="62.833333333333336 1383.6666666666667" LeftDirection="56.66666666666667 1367.3333333333335" RightDirection="69 1400"/>
+							<PathPointType Anchor="46.166666666666664 1407.1666666666667" LeftDirection="56.666666666666664 1407.3333333333335" RightDirection="35.666666666666664 1407"/>
+							<PathPointType Anchor="-46.000166666666644 1407.6694423902532" LeftDirection="-41.30702177374724 1407.7249233392265" RightDirection="-60.333333333333336 1407.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<FrameFittingOption LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="TopLeftAnchor"/>
+		</Polygon>
+		<TextFrame Self="uab7" ParentStory="uaa5" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" FillColor="Color/uabb" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="-0.9659258262890682 0.2588190451025207 -0.2588190451025207 -0.9659258262890682 231.249292643152 -26.488211476845926">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.31697650000001 -62.82686025000001" LeftDirection="-71.31697650000001 -62.82686025000001" RightDirection="-71.31697650000001 -62.82686025000001"/>
+							<PathPointType Anchor="-71.31697650000001 -24.11193014999989" LeftDirection="-71.31697650000001 -24.11193014999989" RightDirection="-71.31697650000001 -24.11193014999989"/>
+							<PathPointType Anchor="71.31697650000001 -24.11193014999989" LeftDirection="71.31697650000001 -24.11193014999989" RightDirection="71.31697650000001 -24.11193014999989"/>
+							<PathPointType Anchor="71.31697650000001 -62.82686025000001" LeftDirection="71.31697650000001 -62.82686025000001" RightDirection="71.31697650000001 -62.82686025000001"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnGutter="11.643588" TextColumnFixedWidth="142.63395300000002"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="uabe" ParentStory="uac1" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" FillColor="Color/uabb" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="0.9659258262890682 -0.2588190451025207 0.2588190451025207 0.9659258262890682 231.0950932205928 -3.7765229822503397">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-73.5 -64.75" LeftDirection="-73.5 -64.75" RightDirection="-73.5 -64.75"/>
+							<PathPointType Anchor="-73.5 -24.84999999999991" LeftDirection="-73.5 -24.84999999999991" RightDirection="-73.5 -24.84999999999991"/>
+							<PathPointType Anchor="73.5 -24.84999999999991" LeftDirection="73.5 -24.84999999999991" RightDirection="73.5 -24.84999999999991"/>
+							<PathPointType Anchor="73.5 -64.75" LeftDirection="73.5 -64.75" RightDirection="73.5 -64.75"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="147"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<Rectangle Self="uadf" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 2 155.44618316242259">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-363 -95.5" LeftDirection="-363 -95.5" RightDirection="-363 -95.5"/>
+							<PathPointType Anchor="-363 95.5" LeftDirection="-363 95.5" RightDirection="-363 95.5"/>
+							<PathPointType Anchor="363 95.5" LeftDirection="363 95.5" RightDirection="363 95.5"/>
+							<PathPointType Anchor="363 -95.5" LeftDirection="363 -95.5" RightDirection="363 -95.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="uada" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -363 -95.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="726" Bottom="191"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="uadd" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/inkSplat.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951991596110000 19141" LinkImportModificationTime="2009-08-19T18:45:59" LinkImportTime="2009-08-19T18:46:25"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+	</Spread>
+</idPkg:Spread>

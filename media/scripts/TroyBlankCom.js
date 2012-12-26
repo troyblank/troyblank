@@ -160,16 +160,37 @@ var TroyBlankCom = new function(){
 
             var flashAttrs = new Object();
             flashAttrs["vars"] = {};
+
+            if($(targ).attr('data-flash-vars').length > 0){
+                var flashVars = $(targ).attr('data-flash-vars').split(',');
+                var i = flashVars.length-1;
+                while(i >= 0){
+                    var flashVar = flashVars[i].split(':');
+                    flashAttrs["vars"][flashVar[0]] = flashVar[1];
+                    i--;
+                }
+            }
+
             flashAttrs["params"] = {
-                bgcolor: "0xffffff",
+                bgcolor: "#ffffff",
                 wmode: "transparent",
                 AllowScriptAccess: "always",
                 allowFullScreen: "true",
                 menu: "false"
             };
+
+            if($(targ).attr('data-flash-params').length > 0){
+                var flashParams = $(targ).attr('data-flash-params').split(',');
+                var j = flashParams.length-1;
+                while(j >= 0){
+                    var flashParam = flashParams[j].split(':');
+                    flashAttrs["params"][flashParam[0]] = flashParam[1];
+                    j--;
+                }
+            }
+
             flashAttrs["attributes"] = {};
-            console.log($(targ).attr('data-src'));
-            console.log(divId);
+
             swfobject.embedSWF($(targ).attr('data-src'), divId, $(targ).attr('data-width'), $(targ).attr('data-height'), $(targ).attr('data-version'), "/media/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
         }
 

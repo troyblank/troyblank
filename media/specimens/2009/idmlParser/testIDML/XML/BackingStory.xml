@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:BackingStory xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<XmlStory Self="u9b" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection"/>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]"/>
+			<XMLElement Self="di2" MarkupTag="XMLTag/Root">
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i3" MarkupTag="XMLTag/Story" XMLContent="u201"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i4" MarkupTag="XMLTag/text_price_six">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">5</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>$XX.XX</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i6" MarkupTag="XMLTag/text_price_one" XMLContent="u249"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i7" MarkupTag="XMLTag/text_price_six">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">5</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>$XX.XX</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i9" MarkupTag="XMLTag/Story" XMLContent="u27a"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2ia" MarkupTag="XMLTag/Story">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>Rice Pilaf	</Content>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>Garlic Mashed Potatoes	</Content>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>Cole Slaw	</Content>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="MediumItalic" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>Per Person</Content>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Medium" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Br/>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>Seasonal Vegetables	</Content>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>Tortilla Chips</Content>
+					</CharacterStyleRange>
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Medium" PointSize="9">
+						<Properties>
+							<Leading type="unit">10</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>	</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2ic" MarkupTag="XMLTag/Story" XMLContent="u2da"/>
+					<XMLElement Self="di2id" MarkupTag="XMLTag/Story" XMLContent="u2f2"/>
+					<XMLElement Self="di2ie" MarkupTag="XMLTag/text_price_two" XMLContent="u311"/>
+					<XMLElement Self="di2if" MarkupTag="XMLTag/text_price_three" XMLContent="u32a"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i10" MarkupTag="XMLTag/text_price_six">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">5</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>$XX.XX</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i12" MarkupTag="XMLTag/text_price_four" XMLContent="u358"/>
+					<XMLElement Self="di2i13" MarkupTag="XMLTag/text_price_five" XMLContent="u36f"/>
+					<XMLElement Self="di2i14" MarkupTag="XMLTag/text_price_six" XMLContent="u386"/>
+					<XMLElement Self="di2i15" MarkupTag="XMLTag/text_prices_sideEleven" XMLContent="u3b8"/>
+					<XMLElement Self="di2i16" MarkupTag="XMLTag/text_prices_sideTen" XMLContent="u3cf"/>
+					<XMLElement Self="di2i17" MarkupTag="XMLTag/text_prices_sideNine" XMLContent="u3e6"/>
+					<XMLElement Self="di2i18" MarkupTag="XMLTag/text_prices_sideEight" XMLContent="u3fd"/>
+					<XMLElement Self="di2i19" MarkupTag="XMLTag/text_prices_sideSeven" XMLContent="u414"/>
+					<XMLElement Self="di2i1a" MarkupTag="XMLTag/text_prices_sideSix" XMLContent="u42b"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i1b" MarkupTag="XMLTag/text_price_six">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="9">
+						<Properties>
+							<Leading type="unit">5</Leading>
+							<AppliedFont type="string">DINOT</AppliedFont>
+						</Properties>
+						<Content>$XX.XX</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i1c" MarkupTag="XMLTag/text_prices_sideFive" XMLContent="u459"/>
+					<XMLElement Self="di2i1d" MarkupTag="XMLTag/text_prices_sideFour" XMLContent="u470"/>
+					<XMLElement Self="di2i1e" MarkupTag="XMLTag/text_prices_sideTwo" XMLContent="u487"/>
+					<XMLElement Self="di2i1f" MarkupTag="XMLTag/text_prices_sideThree" XMLContent="u49f"/>
+					<XMLElement Self="di2i20" MarkupTag="XMLTag/text_prices_sideOne" XMLContent="u4b6"/>
+					<XMLElement Self="di2i22" MarkupTag="XMLTag/text_price_eight" XMLContent="u53e"/>
+					<XMLElement Self="di2i23" MarkupTag="XMLTag/text_price_seven" XMLContent="u555"/>
+					<XMLElement Self="di2i24" MarkupTag="XMLTag/image_frameOne" XMLContent="u58a">
+						<XMLAttribute Self="di2i24XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i25" MarkupTag="XMLTag/image_frameOne">
+						<XMLAttribute Self="di2i25XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i27" MarkupTag="XMLTag/image_frameOne" XMLContent="u661">
+						<XMLAttribute Self="di2i27XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_10.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i28" MarkupTag="XMLTag/image_frameOne" XMLContent="u654">
+						<XMLAttribute Self="di2i28XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_09.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i29" MarkupTag="XMLTag/image_frameOne" XMLContent="u64c">
+						<XMLAttribute Self="di2i29XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_08.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i2a" MarkupTag="XMLTag/image_frameOne" XMLContent="u612">
+						<XMLAttribute Self="di2i2aXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_07.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i2b" MarkupTag="XMLTag/image_frameOne" XMLContent="u608">
+						<XMLAttribute Self="di2i2bXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_06.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i2c" MarkupTag="XMLTag/image_frameOne" XMLContent="u5f8">
+						<XMLAttribute Self="di2i2cXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_04.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i2d" MarkupTag="XMLTag/image_frameOne" XMLContent="u600">
+						<XMLAttribute Self="di2i2dXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i2e" MarkupTag="XMLTag/image_frameOne" XMLContent="u5f1">
+						<XMLAttribute Self="di2i2eXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_03.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i2f" MarkupTag="XMLTag/image_frameOne" XMLContent="u5eb">
+						<XMLAttribute Self="di2i2fXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_02.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i30" MarkupTag="XMLTag/image_frameTwo" XMLContent="u674">
+						<XMLAttribute Self="di2i30XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_10.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i31" MarkupTag="XMLTag/image_frameTwo" XMLContent="u680">
+						<XMLAttribute Self="di2i31XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_09.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i32" MarkupTag="XMLTag/image_frameTwo" XMLContent="u68c">
+						<XMLAttribute Self="di2i32XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_08.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i33" MarkupTag="XMLTag/image_frameTwo" XMLContent="u698">
+						<XMLAttribute Self="di2i33XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_07.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i34" MarkupTag="XMLTag/image_frameTwo" XMLContent="u6a4">
+						<XMLAttribute Self="di2i34XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_06.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i35" MarkupTag="XMLTag/image_frameTwo" XMLContent="u6b2">
+						<XMLAttribute Self="di2i35XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_04.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i36" MarkupTag="XMLTag/image_frameTwo" XMLContent="u6be">
+						<XMLAttribute Self="di2i36XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i37" MarkupTag="XMLTag/image_frameTwo" XMLContent="u6ca">
+						<XMLAttribute Self="di2i37XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_03.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i38" MarkupTag="XMLTag/image_frameTwo" XMLContent="u6d7">
+						<XMLAttribute Self="di2i38XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_02.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i39" MarkupTag="XMLTag/image_frameTwo" XMLContent="u6e5">
+						<XMLAttribute Self="di2i39XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i3a" MarkupTag="XMLTag/image_frameThree" XMLContent="u6f9">
+						<XMLAttribute Self="di2i3aXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_10.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i3b" MarkupTag="XMLTag/image_frameThree" XMLContent="u706">
+						<XMLAttribute Self="di2i3bXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_09.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i3c" MarkupTag="XMLTag/image_frameThree" XMLContent="u712">
+						<XMLAttribute Self="di2i3cXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_08.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i3d" MarkupTag="XMLTag/image_frameThree" XMLContent="u71f">
+						<XMLAttribute Self="di2i3dXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_07.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i3e" MarkupTag="XMLTag/image_frameThree" XMLContent="u72b">
+						<XMLAttribute Self="di2i3eXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_06.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i3f" MarkupTag="XMLTag/image_frameThree" XMLContent="u737">
+						<XMLAttribute Self="di2i3fXMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_04.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i40" MarkupTag="XMLTag/image_frameThree" XMLContent="u744">
+						<XMLAttribute Self="di2i40XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i41" MarkupTag="XMLTag/image_frameThree" XMLContent="u750">
+						<XMLAttribute Self="di2i41XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_03.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i42" MarkupTag="XMLTag/image_frameThree" XMLContent="u75c">
+						<XMLAttribute Self="di2i42XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_02.png"/>
+					</XMLElement>
+					<XMLElement Self="di2i43" MarkupTag="XMLTag/image_frameThree" XMLContent="u76b">
+						<XMLAttribute Self="di2i43XMLAttributenhref" Name="href" Value="file:///S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png"/>
+					</XMLElement>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i44" MarkupTag="XMLTag/copy_frameOne">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+						<Properties>
+							<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+						</Properties>
+						<Content>This is A Photograph </Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i46" MarkupTag="XMLTag/copy_frameOne" XMLContent="u79c"/>
+					<XMLElement Self="di2i47" MarkupTag="XMLTag/copy_frameOne" XMLContent="u7b4"/>
+					<XMLElement Self="di2i48" MarkupTag="XMLTag/copy_frameOne" XMLContent="u7cb"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i49" MarkupTag="XMLTag/copy_frameOne">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+						<Properties>
+							<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+						</Properties>
+						<Content>Looking at Me</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i4a" MarkupTag="XMLTag/copy_frameOne" XMLContent="u805"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i4b" MarkupTag="XMLTag/copy_frameOne">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+						<Properties>
+							<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+						</Properties>
+						<Content>Looking at Me</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]"/>
+				<XMLElement Self="di2i4c" MarkupTag="XMLTag/copy_frameOne">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+						<Properties>
+							<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+						</Properties>
+						<Content>Looking at Me</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]"/>
+				<XMLElement Self="di2i4d" MarkupTag="XMLTag/copy_frameOne">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+						<Properties>
+							<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+						</Properties>
+						<Content>Looking at Me</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i4e" MarkupTag="XMLTag/copy_frameOne" XMLContent="u878"/>
+				</CharacterStyleRange>
+				<XMLElement Self="di2i4f" MarkupTag="XMLTag/copy_frameOne">
+					<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+						<Properties>
+							<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+						</Properties>
+						<Content>Looking at Me</Content>
+					</CharacterStyleRange>
+				</XMLElement>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<XMLElement Self="di2i54" MarkupTag="XMLTag/copy_frameOne" XMLContent="u8b3"/>
+					<XMLElement Self="di2i56" MarkupTag="XMLTag/copy_frameTwo" XMLContent="u8d5"/>
+					<XMLElement Self="di2i57" MarkupTag="XMLTag/copy_frameTwo" XMLContent="u8f5"/>
+					<XMLElement Self="di2i58" MarkupTag="XMLTag/copy_frameTwo" XMLContent="u915"/>
+					<XMLElement Self="di2i59" MarkupTag="XMLTag/copy_frameTwo" XMLContent="u935"/>
+					<XMLElement Self="di2i5a" MarkupTag="XMLTag/copy_frameTwo" XMLContent="u955"/>
+					<XMLElement Self="di2i5b" MarkupTag="XMLTag/copy_frameTwo" XMLContent="u975"/>
+					<XMLElement Self="di2i5c" MarkupTag="XMLTag/copy_frameThree" XMLContent="u9a0"/>
+					<XMLElement Self="di2i5d" MarkupTag="XMLTag/copy_frameThree" XMLContent="u9c0"/>
+					<XMLElement Self="di2i5e" MarkupTag="XMLTag/copy_frameThree" XMLContent="u9e0"/>
+					<XMLElement Self="di2i5f" MarkupTag="XMLTag/copy_frameThree" XMLContent="ua00"/>
+					<XMLElement Self="di2i60" MarkupTag="XMLTag/copy_frameThree" XMLContent="ua20"/>
+					<XMLElement Self="di2i61" MarkupTag="XMLTag/copy_frameThree" XMLContent="ua40"/>
+				</CharacterStyleRange>
+			</XMLElement>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>﻿</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</XmlStory>
+</idPkg:BackingStory>
