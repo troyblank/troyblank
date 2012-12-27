@@ -40,24 +40,24 @@ ul li { }
 /* MAIN LAYOUT
 ----------------------------------------------------------------------------------------*/
 html { width:100%; height:100%; }
-body { width:100%; height:100%; overflow:hidden; background:url("../images/backings/backing.jpg") no-repeat; background-size:100% 100%; background-position: center center; }
-body:after { top:0; left:0; background:url("../images/backings/pattern_backing.png") repeat; width:100%; height:100%; }
+body { width:100%; height:100%; overflow:hidden; background:url("../images/backings/backing.jpg") no-repeat; background-size:100% 100%; background-position: center center; position:relative;  }
+body:after { top:0; left:0; background:url("../images/backings/pattern_backing.png") repeat; width:100%; height:100%; content:""; position:absolute; }
 #content-wrapper { width:100%; height:100%; overflow:hidden; position:absolute; z-index:50; }
 
 /* scroll bar */
 #content-wrapper .scrollBar { width:23px; height:100%; background:#bfbfbf; position:absolute; right:0; }
 #content-wrapper .thumb { width:20px; min-height:100px; background:#ffffff; cursor:pointer; margin-left:2px; position:absolute; }
-#content-wrapper .thumb:after { width:5px; height:10px; content:""; position:absolute; background:url("../images/thumbGrip.png"); top:50%; margin-top:-5pxFallWinterCreative_Microsite_10_18_2012FallWinterCreative_Microsite_10_18_2012FallWinterCreative_Microsite_10_18_2012; left:8px; }
+#content-wrapper .thumb:after { width:5px; height:10px; content:""; position:absolute; background:url("../images/thumbGrip.png"); top:50%; margin-top:-5px; left:8px; }
 
 /* PORTFOLIO CANVAS
 ----------------------------------------------------------------------------------------*/
-.portfolio-piece { width:100%; height: inherit; background:#ffffff; z-index:45; display:block; overflow: auto; }
+.portfolio-piece { width:100%; height: inherit; background:#f6f6eb; z-index:45; display:block; overflow: auto; }
 .portfolio-piece .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:53px; height:56px; position:fixed; top:175px; right:0px; z-index:50; }
 .portfolio-piece .mask { position:absolute; width:100%; height:100%; }
 .portfolio-piece .content { width:100%; padding:20px 0 80px 0; }
 .portfolio-piece h1 { padding:6px 40px 6px 15px; margin-bottom:4px; margin:0 0 4px 0; font-size:30px; }
 .portfolio-piece h2 { margin:0 0 33px 0; padding:6px 10px 6px 15px; }
-.portfolio-piece .body { padding:0 65px; margin:0 auto; }
+.portfolio-piece .body { padding:0 65px; margin:0 auto; position:relative; }
 .portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; display:none; }
 .portfolio-piece .slideshow nav a { display:block; width:24px; height:19px; background:url('../images/slideNav_black.png') no-repeat; float:left;
 	color:#ffffff; padding-top:5px; text-align:center; margin-right:7px; }
@@ -99,7 +99,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 	position:relative; overflow:hidden; display:block; }
 #portfolioCarousel > a:last-child{ margin-right:0px; }
 #portfolioCarousel .headers { position:absolute; right:0; bottom:30px; }
-#portfolioCarousel h1, #portfolioCarousel h2 { float:right; }
+#portfolioCarousel h1, #portfolioCarousel h2 { float:right; clear:both; }
 #portfolioCarousel h1 { margin-bottom:3px; padding-left:40px; }
 #portfolioCarousel .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
 
@@ -129,7 +129,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 	/* MAIN LAYOUT */
 	html { height:inherit; }
-	body { overflow:inherit; background:none; }
+	body { overflow:inherit; background:#f6f6eb; }
 	body:after { background:none; position:static; }
 	#content-wrapper { overflow:inherit; position:inherit; }
 
