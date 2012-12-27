@@ -289,8 +289,12 @@ var TroyBlankCom = new function(){
         }
 
         function setSlideShowDiminsions(targ, w, h, animateIt){
+            var borderWidth = Number($('.slideshow .region').css('border-left-width').split('px')[0])+Number($('.slideshow .region').css('border-right-width').split('px')[0]);
+
+
             if(!animateIt){
                 if($(targ).hasClass('active')){
+                    $('.portfolio-piece .slideshow .slide-band').height(Number(h)+borderWidth);
                     $('.slideshow .region').width(w);
                     $('.slideshow .region').height(h);
                     $('.slideshow').width($('.slideshow .region').outerWidth(true));
@@ -298,9 +302,8 @@ var TroyBlankCom = new function(){
                 $(targ).width(w);
                 $(targ).height(h);
             }else{
-                var borderWidth = Number($('.slideshow .region').css('border-left-width').split('px')[0])+Number($('.slideshow .region').css('border-right-width').split('px')[0]);
-                
                 $('.slideshow').stop().animate({'width':Number(w)+borderWidth}, FADE_SPEED);
+                $('.portfolio-piece .slideshow .slide-band').stop().animate({'height':Number(h)+borderWidth}, FADE_SPEED);
                 $('.slideshow .region').stop().animate({'width':w, 'height':h}, FADE_SPEED);
 
                 $(targ).stop().animate({'width':w, 'height':h, 'opacity':1}, FADE_SPEED, function(){
@@ -1208,6 +1211,7 @@ function ScrollBar(frame, choke){
 
         if(!this.isScrollable()){
             $('.scrollBar', this.frame).css('display', 'none');
+            $('.content', this.frame).css('top', 0);
             this.removeListeners();
         }else{
             this.setStage();
