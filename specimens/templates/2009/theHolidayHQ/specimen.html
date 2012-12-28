@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <section class="portfolio-piece">
+        <div class="content">
+            <h1>The Holiday HQ</h1><br />
+            <h2>Processing | ID 005 | Salva O'Renick | 2009</h2>
+            <div class="body">
+                <div class="slideshow"> 
+                    <nav></nav>
+                    <div class="slide-band"></div>
+                    <div class="region">
+                        <div class="under-size-error">
+                            <div>The size of your browser is too small to properly display this content.</div>
+                            <img src="{{ MEDIA_URL }}images/skull.png" />
+                        </div>
+                        <div class="slide image" data-width="850" data-height="550" data-resizeable="true" >
+                            <img src="{{ MEDIA_URL }}specimens/2009/theHolidayHQ/images/theHolidayHQ_1.jpg" alt="The Holiday HQ" />
+                        </div>
+                    </div>
+                </div>
+                 <p>Every year, the digital development team at Salva O’Renick likes to push new technologies with the annual holiday piece. With the explosion of Twitter in 2009, we decided to use the Twitter API to see if we could start something socially intriguing. I programmed the site to employ HTML’s new canvas tag to display graphics without the need for third-party plug-ins--the snowflakes were programmed in Processing and are displayed using JavaScipt via the canvas tag. Please note since the changes in the Twitter API this site no longer works so you will have to settle for a pretty screen shot.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

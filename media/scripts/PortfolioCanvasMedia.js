@@ -148,7 +148,10 @@ function PortfolioCanvasMedia(needsLoading, link){
 
         flashAttrs["attributes"] = {};
 
-        swfobject.embedSWF($(targ).attr('data-src'), divId, $(targ).attr('data-width'), $(targ).attr('data-height'), $(targ).attr('data-version'), "/media/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
+        var width = $(targ).attr('data-resizeable') == 'false' ? $(targ).attr('data-width') : '100%';
+        var height = $(targ).attr('data-resizeable') == 'false' ? $(targ).attr('data-height') : '100%';
+
+        swfobject.embedSWF($(targ).attr('data-src'), divId, width, height, $(targ).attr('data-version'), "/media/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
     }
 
     function getSWF(movieName) {
@@ -228,10 +231,19 @@ function PortfolioCanvasMedia(needsLoading, link){
     }
 
     function showResizeError(targ){
-        $('.portfolio-piece .slideshow .under-size-error').height($($('.portfolio-piece .slideshow .slide')[slideIndex]).height());
+        var targHeight = $($('.portfolio-piece .slideshow .slide')[slideIndex]).height();
+
+        $('.portfolio-piece .slideshow .under-size-error').height(targHeight );
         $('.portfolio-piece .slideshow .under-size-error').css('display', 'block');
 
         $('.flashContent', targ).css('display', 'none');
+
+        //fitting skull into smaller spaces
+        if(targHeight  < 350){
+            $('.portfolio-piece .slideshow .under-size-error').addClass('smaller');
+        }else{
+            $('.portfolio-piece .slideshow .under-size-error').removeClass('smaller');
+        }
     }
 
     function hideResizeError(targ){
