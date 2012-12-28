@@ -4,6 +4,7 @@ var TroyBlankCom = new function(){
     this.device = 'desktop'; //could be 'desktop' or 'mobile'
 
     this.section = 'main'; //could be 'main', portfolio', 'about', or 'contact'
+    this.trapKeys = false; //used to stop keys from triggering navigation on media that uses them
 
     this.portfolio_display_index = 0;
     this.portfolioThumbWidth = 0;
@@ -163,7 +164,9 @@ var TroyBlankCom = new function(){
                 TroyBlankCom.changeSection('main');
             }else if(e.keyCode == 40){
                 //down
-                TroyBlankCom.changeSection('main');
+                if(!TroyBlankCom.trapKeys){
+                    TroyBlankCom.changeSection('main');
+                }
             }
         }
 

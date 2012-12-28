@@ -24,6 +24,7 @@ function PortfolioCanvasMedia(needsLoading, link){
 
     function postLoadInit(){
         $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
+        checkForTrapKeys();
 
         addPagination();
         sizeAllContent();
@@ -41,6 +42,14 @@ function PortfolioCanvasMedia(needsLoading, link){
         $('.slideshow > nav a').on('click', slideShowPageClick);
 
         TroyBlankCom.addEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
+    }
+
+    function checkForTrapKeys(){
+        if($($('.portfolio-piece .slideshow .slide')[slideIndex]).attr('data-trap-keys') == 'true'){
+            TroyBlankCom.trapKeys = true;
+        }else{
+            TroyBlankCom.trapKeys = false;
+        }
     }
 
     //-------------------------------------------------------------------------------------------------------------------------------------
@@ -86,6 +95,7 @@ function PortfolioCanvasMedia(needsLoading, link){
         sizeContent($($('.portfolio-piece .slideshow .slide')[slideIndex]), true);
 
         addContent();
+        checkForTrapKeys();
     }
 
     //-------------------------------------------------------------------------------------------------------------------------------------
@@ -233,7 +243,8 @@ function PortfolioCanvasMedia(needsLoading, link){
     //DESTROY
     //-------------------------------------------------------------------------------------------------------------------------------------
     function destroy(){
-        flashRestoreHtml = new Object()
+        TroyBlankCom.trapKeys = false;
+        flashRestoreHtml = new Object();
         
         removePermaListeners();
         removeListeners();
