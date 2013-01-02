@@ -43,6 +43,7 @@ var TroyBlankCom = new function(){
         $(window).scroll(scrollHand);
 
         $('header .logo').on('click', homeClickHandler);
+        $('header nav a').on('click', mainNavClick);
     }
 
     this.setScrollVal = function(val){
@@ -109,7 +110,91 @@ var TroyBlankCom = new function(){
             }
         }
     }
-    
+
+    //---------------------------------------------------------------------------------------------
+    //SECTION ANIMATION
+    //---------------------------------------------------------------------------------------------
+    this.animateSectionOn = function(sectionID){
+       if(TroyBlankCom.size == 'desktop'){
+            $(sectionID).css('display', 'block');
+            $(sectionID).css('top', -$(window).height());
+
+            $(sectionID).stop().animate({'top':0}, 250);
+        }else{
+            $(sectionID).css('display', 'block');
+            $('#portfolioCarousel').css('display', 'none');
+
+            $(window).scrollTop(0);
+        } 
+    }
+
+    this.animateSectionOff = function(sectionID){
+        if(TroyBlankCom.size == 'desktop'){
+            $(sectionID).stop().animate({'top':$(window).height()}, 300, function(){
+                $(this).css('display', 'none');
+                TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
+            });
+        }else{
+            $(sectionID).css('display', 'none');
+            $('#portfolioCarousel').css('display', 'block');
+
+            $(window).scrollTop(0);
+       }
+   }
+
+    //---------------------------------------------------------------------------------------------
+    //MAIN NAV
+    //---------------------------------------------------------------------------------------------
+    function showMainNavContent(url){
+        TroyBlankCom.changeSection('mainNavContent');
+
+        //removeListeners();
+        console.log('need to remove listeners to portfolio')
+        console.log(url)
+        new mainNavContent(url);
+    }
+    function mainNavContent(url){
+        function init(){
+            addListeners();
+
+            TroyBlankCom.animateSectionOn('#mainNavContent');
+        }
+
+        function addListeners(){
+            $('#mainNavContent .nav-up').on('click', exitHand);
+
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
+        }
+
+        function removeListeners(){
+            $('#mainNavContent .nav-up').off('click', exitHand);
+
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
+        }
+
+        //DESTROY
+        function exit(){
+            removeListeners();
+            TroyBlankCom.animateSectionOff('#mainNavContent');
+
+            //scrollbar.destroy();
+        }
+
+        //HANDLERS
+        function exitHand(){
+            TroyBlankCom.changeSection('main');
+        }
+
+        function onSectionChangeHand(){
+            if(TroyBlankCom.section != 'mainNavContent'){
+                exit();
+                ImageCenterer.centerImages();
+            }
+        }
+
+
+        init();
+    }
     //---------------------------------------------------------------------------------------------
     //PORTFOLIO CANVAS
     //---------------------------------------------------------------------------------------------
@@ -123,7 +208,7 @@ var TroyBlankCom = new function(){
             addListeners();
 
             new PortfolioCanvasMedia(true, $(targ).attr('data-link'));
-            animateOn();
+            TroyBlankCom.animateSectionOn('#portfolioCanvas');
         }
 
         function addListeners(){
@@ -173,38 +258,9 @@ var TroyBlankCom = new function(){
         //DESTROY
         function exit(){
             removeListeners();
-            animateOff();
+            TroyBlankCom.animateSectionOff('#portfolioCanvas');
 
             scrollbar.destroy();
-        }
-
-        //ANIMATION
-        function animateOn(){
-            if(TroyBlankCom.size == 'desktop'){
-                $('#portfolioCanvas').css('display', 'block');
-                $('#portfolioCanvas').css('top', -$(window).height());
-
-                $('#portfolioCanvas').stop().animate({'top':0}, 250);
-            }else{
-                $('#portfolioCanvas').css('display', 'block');
-                $('#portfolioCarousel').css('display', 'none');
-
-                $(window).scrollTop(0);
-            }
-        }
-
-        function animateOff(){
-            if(TroyBlankCom.size == 'desktop'){
-                $('#portfolioCanvas').stop().animate({'top':$(window).height()}, 300, function(){
-                    $(this).css('display', 'none');
-                    TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
-                });
-            }else{
-                $('#portfolioCanvas').css('display', 'none');
-                $('#portfolioCarousel').css('display', 'block');
-
-                $(window).scrollTop(0);
-            }
         }
 
         //HANDLERS
@@ -414,6 +470,8 @@ var TroyBlankCom = new function(){
         function onSectionChangeHand(){
             if(TroyBlankCom.section == 'main'){
                 addListeners();
+            }else{
+                removeListeners();
             }
         }
 
@@ -515,6 +573,10 @@ var TroyBlankCom = new function(){
         }else{
             window.location.href = '/';
         }
+    }
+
+    function mainNavClick(){
+        showMainNavContent($(this).attr('data-href'));
     }
 
     //PRELOAD PORTFOLIO THUMBS
