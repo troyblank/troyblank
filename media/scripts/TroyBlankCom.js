@@ -34,7 +34,7 @@ var TroyBlankCom = new function(){
 
         //portfolio standalone
         if($('body.portfolio-standalone').length > 0){
-            new PortfolioCanvasMedia(false);
+            new PortfolioCanvasMedia();
         }
     }
 
@@ -44,6 +44,8 @@ var TroyBlankCom = new function(){
 
         $('header .logo').on('click', homeClickHandler);
         $('header nav a').on('click', mainNavClick);
+
+        TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, sectionChangeHand);
     }
 
     this.setScrollVal = function(val){
@@ -80,7 +82,7 @@ var TroyBlankCom = new function(){
     this.eventDispatcher = new Object();
     this.ON_SECTION_CHANGE = 'onSectionChange';
     this.ON_RESIZE = 'onResize';
-    this.ON_SPECIMEN_READY = 'onSpecimenReady';
+    this.ON_CONTENT_READY = 'onSpecimenReady';
     this.ON_MEDIA_FLUSH_REQUEST = 'onMediaFlushRequest';
 
     this.addEventListener = function(type, handler){
@@ -112,103 +114,37 @@ var TroyBlankCom = new function(){
     }
 
     //---------------------------------------------------------------------------------------------
-    //SECTION ANIMATION
-    //---------------------------------------------------------------------------------------------
-    this.animateSectionOn = function(sectionID){
-       if(TroyBlankCom.size == 'desktop'){
-            $(sectionID).css('display', 'block');
-            $(sectionID).css('top', -$(window).height());
-
-            $(sectionID).stop().animate({'top':0}, 250);
-        }else{
-            $(sectionID).css('display', 'block');
-            $('#portfolioCarousel').css('display', 'none');
-
-            $(window).scrollTop(0);
-        } 
-    }
-
-    this.animateSectionOff = function(sectionID){
-        if(TroyBlankCom.size == 'desktop'){
-            $(sectionID).stop().animate({'top':$(window).height()}, 300, function(){
-                $(this).css('display', 'none');
-                TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
-            });
-        }else{
-            $(sectionID).css('display', 'none');
-            $('#portfolioCarousel').css('display', 'block');
-
-            $(window).scrollTop(0);
-       }
-   }
-
-    //---------------------------------------------------------------------------------------------
     //MAIN NAV
     //---------------------------------------------------------------------------------------------
     function showMainNavContent(url){
-        TroyBlankCom.changeSection('mainNavContent');
+        if(TroyBlankCom.section != 'mainNavContent'){
+            TroyBlankCom.changeSection('mainNavContent');
 
-        //removeListeners();
-        console.log('need to remove listeners to portfolio')
-        console.log(url)
-        new mainNavContent(url);
+            new sectionCanvas(url, '#mainNavContent');
+        }else{
+            console.log('AGAINS!')
+        }
     }
-    function mainNavContent(url){
-        function init(){
-            addListeners();
 
-            TroyBlankCom.animateSectionOn('#mainNavContent');
-        }
-
-        function addListeners(){
-            $('#mainNavContent .nav-up').on('click', exitHand);
-
-            TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
-        }
-
-        function removeListeners(){
-            $('#mainNavContent .nav-up').off('click', exitHand);
-
-            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
-        }
-
-        //DESTROY
-        function exit(){
-            removeListeners();
-            TroyBlankCom.animateSectionOff('#mainNavContent');
-
-            //scrollbar.destroy();
-        }
-
-        //HANDLERS
-        function exitHand(){
-            TroyBlankCom.changeSection('main');
-        }
-
-        function onSectionChangeHand(){
-            if(TroyBlankCom.section != 'mainNavContent'){
-                exit();
-                ImageCenterer.centerImages();
-            }
-        }
-
-
-        init();
+    this.removeMainNavActives = function(){
+        $('header nav li a').removeClass('active');
     }
+
     //---------------------------------------------------------------------------------------------
-    //PORTFOLIO CANVAS
+    //SUB SECTION CANVAS -- for a portfolio piece or a main nav link
     //---------------------------------------------------------------------------------------------
-    function portfolioCanvas(targ){
+    function sectionCanvas(assetURL, canvasID){
 
         var scrollbar = null;
         var resizeActive = false;
-        var targ = targ;
+        var assetURL = assetURL;
+        var canvasID = canvasID;
 
         function init(){
             addListeners();
 
-            new PortfolioCanvasMedia(true, $(targ).attr('data-link'));
-            TroyBlankCom.animateSectionOn('#portfolioCanvas');
+            addContent();
+            animateSectionOn(canvasID);
         }
 
         function addListeners(){
@@ -216,13 +152,14 @@ var TroyBlankCom = new function(){
 
             $(document).on('keydown', keydownHand);
 
-            $('#portfolioCanvas .nav-down').on('click', exitHand);
-            $('#portfolioCanvas .close-btn').on('click', exitHand);
+            $(canvasID+' .nav-down').on('click', exitHand);
+            $(canvasID+' .nav-up').on('click', exitHand);
+            $(canvasID+' .close-btn').on('click', exitHand);
 
-            TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvas);
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
             TroyBlankCom.addEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
 
-            TroyBlankCom.addEventListener(TroyBlankCom.ON_SPECIMEN_READY, specimenReadyHand);
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_CONTENT_READY, contentReadyHand);
         }
 
         function removeListeners(){
@@ -230,17 +167,18 @@ var TroyBlankCom = new function(){
 
             $(document).off('keydown', keydownHand);
 
-            $('#portfolioCanvas .nav-down').off('click', exitHand);
-            $('#portfolioCanvas .close-btn').off('click', exitHand);
+            $(canvasID+' .nav-down').off('click', exitHand);
+            $(canvasID+' .nav-up').off('click', exitHand);
+            $(canvasID+' .close-btn').off('click', exitHand);
 
-            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand_portfolioCanvas);
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
             TroyBlankCom.removeEventListener(TroyBlankCom.ON_RESIZE, resizeHand);
-            TroyBlankCom.removeEventListener(TroyBlankCom.ON_SPECIMEN_READY, specimenReadyHand);
+            TroyBlankCom.removeEventListener(TroyBlankCom.ON_CONTENT_READY, contentReadyHand);
         }
 
         function addScrollBar(){
-            $('#portfolioCanvas .scrollBar .thumb').css('top', 0);
-            scrollbar = new ScrollBar($('#portfolioCanvas'), 60);
+            $(canvasID+' .scrollBar .thumb').css('top', 0);
+            scrollbar = new ScrollBar($(canvasID), 60);
         }
 
         function keydownHand(e){
@@ -255,18 +193,50 @@ var TroyBlankCom = new function(){
             }
         }
 
+        //ANIMATION
+        function animateSectionOn(sectionID){
+           if(TroyBlankCom.size == 'desktop'){
+                $(sectionID).css('display', 'block');
+                $(sectionID).css('top', -$(window).height());
+
+                $(sectionID).stop().animate({'top':0}, 250);
+            }else{
+                $(sectionID).css('display', 'block');
+                $('#portfolioCarousel').css('display', 'none');
+
+                $(window).scrollTop(0);
+            } 
+        }
+
+        function animateSectionOff(sectionID){
+            if(TroyBlankCom.size == 'desktop'){
+                $(sectionID).stop().animate({'top':$(window).height()}, 300, function(){
+                    $(this).css('display', 'none');
+                    TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
+                });
+            }else{
+                $(sectionID).css('display', 'none');
+                $('#portfolioCarousel').css('display', 'block');
+
+                $(window).scrollTop(0);
+           }
+       }
+
         //DESTROY
         function exit(){
             removeListeners();
-            TroyBlankCom.animateSectionOff('#portfolioCanvas');
+            removePreloader();
+            animateSectionOff(canvasID);
 
-            scrollbar.destroy();
+            if(scrollbar != null){
+                scrollbar.destroy();
+            }
         }
 
         //HANDLERS
         function resizeHand(){
             if(resizeActive){
-                $('#portfolioCanvas').css('top', 0);
+                $(canvasID).css('top', 0);
 
                 scrollbar.refreshDisplay();
             }
@@ -276,15 +246,53 @@ var TroyBlankCom = new function(){
             TroyBlankCom.changeSection('main');
         }
 
-        function onSectionChangeHand_portfolioCanvas(){
-            if(TroyBlankCom.section != 'portfolio'){
+        function onSectionChangeHand(){
+            if(canvasID == '#portfolioCanvas' && TroyBlankCom.section != 'portfolio'){
+                exit();
+                ImageCenterer.centerImages();
+            }else if(canvasID == '#mainNavContent' && TroyBlankCom.section != 'mainNavContent'){
                 exit();
                 ImageCenterer.centerImages();
             }
         }
 
-        function specimenReadyHand(){
+        function contentReadyHand(){
             addScrollBar();
+        }
+
+        //LOADER
+        function addContent(){
+            addPreloader();
+            loadContent();
+        }
+
+        function postLoadInit(){
+            switch(TroyBlankCom.section){
+                case 'portfolio':
+                    new PortfolioCanvasMedia();
+                    break;
+            }
+        }
+
+        function loadContent(){
+            $(canvasID+' .mask').load(assetURL+' .content-cnt .content', loadedContentHand);
+        }
+
+        function loadedContentHand(){
+            removePreloader();
+            postLoadInit();
+        }
+
+        function addPreloader(){
+            $(canvasID).prepend('<div id="preloader_content" class="atomic-preloader" />');
+            preloader = new atomicPreloader('preloader_content', true);
+        }
+
+        function removePreloader(){
+            if($('#preloader_content').length > 0){
+               preloader.destroy(); 
+               $('#preloader_content').remove();
+            }
         }
 
         init();
@@ -388,7 +396,6 @@ var TroyBlankCom = new function(){
         }
         
         //PORTFOLIO DISPLAY INDEX *********************************************************************
-
         this.portfolioDisplayIndexCheck = function(){
             var newDisplayIndex = null;
 
@@ -416,16 +423,15 @@ var TroyBlankCom = new function(){
             return false;
         }
 
-        //PORTFOLIO CANVAS *********************************************************************
-
+        //PORTFOLIO CANVAS
         function showPortfolioCanvas(portfolioTarg){
             TroyBlankCom.changeSection('portfolio');
 
             removeListeners();
-            new portfolioCanvas(portfolioTarg);
+            new sectionCanvas($(portfolioTarg).attr('data-link'), '#portfolioCanvas');
         }
 
-        //HANDLERS ************************************************************************************
+        //HANDLERS
         function portfolioClickHand(){
             showPortfolioCanvas(this);
         }
@@ -478,8 +484,7 @@ var TroyBlankCom = new function(){
         init();
     }
 
-    //LAYOUT
-    //---------------------------------------------------------------------------------------------
+    //LAYOUT ************************************************************************************
     this.determineSize = function(){
         if($(window).width() > 600 && $(window).height() > 600){
             this.size = 'desktop';
@@ -563,6 +568,12 @@ var TroyBlankCom = new function(){
         TroyBlankCom.dispatchEvent(TroyBlankCom.ON_RESIZE);
     }
 
+    function sectionChangeHand(){
+        if(TroyBlankCom.section != 'mainNavContent'){
+            TroyBlankCom.removeMainNavActives();
+        }
+    }
+
     function scrollHand(){
         TroyBlankCom.adjustMobileScrollButtons();
     }
@@ -576,7 +587,11 @@ var TroyBlankCom = new function(){
     }
 
     function mainNavClick(){
-        showMainNavContent($(this).attr('data-href'));
+        if(!$(this).hasClass('active')){
+            TroyBlankCom.removeMainNavActives();
+            $(this).addClass('active');
+            showMainNavContent($(this).attr('data-href'));
+        }
     }
 
     //PRELOAD PORTFOLIO THUMBS

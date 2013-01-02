@@ -1,5 +1,5 @@
 
-function PortfolioCanvasMedia(needsLoading, link){
+function PortfolioCanvasMedia(link){
 
     var slideIndex = 0;
     var preloader = null;
@@ -12,17 +12,6 @@ function PortfolioCanvasMedia(needsLoading, link){
     var FADE_SPEED = 500;
 
     function init(){
-        if(needsLoading){
-            addPreloader();
-            loadContent();
-        }else{
-            postLoadInit();
-        }
-
-        addPermaListeners();
-    }
-
-    function postLoadInit(){
         $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
         checkForTrapKeys();
 
@@ -31,8 +20,22 @@ function PortfolioCanvasMedia(needsLoading, link){
         addListeners();
         addContent();
 
-        TroyBlankCom.dispatchEvent(TroyBlankCom.ON_SPECIMEN_READY);
+        TroyBlankCom.dispatchEvent(TroyBlankCom.ON_CONTENT_READY);
+
+        addPermaListeners();
     }
+
+    /*function postLoadInit(){
+        $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
+        checkForTrapKeys();
+
+        addPagination();
+        sizeAllContent();
+        addListeners();
+        addContent();
+
+        TroyBlankCom.dispatchEvent(TroyBlankCom.ON_CONTENT_READY);
+    }*/
 
     function addPermaListeners(){
         TroyBlankCom.addEventListener(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST, onMediaFlushRequest);
@@ -260,7 +263,6 @@ function PortfolioCanvasMedia(needsLoading, link){
         
         removePermaListeners();
         removeListeners();
-        removePreloader();
 
         $('#portfolioCanvas .content').empty();
     }
@@ -310,30 +312,6 @@ function PortfolioCanvasMedia(needsLoading, link){
             $('.slideshow > nav a').removeClass('active');
             $(this).addClass('active');
             swapSlide();
-        }
-    }
-
-    //-------------------------------------------------------------------------------------------------------------------------------------
-    //LOADER
-    //-------------------------------------------------------------------------------------------------------------------------------------
-    function loadContent(){
-        $('#portfolioCanvas .mask').load(link+' .portfolio-piece .content', loadedContentHand);
-    }
-
-    function loadedContentHand(){
-        removePreloader();
-        postLoadInit();
-    }
-
-    function addPreloader(){
-        $('.portfolio-piece').prepend('<div id="preloader_specimen" class="atomic-preloader" />');
-        preloader = new atomicPreloader('preloader_specimen', true);
-    }
-
-    function removePreloader(){
-        if($('#preloader_specimen').length > 0){
-           preloader.destroy(); 
-           $('#preloader_specimen').remove();
         }
     }
 
