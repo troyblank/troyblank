@@ -37,6 +37,9 @@ a:hover { }
 ul { }
 ul li { }
 
+/* ROPA SANS */
+#contact-form input, #contact-form textarea { font-family: 'Ropa Sans' }
+
 /* MAIN LAYOUT
 ----------------------------------------------------------------------------------------*/
 html { width:100%; height:100%; }
@@ -45,19 +48,23 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 #content-wrapper { width:100%; height:100%; overflow:hidden; position:absolute; z-index:50; }
 
 /* scroll bar */
-#content-wrapper .scrollBar { width:23px; height:100%; background:#bfbfbf; position:absolute; right:0; }
+#content-wrapper .scrollBar { width:23px; height:100%; background:#bfbfbf; position:absolute; right:0; display:none; }
 #content-wrapper .thumb { width:20px; min-height:100px; background:#ffffff; cursor:pointer; margin-left:2px; position:absolute; }
 #content-wrapper .thumb:after { width:5px; height:10px; content:""; position:absolute; background:url("../images/thumbGrip.png"); top:50%; margin-top:-5px; left:8px; }
 
+
+.content-cnt { width:100%; height: inherit; background:#f6f6eb; z-index:145; display:block; overflow: auto; }
+.content-cnt .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:53px; height:56px; position:fixed; top:175px; right:0px; z-index:50; }
+.content-cnt .mask { position:absolute; width:100%; height:100%; }
+.content-cnt .content { width:100%; padding:20px 0 80px 0; }
+.content-cnt h1 { padding:6px 40px 6px 15px; margin-bottom:4px; margin:0 0 4px 0; font-size:30px; }
+.content-cnt h2 { margin:0 0 33px 0; padding:6px 10px 6px 15px; }
+.content-cnt .body { padding:0 65px; margin:0 auto; position:relative; }
+
+.content-cnt .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
+
 /* PORTFOLIO CANVAS
 ----------------------------------------------------------------------------------------*/
-.portfolio-piece { width:100%; height: inherit; background:#f6f6eb; z-index:145; display:block; overflow: auto; }
-.portfolio-piece .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:53px; height:56px; position:fixed; top:175px; right:0px; z-index:50; }
-.portfolio-piece .mask { position:absolute; width:100%; height:100%; }
-.portfolio-piece .content { width:100%; padding:20px 0 80px 0; }
-.portfolio-piece h1 { padding:6px 40px 6px 15px; margin-bottom:4px; margin:0 0 4px 0; font-size:30px; }
-.portfolio-piece h2 { margin:0 0 33px 0; padding:6px 10px 6px 15px; }
-.portfolio-piece .body { padding:0 65px; margin:0 auto; position:relative; }
 .portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; display:none; }
 .portfolio-piece .slideshow nav a { display:block; width:24px; height:19px; background:url('../images/slideNav_black.png') no-repeat; float:left;
 	color:#ffffff; padding-top:5px; text-align:center; margin-right:7px; }
@@ -78,7 +85,6 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 #portfolioCanvas { display:none; overflow:hidden; height:100%; position:absolute; }
 #portfolioCanvas .content { position:absolute; }
 
-.portfolio-piece .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
 
 /* PORTFOLIO CONTENT
 ----------------------------------------------------------------------------------------*/
@@ -116,7 +122,6 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 #portfolioCarousel h1 { margin-bottom:3px; padding-left:40px; }
 #portfolioCarousel .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
 
-
 /* ARROW NAV BTNS
 ----------------------------------------------------------------------------------------*/
 #content-wrapper .nav { position:absolute; width:92px; height:100%; }
@@ -129,6 +134,15 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 #content-wrapper .nav-left .btn { background: url('../images/navigate_left_btn.png') no-repeat; }
 #content-wrapper .nav-down .btn { width:69px; height:39px; background: url('../images/navigate_down_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-37px; }
 #content-wrapper .nav-up .btn { width:69px; height:39px; background: url('../images/navigate_up_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-37px; }
+
+/* CONTACT FORM
+----------------------------------------------------------------------------------------*/
+#contact-form { width:530px; height:370px; position:absolute; top:40%; left:50%; margin-top:-185px; margin-left:-265px; }
+#contact-form input, #contact-form textarea { width:100%; margin-bottom:15px; display:inline-block; background:#000000; border:none; color:#ffffff; text-transform:uppercase; padding:4px 0px 0 10px; font-size:24px; }
+#contact-form input { height:36px; }
+#contact-form textarea { height:207px; resize:none; }
+#contact-form input[type=submit] { width:auto; display:block; cursor:pointer; float:right; padding:4px 10px; margin-right:-10px; }
+#contact-form ul.errorlist { color:#7F0000; text-align:right; padding-bottom:4px; }
 
 
 /* MEDIA QUERIES
@@ -148,7 +162,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 	#content-wrapper { overflow:inherit; position:static; }
 
 	/* PORTFOLIO CANVAS */
-	#portfolioCanvas, .portfolio-piece { position:static; height:inherit; }
+	#portfolioCanvas, #mainNavContent, .content-cnt { position:static; height:inherit; }
 	.portfolio-piece .close-btn { display:block; }
 	.portfolio-piece .mask { position:static; height:inherit; }
 	#portfolioCanvas .content, .portfolio-piece .mask .content { position:static; padding:40px 0; }

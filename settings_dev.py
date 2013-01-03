@@ -119,6 +119,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'specimens',
     'contact',
+    'about',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -156,7 +157,10 @@ LOGGING = {
 
 #GOOGLE apps
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'troy@troyblank.com'
-EMAIL_HOST_PASSWORD = '4Robertpaulsen'
+EMAIL_HOST_USER = 'support@troyblank.com'
+EMAIL_HOST_PASSWORD = 's3curity'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+#EMAIL_PORT
+CONTACT_EMAIL = 'troy@troyblank.com'

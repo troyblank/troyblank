@@ -1,9 +1,24 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-    <section class="nav-content">
-        <div class="content">
-            contact to go there
-        </div>
+    <section class="content-cnt">
+    	{% if emailSent %}
+			<div>your email was sent</div>
+		{% else %}
+	        <!--<div id="contact-form" class="content">
+	        	<form action="/contact/" method="post">
+		        	{% csrf_token %}
+		        	{% for field in contactForm %}
+		        		{{ field.errors }}
+		        		{{ field }}
+		        	{% endfor %}
+		        	<input type="submit" value="Submit" />
+		        </form>
+	        </div> -->
+	        <div class="thank-you">
+	        	<h1>Thank you,</h1>
+				<h2>your email was probably charming.</h2>
+	        </div>
+        {% endif %}
     </section>
 {% endblock %}

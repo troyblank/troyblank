@@ -11,6 +11,7 @@ var TroyBlankCom = new function(){
     this.portfolioLength = 0;
     this.scrollVal = 0;
     this.oldPortfolioThumbWidth = null;
+    this.currentMainNavSectionCanvas = null;
 
     var done_loadingThumbs = false;
 
@@ -120,9 +121,9 @@ var TroyBlankCom = new function(){
         if(TroyBlankCom.section != 'mainNavContent'){
             TroyBlankCom.changeSection('mainNavContent');
 
-            new sectionCanvas(url, '#mainNavContent');
+            this.currentMainNavSectionCanvas = new sectionCanvas(url, '#mainNavContent');
         }else{
-            console.log('AGAINS!')
+            this.currentMainNavSectionCanvas.reloadContent(url);
         }
     }
 
@@ -146,6 +147,25 @@ var TroyBlankCom = new function(){
             addContent();
             animateSectionOn(canvasID);
         }
+
+        //RELOAD
+        this.reloadContent = function(newURL){
+            assetURL = newURL
+
+            removeListeners();
+            if($('.fade-wrapper', canvasID).length <= 0){
+                $(canvasID).wrapInner('<div class="fade-wrapper" />')
+            }
+            $('.fade-wrapper', canvasID).stop().animate({'opacity':0}, 300, fadeOnNewContent);
+        }
+
+        function fadeOnNewContent(){
+            $(canvasID, '.mask').empty();
+            $('.fade-wrapper', canvasID).stop().animate({'opacity':1}, 300);
+            addListeners();
+            addContent();
+        }
+
 
         function addListeners(){
             resizeActive = true;
@@ -237,8 +257,9 @@ var TroyBlankCom = new function(){
         function resizeHand(){
             if(resizeActive){
                 $(canvasID).css('top', 0);
-
-                scrollbar.refreshDisplay();
+                if(scrollbar != null){
+                    scrollbar.refreshDisplay();
+                }
             }
         }
 
@@ -275,6 +296,8 @@ var TroyBlankCom = new function(){
         }
 
         function loadContent(){
+            console.log('loading' )
+            console.log($(canvasID+' .mask'));
             $(canvasID+' .mask').load(assetURL+' .content-cnt .content', loadedContentHand);
         }
 
@@ -570,6 +593,7 @@ var TroyBlankCom = new function(){
 
     function sectionChangeHand(){
         if(TroyBlankCom.section != 'mainNavContent'){
+            this.currentMainNavSectionCanvas = null;
             TroyBlankCom.removeMainNavActives();
         }
     }
