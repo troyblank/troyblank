@@ -8,6 +8,6 @@ def specimen(request, year, specimen):
 
 	try:
 		template.loader.get_template(template_name)
-		return render_to_response(template_name, {'bodyclass':'portfolio-standalone standalone'}, context_instance=RequestContext(request))
+		return render_to_response(template_name, {'bodyclass':'standalone'}, context_instance=RequestContext(request))
 	except template.TemplateDoesNotExist:
 		raise Http404

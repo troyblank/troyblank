@@ -2,23 +2,19 @@
 
 {% block main_content %}
     <section class="content-cnt">
-    	{% if emailSent %}
-			<div>your email was sent</div>
-		{% else %}
-	        <!--<div id="contact-form" class="content">
-	        	<form action="/contact/" method="post">
-		        	{% csrf_token %}
-		        	{% for field in contactForm %}
-		        		{{ field.errors }}
-		        		{{ field }}
-		        	{% endfor %}
-		        	<input type="submit" value="Submit" />
-		        </form>
-	        </div> -->
-	        <div class="thank-you">
-	        	<h1>Thank you,</h1>
+		<div id="contact-form" class="content">
+        	<form action="/contact/" method="post" style="display:{% if emailSent %}none{% else %}block{% endif %};">
+	        	{% csrf_token %}
+	        	{% for field in contactForm %}
+	        		{{ field.errors }}
+	        		{{ field }}
+	        	{% endfor %}
+	        	<input type="submit" value="Submit" />
+	        </form>
+	        <div class="thank-you" style="display:{% if emailSent %}block{% else %}none{% endif %}">
+	        	<h1>Thank you,</h1><br />
 				<h2>your email was probably charming.</h2>
 	        </div>
-        {% endif %}
+    	</div>
     </section>
 {% endblock %}

@@ -33,9 +33,11 @@ var TroyBlankCom = new function(){
 
         addListeners();
 
-        //portfolio standalone
-        if($('body.portfolio-standalone').length > 0){
+        //page standalones
+        if($('body.standalone .portfolio-piece').length > 0){
             new PortfolioCanvasMedia();
+        }else if($('body.standalone #contact-form').length > 0){
+            new Contact();
         }
     }
 
@@ -292,12 +294,19 @@ var TroyBlankCom = new function(){
                 case 'portfolio':
                     new PortfolioCanvasMedia();
                     break;
+                case 'mainNavContent':
+                    postLoadMainNavInit();
+                    break;
+            }
+        }
+
+        function postLoadMainNavInit(){
+            if($('#contact-form').length > 0){
+                new Contact();
             }
         }
 
         function loadContent(){
-            console.log('loading' )
-            console.log($(canvasID+' .mask'));
             $(canvasID+' .mask').load(assetURL+' .content-cnt .content', loadedContentHand);
         }
 

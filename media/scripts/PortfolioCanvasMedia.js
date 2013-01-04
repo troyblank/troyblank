@@ -25,18 +25,6 @@ function PortfolioCanvasMedia(link){
         addPermaListeners();
     }
 
-    /*function postLoadInit(){
-        $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
-        checkForTrapKeys();
-
-        addPagination();
-        sizeAllContent();
-        addListeners();
-        addContent();
-
-        TroyBlankCom.dispatchEvent(TroyBlankCom.ON_CONTENT_READY);
-    }*/
-
     function addPermaListeners(){
         TroyBlankCom.addEventListener(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST, onMediaFlushRequest);
     }

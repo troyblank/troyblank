@@ -144,6 +144,8 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 #contact-form input[type=submit] { width:auto; display:block; cursor:pointer; float:right; padding:4px 10px; margin-right:-10px; }
 #contact-form ul.errorlist { color:#7F0000; text-align:right; padding-bottom:4px; }
 
+#contact-form .thank-you h1 {}
+
 
 /* MEDIA QUERIES
 ----------------------------------------------------------------------------------------*/
