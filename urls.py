@@ -8,6 +8,7 @@ from django.conf import settings
 urlpatterns = patterns('',
 	(r'^$', 'views.index'),
     url(r'^contact/$', 'contact.views.contact'),
+    url(r'^contact/send_email/$', 'contact.views.send_email'),
     url(r'^about/$', 'about.views.about'),
     url(r'^specimens/(?P<year>\d{4})/(?P<specimen>\w+)/$', 'specimens.views.specimen'),
     # Examples:
