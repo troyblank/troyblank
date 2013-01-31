@@ -13,7 +13,11 @@
 	        </form>
 	        <div class="thank-you" style="display:{% if emailSent %}block{% else %}none{% endif %}">
 	        	<h1>Thank you,</h1><br />
-				<h2>your email was probably charming.</h2>
+				<h2>Here at Troy Blank Labs we love the emails.</h2>
+	        </div>
+	        <div class="error" style="display:{% if emailSent %}block{% else %}none{% endif %}">
+	        	<h1>We are sorry,</h1><br />
+				<h2>There was something wrong and your email could not be sent at this time.</h2>
 	        </div>
     	</div>
     </section>

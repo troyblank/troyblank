@@ -28,29 +28,15 @@ def contact(request):
 	return render_to_response('contact.html', {'bodyclass':'standalone', 'contactForm':contact_form, 'emailSent':email_sent}, context_instance=RequestContext(request))
 
 def send_email(request):
-
-	#key = 'troyBlankSendzDaMails'
-
-	print '-----------------'
-	print request.method
-	#print hash_spit
-
-	#if request.method == 'POST':
-            #print request.read()
-
-	#m = hashlib.md5(str(name)+key+str(email+message))
-
-	#print hash_spit
-	#print m.hexdigest()
-	#print '-----------------'
-
-	#if hash_spit == m.hexdigest():
+	if request.method == 'POST':
 
 		#send email
+		emailBody = '%s \n\n *** DO NOT REPLY TO THIS EMAIL, REPLY TO THE EMAIL BELOW ***\nThis email was sent by %s at the email %s from troyblank.com' % (request.POST.get('message', ''), request.POST.get('name', ''), request.POST.get('email', ''))
+		email = EmailMessage('!FROM TROYBLANK.COM!', emailBody, from_email=request.POST.get('email', ''), to=[settings.CONTACT_EMAIL])
+		email.send()
 
-	#	response = HttpResponse()
-	#else:
-	#	response = HttpResponseBadRequest()
+		response = HttpResponse()
+	else:
+		response = HttpResponseBadRequest()
 
-	response = HttpResponse()
 	return response

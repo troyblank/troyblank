@@ -3,6 +3,10 @@ function Contact(){
 	var FEILD_DEFAULTS = {'id_name':'Enter your name here', 'id_email':'Enter your email here', 'id_message':'Type me a pretty message here'};
 	var preloader = null;
 
+	var HAS_COOKIES_DISABLED = function(){var cookieEnabled = (navigator.cookieEnabled) ? true : false; 
+	if (typeof navigator.cookieEnabled == "undefined" && !cookieEnabled){ document.cookie="testcookie"; cookieEnabled = (document.cookie.indexOf("testcookie") != -1) ? true : false;}
+	return (!cookieEnabled);}();
+
 	function init(){
 		addDefaults();
 		addListeners();
@@ -40,7 +44,6 @@ function Contact(){
 	}
 
 	function callWebService(){
-		//url(r'^contact/send_email/(?P<name>[\w]+)/(?P<email>[\w]+)/(?P<message>[\w]+)/(?P<hash_spit>[\w]+)$', 'contact.views.send_email'),
 		var url = '/contact/send_email/';
 		var data = {'name':$('#id_name').val(), 'email':$('#id_email').val(), 'message':$('#id_message').val()}
 
@@ -60,8 +63,12 @@ function Contact(){
 	}
 
 	function callFailure(xhr, status, errorThrown){
-		console.log('Something went wrong processing the request.');
-		console.log(status+' - '+xhr.status);
+		//console.log(status+' - '+xhr.status);
+		removePreloader();
+		$('#contact-form .error').css('display', 'block');
+		if(HAS_COOKIES_DISABLED){
+			$('#contact-form .error h2').html('We have detected you have cookies disabled for your browser. Email could not be sent.');
+		}
 	}
 
 	//---------------------------------------------------------------------------------------------
