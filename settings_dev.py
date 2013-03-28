@@ -74,7 +74,7 @@ STATICFILES_DIRS = (os.path.join(PROJECT_DIR, 'static'),)
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'compressor.finders.CompressorFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'compressor',
     'specimens',
     'contact',
     'about',
@@ -160,3 +161,7 @@ EMAIL_USE_TLS = True
 
 #EMAIL_PORT
 CONTACT_EMAIL = 'troy@troyblank.com'
+
+#COMPRESSOR
+COMPRESS_URL = STATIC_URL
+COMPRESS_ENABLED = True
