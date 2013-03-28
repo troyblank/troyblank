@@ -10,8 +10,36 @@
                     <nav></nav>
                     <div class="slide-band"></div>
                     <div class="region">
-                        <div class="slide image" data-width="800" data-height="500" data-resizeable="true" >
-                            <img src="{{ STATIC_URL }}specimens/2009/kurcaMysteryGame/images/kurcaMysteryGame_1.jpg" alt="Kurca Mystery Game" />
+                        <div class="slide video" data-width="1024" data-height="593" data-alternative-size="600x355,320x196" data-resizeable="tiered" data-type="video" >
+                            <div class="video-player">
+                                <video id="videoTag" poster="{{ STATIC_URL }}specimens/2009/demoReel/images/demoReel.jpg">
+                                    <source src="{{ STATIC_URL }}specimens/2009/demoReel/video/demoReel.mp4">
+                                    <source src="{{ STATIC_URL }}specimens/2009/demoReel/video/demoReel.ogv">
+                                    <source src="{{ STATIC_URL }}specimens/2009/demoReel/video/demoReel.webm">
+                                </video>
+                                <div class="overlays">
+                                    <div class="buffer"></div>
+                                    <div class="big-play-btn"></div>
+                                </div>
+                                <div class="control-bar">
+                                    <a class="rewind-btn"></a>
+                                    <a class="play-pause-btn"></a>
+                                    <div class="scrub-bar">
+                                        <div class="load-bar"></div>
+                                        <div class="progress-bar"></div>
+                                        <div class="cursor"></div>
+                                    </div>
+                                    <div class="timer">
+                                        <span>00:00</span>
+                                    </div>
+                                    <div class="volume-bar">
+                                        <div class="status-bar"></div>
+                                        <div class="icon"></div>
+                                        <div class="cursor"></div>
+                                    </div>
+                                    <a class="full-screen-btn"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

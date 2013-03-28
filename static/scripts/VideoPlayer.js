@@ -346,6 +346,53 @@ function VideoPlayer(targ, autoPlay){
         }
     }
     //-----------------------------------------------------------------------------------------
+    //DISTRUCTION
+    //-----------------------------------------------------------------------------------------
+    this.destroy = function(){
+        endTicker();
+        removeListeners();
+        killVideo();
+        resetDisplay();
+    }
+
+    function killVideo(){
+        video.pause();
+        setTime(0);
+    }
+
+    function resetDisplay(){
+        toggleBuffer(false);
+        $('.big-play-btn', targ).css('display', 'block');
+        $('.play-pause-btn', targ).removeClass('active');
+
+        //CONTROL BAR
+        $('.video-player .control-bar .scrub-bar .cursor').css('left', '0%');
+        $('.video-player .control-bar .scrub-bar .progress-bar').css('width', '0%');
+        $('.video-player .control-bar .scrub-bar .load-bar').css('width', '0%');
+    }
+
+    function removeListeners(){
+        //VIDEO STATUS LISTENERS
+        video.removeEventListener("playing", videoPlayingHand, false);
+        video.removeEventListener('progress', videoProgressHand, false);
+        video.removeEventListener("ended", videoEndedHand, false);
+        video.removeEventListener('timeupdate', timeUpdateHand, false);
+        video.removeEventListener('canplaythrough', canPlayThroughHand, false);
+
+        //UI LISTENERS
+        $('.rewind-btn', targ).off('click', onRewindHand);
+        $('.play-pause-btn', targ).off('click', onPlayPauseHand);
+        $('.full-screen-btn', targ).off('click', onFullScreenHand);
+        $('.scrub-bar .load-bar', targ ).off('click', loadBarClickHand);
+        $('.scrub-bar .cursor', targ).off('mousedown', videoCursorDownHand);
+        $('.scrub-bar', targ).off('mousemove', scrubingVideoMoveHand);
+        $('.volume-bar .cursor', targ).off('mousedown', audioCursorDownHand);
+        $('.volume-bar', targ).off('mousemove', scrubingAudioMoveHand);
+        $('.volume-bar', targ).off('click', volumeBarClickHand);
+        $('.big-play-btn', targ).off('click', onBigPlayPauseHand);
+        $(window).off('mouseup', cursorUpHand);
+    }
+    //-----------------------------------------------------------------------------------------
     //DISPATCHER
     //-----------------------------------------------------------------------------------------
     var eventDispatcher = new Object();
