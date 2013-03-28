@@ -146,6 +146,13 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 #contact-form .thank-you, #contact-form .error { margin-top:175px;}
 
+/* ABOUT
+----------------------------------------------------------------------------------------*/
+#about { padding:75px 55px 0 80px; }
+#about p { font-size:18px; }
+#about .title-1 { font-size:115px; display:block; text-transform: uppercase; margin-left:-6px; }
+#about .title-2 { font-size:25px; display:block; text-transform: uppercase; margin-top:-18px; }
+
 /* MEDIA QUERIES
 ----------------------------------------------------------------------------------------*/
 /*@media only screen and (min-width: X) {
