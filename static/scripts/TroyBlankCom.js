@@ -766,7 +766,33 @@ var TROYBLANK_UTILS = new function(){
         //normal ellipse
         return new this.Point(centerX + Math.cos(angle) * radiusX, centerY + Math.sin(angle) * radiusY);
     }
-    
+
+    this.getMouseCords = function(e, target){
+        var scaleRatioW = $(target).attr("width")/$(target).width();
+        var scaleRatioH = $(target).attr("height")/$(target).height();
+        
+        var x;
+        var y;
+        if (e.pageX || e.pageY) { 
+          x = e.pageX;
+          y = e.pageY;
+        }
+        else { 
+          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
+          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
+        } 
+        
+        x -= $(target).offset().left;
+        y -= $(target).offset().top;
+        
+        if(scaleRatioW > 0){
+            x = Math.round(x*scaleRatioW);
+            y = Math.round(y*scaleRatioH);
+        }
+        
+        return new this.Point(x, y);
+    }
+
     this.Point = function(x, y){
         this.x = x;
         this.y = y;
@@ -1180,7 +1206,7 @@ function ScrollBar(frame, choke){
             y = Math.round(y*scaleRatioH);
         }
         
-        return new Point(x, y);
+        return new TROYBLANK_UTILS.Point(x, y);
     }
 
     //-------------------------------------------
@@ -1242,13 +1268,7 @@ function ScrollBar(frame, choke){
 
 
 
-//-------------------------------------------------------------------------------------------------
-//Point
-//-------------------------------------------------------------------------------------------------
-function Point(x, y){
-    this.x = x;
-    this.y = y;
-}
+
 
 
 
