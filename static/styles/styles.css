@@ -138,20 +138,21 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 /* CONTACT FORM
 ----------------------------------------------------------------------------------------*/
 #contact-form { width:530px; height:370px; position:absolute; top:40%; left:50%; margin-top:-185px; margin-left:-265px; }
-#contact-form input, #contact-form textarea { width:100%; margin-bottom:15px; display:inline-block; background:#000000; border:none; color:#ffffff; text-transform:uppercase; padding:4px 0px 0 10px; font-size:24px; }
-#contact-form input { height:36px; }
-#contact-form textarea { height:207px; resize:none; }
+#contact-form input, #contact-form textarea { width:100%; margin-bottom:15px; display:inline-block; background:#000000; border:none; color:#ffffff; text-transform:uppercase; padding:4px 0px 0 10px; font-size:24px; -webkit-appearance: none; }
+#contact-form input { height:36px; border-radius:0; -webkit-appearance: none; }
+#contact-form textarea { height:207px; resize:none; border-radius:0; }
 #contact-form input[type=submit] { width:auto; display:block; cursor:pointer; float:right; padding:4px 10px; margin-right:-10px; }
 #contact-form ul.errorlist { color:#7F0000; text-align:right; padding-bottom:4px; }
 
-#contact-form .thank-you, #contact-form .error { margin-top:175px;}
+#contact-form .thank-you, #contact-form .error { margin-top:175px; }
 
 /* ABOUT
 ----------------------------------------------------------------------------------------*/
-#about { padding:75px 55px 0 80px; }
+#about > div { padding:75px 55px 0 80px; }
 #about p { font-size:18px; }
 #about .title-1 { font-size:115px; display:block; text-transform: uppercase; margin-left:-6px; }
 #about .title-2 { font-size:25px; display:block; text-transform: uppercase; margin-top:-18px; }
+#about h2 { font-size:48px; text-transform: uppercase; padding:5px;}
 
 /* MEDIA QUERIES
 ----------------------------------------------------------------------------------------*/
@@ -201,6 +202,13 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 	#contact-form .thank-you, #contact-form .error { margin-top:75px;}
 
+	/* ABOUT
+	----------------------------------------------------------------------------------------*/
+	#about > div { padding:25px 15px 0 20px; }
+	#about .title-1 { font-size:60px; margin-left:-3px; }
+	#about .title-2 { font-size:14px; margin-top:-10px; }
+	#about h2 { font-size:20px; }
+	
 	/* PORTFOLIO CONTENT
 	----------------------------------------------------------------------------------------*/
 	/* FLASH */

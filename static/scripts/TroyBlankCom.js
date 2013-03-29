@@ -45,10 +45,22 @@ var TroyBlankCom = new function(){
         $(window).resize(resizeHand);
         $(window).scroll(scrollHand);
 
-        $('header .logo').on('click', homeClickHandler);
-        $('header nav a').on('click', mainNavClick);
+        if($('body.standalone').length <= 0){
+            $('header .logo').on('click', homeClickHandler);
+            $('header nav a').on('click', mainNavClick);
+        }else{
+            addStandaloneLinks();
+        }
 
         TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, sectionChangeHand);
+    }
+
+    function addStandaloneLinks(){
+        $('header .logo').attr('href', '/');
+        $('header nav li a').each(function(i, ele){
+            $(ele).attr('href', $(ele).attr('data-href'));
+            $(ele).removeAttr('data-href')
+        });
     }
 
     this.setScrollVal = function(val){
