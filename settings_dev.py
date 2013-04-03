@@ -16,7 +16,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 #mimetypes
-mimetypes.add_type("video/mpeg", ".mp4", True)
+mimetypes.add_type("video/mp4", ".mp4", True)
 
 DATABASES = {
     'default': {

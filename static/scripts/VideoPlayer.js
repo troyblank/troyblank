@@ -87,12 +87,12 @@ function VideoPlayer(targ, autoPlay){
 
             //style
             $('.scrub-bar .progress-bar', targ ).css('cursor', 'pointer');
-        }else if(IS_BROWER_SAFARI){
-            $('.full-screen-btn', targ).css('display', 'none');
-            $('.volume-bar', targ).css('display', 'none');
         }else if(IS_BROWER_CHROME){
             $('.video-player .control-bar .scrub-bar .cursor').off('mousedown', videoCursorDownHand);
             $('.video-player .control-bar .scrub-bar').off('mousemove', scrubingVideoMoveHand);
+        }else if(IS_BROWER_SAFARI){
+            $('.full-screen-btn', targ).css('display', 'none');
+            $('.volume-bar', targ).css('display', 'none');
         }
     }
 
@@ -207,8 +207,6 @@ function VideoPlayer(targ, autoPlay){
     //-----------------------------------------------------------------------------------------
     function setVolume(vol){
         video.volume = vol;
-
-        alert(vol+" : "+video.volume);
     }
 
     function updateVolume(){
@@ -291,13 +289,26 @@ function VideoPlayer(targ, autoPlay){
     }
 
     function onFullScreenHand(){
+        //var fsArea = $('.full-screen-area', targ)[0];
+        //$(document)[0].onfullscreenchange = onFullScreenChange;
+
         if(video.requestFullScreen){
-            video.requestFullScreen();
+           // fsArea.requestFullScreen();
+           video.requestFullScreen();
         }else if(video.mozRequestFullScreen){
+            //fsArea.mozRequestFullScreen();
             video.mozRequestFullScreen();
         }else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen();
+            //fsArea.webkitRequestFullscreen();
+            video.webkitRequestFullscreen();
         }
+    }
+
+    function onFullScreenChange(){
+        //$('.full-screen-area', targ).css('width', '100%');
+        //$('.full-screen-area', targ).css('height', '100%');
+        //$('video', targ).css('width', '100%');
+        //$('video', targ).css('height', '100%');
     }
 
     function tickHand(){
@@ -400,6 +411,7 @@ function VideoPlayer(targ, autoPlay){
         $('.volume-bar', targ).off('click', volumeBarClickHand);
         $('.big-play-btn', targ).off('click', onBigPlayPauseHand);
         $(window).off('mouseup', cursorUpHand);
+        $(document).unbind();
     }
     //-----------------------------------------------------------------------------------------
     //DISPATCHER
