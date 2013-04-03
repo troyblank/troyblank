@@ -43,6 +43,7 @@ var TroyBlankCom = new function(){
 
     function addListeners(){
         $(window).resize(resizeHand);
+        $(window).focus(resizeHand);
         $(window).scroll(scrollHand);
 
         if($('body.standalone').length <= 0){
@@ -607,6 +608,7 @@ var TroyBlankCom = new function(){
 
     //HANDLERS ************************************************************************************
     function resizeHand(){
+        var rand = String(Math.random());
         TroyBlankCom.determineSize();
         TroyBlankCom.resizeDom();
         TroyBlankCom.dispatchEvent(TroyBlankCom.ON_RESIZE);
@@ -924,6 +926,7 @@ var ImageCenterer = new function(){
 
     this.addListeners = function(){
         $(window).resize(this.windowResizeHand);
+        $(window).focus(this.windowResizeHand);
     }
 
     //handlers

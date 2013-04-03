@@ -48,12 +48,12 @@
 
 /* MOBILE */
 @media only screen and (max-width: 730px), (max-height: 600px){
-	.video-player { width:320px; }
-	.video-player video { width:320px; height:180px; }
+	.video-player { width:275px; }
+	.video-player video { width:275px; height:155px; }
 
-	.video-player .overlays { height:180px; }
+	.video-player .overlays { height:155px; }
 	.video-player .overlays .big-play-btn:after { margin:-50px 0 0 -50px; background:url('../images/videoPlayer/big-play-btn-mobile.svg') 0px 0px no-repeat; }
 
-	.video-player .control-bar .scrub-bar { width:145px; }
+	.video-player .control-bar .scrub-bar { width:102px; }
 	.video-player .control-bar .volume-bar { display:none; }
 }

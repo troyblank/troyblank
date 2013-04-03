@@ -13,10 +13,13 @@
 //  ffmpeg -i in.avi -threads 6 -vcodec libx264 -s 520x284 -r 30 -b 1000k -ss 00:00:00 -vpre slow -acodec libfaac -ab 128k -ar 44100 out.mp4
 //
 //ISSUES:
-//3-22-2013 Chrome - does not show buffer 'readystate' is always 4
-//3-22-2013 Chrome - scrubbing too fast sometimes disconnects video, not sure why (disalbed under IS_BROWER_CHROME check)
-//3-25-2013 IE     - requestFullScreen is not supported yet
-//3-25-2013 IE     - does not support pointer-events css
+//03-22-2013 Chrome - does not show buffer 'readystate' is always 4
+//03-22-2013 Chrome - scrubbing too fast sometimes disconnects video, not sure why (disalbed under IS_BROWER_CHROME check)
+//03-25-2013 IE     - requestFullScreen is not supported yet
+//03-25-2013 IE     - does not support pointer-events css
+//04-03-2013 Safari - requestFullScreen is not supported yet
+//04-03-2013 Safari - volume can not be adjusted on iOS
+//04-03-2013 Safari - will not play self hosted videos on localhost iOS (test using this video http://video-js.zencoder.com/oceans-clip.mp4)
 //
 //http://www.w3.org/wiki/HTML/Elements/video
 //-------------------------------------------------------------------------------------------------
@@ -43,6 +46,7 @@ function VideoPlayer(targ, autoPlay){
     var REFRESH_RATE = 350;
 
     var IS_BROWSER_IE = Boolean($.browser.msie);
+    var IS_BROWER_SAFARI = navigator.userAgent.toLowerCase().indexOf("safari") > 0;
     var IS_BROWER_CHROME = navigator.userAgent.toLowerCase().indexOf("chrome") > 0;
 
     function init(){
@@ -83,6 +87,9 @@ function VideoPlayer(targ, autoPlay){
 
             //style
             $('.scrub-bar .progress-bar', targ ).css('cursor', 'pointer');
+        }else if(IS_BROWER_SAFARI){
+            $('.full-screen-btn', targ).css('display', 'none');
+            $('.volume-bar', targ).css('display', 'none');
         }else if(IS_BROWER_CHROME){
             $('.video-player .control-bar .scrub-bar .cursor').off('mousedown', videoCursorDownHand);
             $('.video-player .control-bar .scrub-bar').off('mousemove', scrubingVideoMoveHand);
@@ -200,6 +207,8 @@ function VideoPlayer(targ, autoPlay){
     //-----------------------------------------------------------------------------------------
     function setVolume(vol){
         video.volume = vol;
+
+        alert(vol+" : "+video.volume);
     }
 
     function updateVolume(){

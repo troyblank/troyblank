@@ -205,12 +205,14 @@ function PortfolioCanvasMedia(link){
                 hideResizeError(targ);
             }
         }else{
-            setSlideShowDiminsions(targ, cur_w, Math.round(targ_h*cur_w/targ_w), animateIt);
+            if($(targ).attr('data-resizeable') != 'tiered'){
+                setSlideShowDiminsions(targ, cur_w, Math.round(targ_h*cur_w/targ_w), animateIt);
 
-            if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
-                showResizeError(targ);
-            }else if($(targ).attr('data-resizeable') == 'tiered'){
-                setTieredSize(targ, cur_w);
+                if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
+                    showResizeError(targ);
+                }
+            }else{
+                setTieredSize(targ, cur_w, animateIt);  
             }
         }
 
@@ -219,7 +221,7 @@ function PortfolioCanvasMedia(link){
             if($(targ).attr('data-resizeable') == 'tiered'){
                 var otherSizes = $(targ).attr('data-alternative-size').split(',');
                 var size = otherSizes[otherSizes.length-1].split('x');
-                setSlideShowDiminsions(targ, size[0], size[1], false);
+                setSlideShowDiminsions(targ, size[0], size[1], animateIt);
             }
         }
 
@@ -228,13 +230,13 @@ function PortfolioCanvasMedia(link){
         }
     }
 
-    function setTieredSize(targ, cur_w){
+    function setTieredSize(targ, cur_w, animateIt){
         var otherSizes = $(targ).attr('data-alternative-size').split(',');
 
         for(var i = 0; i<otherSizes.length; i++){
             var size = otherSizes[i].split('x');
             if(cur_w > size[0] || otherSizes.length-1 == i){
-               setSlideShowDiminsions(targ, size[0], size[1], false); 
+               setSlideShowDiminsions(targ, size[0], size[1], animateIt); 
                return false;
             }
         }
@@ -242,7 +244,6 @@ function PortfolioCanvasMedia(link){
 
     function setSlideShowDiminsions(targ, w, h, animateIt){
         var borderWidth = Number($('.slideshow .region').css('border-left-width').split('px')[0])+Number($('.slideshow .region').css('border-right-width').split('px')[0]);
-
 
         if(!animateIt){
             if($(targ).hasClass('active')){
@@ -258,14 +259,14 @@ function PortfolioCanvasMedia(link){
             $('.portfolio-piece .slideshow .slide-band').stop().animate({'height':Number(h)+borderWidth}, FADE_SPEED);
             $('.slideshow .region').stop().animate({'width':w, 'height':h}, FADE_SPEED);
 
-            $(targ).stop().animate({'width':w, 'height':h, 'opacity':1}, FADE_SPEED, function(){
-                animating = false;
-            });
-
             if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
                 $('.portfolio-piece .slideshow .under-size-error').css('opacity', 0);
                 $('.portfolio-piece .slideshow .under-size-error').stop().animate({'opacity':1}, FADE_SPEED);
             }
+
+            $(targ).stop().animate({'width':w, 'height':h, 'opacity':1}, FADE_SPEED, function(){
+                animating = false;
+            });
         }
     }
 
@@ -278,10 +279,12 @@ function PortfolioCanvasMedia(link){
         $('.flashContent', targ).css('display', 'none');
 
         //fitting skull into smaller spaces
-        if(targHeight  < 350){
+        $('.portfolio-piece .slideshow .under-size-error').removeClass('smaller');
+        $('.portfolio-piece .slideshow .under-size-error').removeClass('smallest');
+        if(targHeight  < 150){
+            $('.portfolio-piece .slideshow .under-size-error').addClass('smallest');
+        }else if(targHeight  < 350){
             $('.portfolio-piece .slideshow .under-size-error').addClass('smaller');
-        }else{
-            $('.portfolio-piece .slideshow .under-size-error').removeClass('smaller');
         }
     }
 

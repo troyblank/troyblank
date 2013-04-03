@@ -1,7 +1,5 @@
 # Django settings for troyblank_com project.
 import os
-import mimetypes
-
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
@@ -14,9 +12,6 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
-#mimetypes
-mimetypes.add_type("video/mpeg", ".mp4", True)
 
 DATABASES = {
     'default': {
@@ -169,4 +164,4 @@ CONTACT_EMAIL = 'troy@troyblank.com'
 
 #COMPRESSOR
 COMPRESS_URL = STATIC_URL
-COMPRESS_ENABLED = False
+COMPRESS_ENABLED = True
