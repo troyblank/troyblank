@@ -2,7 +2,7 @@
 import os
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['troyblank.com']
@@ -166,4 +166,5 @@ CONTACT_EMAIL = 'troy@troyblank.com'
 
 #COMPRESSOR
 COMPRESS_URL = STATIC_URL
+COMPRESS_ROOT = '/home/troy/webapps/troyblank_com/static/'
 COMPRESS_ENABLED = True
