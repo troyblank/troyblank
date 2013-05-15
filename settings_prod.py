@@ -5,6 +5,8 @@ PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+ALLOWED_HOSTS = ['troyblank.com']
+
 gettext = lambda s: s
 
 ADMINS = (
