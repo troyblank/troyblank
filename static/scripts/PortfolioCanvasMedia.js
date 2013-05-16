@@ -13,6 +13,10 @@ function PortfolioCanvasMedia(link){
 
     var FADE_SPEED = 500;
 
+    //repeating patterns that span the width of the browser under the portfolio piece
+    var GRAPHIC_BANDS = ['guts.png', 'skulls.png', 'skulls.png', 'skulls.png'];
+    var BAND_ROOT = '/static/images/bands/';
+
     function init(){
         $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
         checkForTrapKeys();
@@ -26,6 +30,7 @@ function PortfolioCanvasMedia(link){
         TroyBlankCom.dispatchEvent(TroyBlankCom.ON_CONTENT_READY);
 
         addPermaListeners();
+        addGraphicBand();
     }
 
     function addPermaListeners(){
@@ -46,6 +51,13 @@ function PortfolioCanvasMedia(link){
         }
     }
 
+    //-------------------------------------------------------------------------------------------------------------------------------------
+    //GRAPHIC BAND
+    //-------------------------------------------------------------------------------------------------------------------------------------
+    function addGraphicBand(){
+        var backgroundURL = BAND_ROOT+GRAPHIC_BANDS[Math.floor(Math.random()*GRAPHIC_BANDS.length)];
+        $('.slideshow .slide-band').css('background', 'url("'+backgroundURL+'") repeat');
+    }
     //-------------------------------------------------------------------------------------------------------------------------------------
     //PAGINATION
     //-------------------------------------------------------------------------------------------------------------------------------------
