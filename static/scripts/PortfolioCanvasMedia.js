@@ -14,7 +14,7 @@ function PortfolioCanvasMedia(link){
     var FADE_SPEED = 500;
 
     //repeating patterns that span the width of the browser under the portfolio piece
-    var GRAPHIC_BANDS = ['guts.png', 'skulls.png', 'skulls.png', 'skulls.png'];
+    var GRAPHIC_BANDS = ['guts.png', 'eyes.png'];
     var BAND_ROOT = '/static/images/bands/';
 
     function init(){
