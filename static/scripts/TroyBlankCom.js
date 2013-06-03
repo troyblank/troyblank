@@ -117,7 +117,6 @@ var TroyBlankCom = new function(){
             }
             i--;
         }
-        
     }
 
     this.dispatchEvent = function(type){
@@ -240,7 +239,7 @@ var TroyBlankCom = new function(){
                 $('#portfolioCarousel').css('display', 'none');
 
                 $(window).scrollTop(0);
-            } 
+            }
         }
 
         function animateSectionOff(sectionID){
@@ -313,6 +312,12 @@ var TroyBlankCom = new function(){
             }
         }
 
+        function trackPageWithGoogleAnalytics(){
+            if(_gaq != undefined){
+                _gaq.push(['_trackPageview', assetURL])
+            }
+        }
+
         function postLoadMainNavInit(){
             if($('#contact-form').length > 0){
                 new Contact();
@@ -326,6 +331,7 @@ var TroyBlankCom = new function(){
         function loadedContentHand(){
             removePreloader();
             postLoadInit();
+            trackPageWithGoogleAnalytics();
         }
 
         function addPreloader(){
@@ -335,7 +341,7 @@ var TroyBlankCom = new function(){
 
         function removePreloader(){
             if($('#preloader_content').length > 0){
-               preloader.destroy(); 
+               preloader.destroy();
                $('#preloader_content').remove();
             }
         }
@@ -439,7 +445,7 @@ var TroyBlankCom = new function(){
                 $(this).css('display', 'none');
             });
         }
-        
+
         //PORTFOLIO DISPLAY INDEX *********************************************************************
         this.portfolioDisplayIndexCheck = function(){
             var newDisplayIndex = null;
@@ -463,7 +469,7 @@ var TroyBlankCom = new function(){
                 preloadPortfolioThumbs.checkPreloadPortfolioThumbs();
 
                 return true;
-            }  
+            }
 
             return false;
         }
@@ -570,7 +576,7 @@ var TroyBlankCom = new function(){
             $('#portfolioCarousel').css('top', Math.floor((windowH - headerH)/2 - $('#portfolioCarousel > a').outerHeight()/2));
 
             //backing
-            var backingRect = TROYBLANK_UTILS.scaleWithAspectRatio(new TROYBLANK_UTILS.Rectangle(0, 0, 1024, 768), 
+            var backingRect = TROYBLANK_UTILS.scaleWithAspectRatio(new TROYBLANK_UTILS.Rectangle(0, 0, 1024, 768),
                 new TROYBLANK_UTILS.Rectangle(0, 0, windowW, windowH), true);
             $('body').css('background-size', Math.ceil(backingRect.width)+'px '+Math.ceil(backingRect.height)+'px');
 
@@ -690,7 +696,7 @@ var TroyBlankCom = new function(){
                 loading = true;
 
                 var imageSRC = TroyBlankCom.device == 'desktop' ? $(thumbPreloaders[0]['ele']).attr('data-image') : $(thumbPreloaders[0]['ele']).attr('data-image-mobile');
-                
+
                 TROYBLANK_UTILS.loadImage(imageSRC, imageLoadHand);
                 loopTimer();
             }
@@ -711,7 +717,7 @@ var TroyBlankCom = new function(){
             if(e.status == 404){
                 throw new Error('Image '+e.url+' could not be loaded.');
             }
-            
+
             thumbPreloaders[0]['preloader'].destroy();
             $(thumbPreloaders[0]['ele']).attr('data-loaded', 'true');
             $('.atomic-preloader', thumbPreloaders[0]['ele']).remove();
@@ -784,26 +790,26 @@ var TROYBLANK_UTILS = new function(){
     this.getMouseCords = function(e, target){
         var scaleRatioW = $(target).attr("width")/$(target).width();
         var scaleRatioH = $(target).attr("height")/$(target).height();
-        
+
         var x;
         var y;
-        if (e.pageX || e.pageY) { 
+        if (e.pageX || e.pageY) {
           x = e.pageX;
           y = e.pageY;
         }
-        else { 
-          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
-          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
-        } 
-        
+        else {
+          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+
         x -= $(target).offset().left;
         y -= $(target).offset().top;
-        
+
         if(scaleRatioW > 0){
             x = Math.round(x*scaleRatioW);
             y = Math.round(y*scaleRatioH);
         }
-        
+
         return new this.Point(x, y);
     }
 
@@ -832,17 +838,17 @@ var TROYBLANK_UTILS = new function(){
         if(crop){
             sourceRect = TROYBLANK_UTILS.scaleWithAspectRatio(sourceRect, targetRect);
         }
-        
+
         var resultRect = new TROYBLANK_UTILS.Rectangle();
         var widthDiff = (targetRect.width - sourceRect.width);
         var heightDiff = (targetRect.height - sourceRect.height);
-        
+
         if(crop){
             var tWD = widthDiff;
             widthDiff = heightDiff;
             heightDiff = tWD;
         }
-        
+
         if(widthDiff < heightDiff){
             resultRect.width = targetRect.width;
             resultRect.height = (targetRect.width/sourceRect.width)*sourceRect.height;
@@ -854,7 +860,7 @@ var TROYBLANK_UTILS = new function(){
             resultRect.x = (targetRect.width - resultRect.width)/2;
             resultRect.y = targetRect.y;
         }
-                
+
         return resultRect;
     }
 
@@ -1020,7 +1026,7 @@ function atomicPreloader(id, selfTimed){
         ellipse3.attr({stroke: '#ff0000', 'stroke-width': 2});
         ellipse3.transform("r-60");
     }
-    
+
     function drawBalls(){
         root.dot1 = paper.circle(0, 0, 2.5);
         root.dot1.attr({fill: '#ff0000', 'stroke-width':0});
@@ -1053,10 +1059,10 @@ function atomicPreloader(id, selfTimed){
 //frame      | Dom Element | container of scrollable components
 //choke      | Number      | space at bottom that does not trigger a scrollbar appear
 //
-//the frame dom element must contain dom elements with the classes mask', 'content', 'scrollBar' 
+//the frame dom element must contain dom elements with the classes mask', 'content', 'scrollBar'
 //and 'thumb'
 //
-//REQUIREMENTS: 
+//REQUIREMENTS:
 //          jQuery 1.7.1 or greater  | http://docs.jquery.com/
 //          jQuery-mousewheel 3.0.6  | https://github.com/brandonaaron/jquery-mousewheel
 //---------------------------------------------- ---------------------------------------------------
@@ -1135,7 +1141,7 @@ function ScrollBar(frame, choke){
     this.isScrollable = function(){
         return $('.content', this.frame).getHiddenDimensions().outerHeight-this.choke > $('.mask', this.frame).getHiddenDimensions().outerHeight
     }
-    
+
     //-------------------------------------------
     //THUMB
     //-------------------------------------------
@@ -1200,7 +1206,7 @@ function ScrollBar(frame, choke){
     this.getMouseCords = function(target, e){
         var scaleRatioW = $(target).attr("width")/$(target).width();
         var scaleRatioH = $(target).attr("height")/$(target).height();
-        
+
         var x;
         var y;
 
@@ -1208,11 +1214,11 @@ function ScrollBar(frame, choke){
           x = e.pageX;
           y = e.pageY;
         }
-        else { 
-          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
-          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
-        } 
-        
+        else {
+          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+
         x -= $(target).offset().left;
         y -= $(target).offset().top;
 
@@ -1220,7 +1226,7 @@ function ScrollBar(frame, choke){
             x = Math.round(x*scaleRatioW);
             y = Math.round(y*scaleRatioH);
         }
-        
+
         return new TROYBLANK_UTILS.Point(x, y);
     }
 
@@ -1271,7 +1277,7 @@ function ScrollBar(frame, choke){
     }
 
     this.init();
-    
+
 }
 
 
