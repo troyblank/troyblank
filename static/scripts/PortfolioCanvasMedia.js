@@ -194,9 +194,9 @@ function PortfolioCanvasMedia(link){
     //DYNAMIC SIZING
     //-------------------------------------------------------------------------------------------------------------------------------------
     function sizeAllContent(){
-        var i = $('.portfolio-piece .slideshow .slide').length-1;
+        var i = $('.portfolio-piece .resizeable').length-1;
         while(i >= 0){
-            sizeContent($('.portfolio-piece .slideshow .slide')[i]);
+            sizeContent($('.portfolio-piece .resizeable')[i]);
             i--;
         }
     }
@@ -224,7 +224,7 @@ function PortfolioCanvasMedia(link){
                     showResizeError(targ);
                 }
             }else{
-                setTieredSize(targ, cur_w, animateIt);  
+                setTieredSize(targ, cur_w, animateIt);
             }
         }
 
@@ -248,32 +248,32 @@ function PortfolioCanvasMedia(link){
         for(var i = 0; i<otherSizes.length; i++){
             var size = otherSizes[i].split('x');
             if(cur_w > size[0] || otherSizes.length-1 == i){
-               setSlideShowDiminsions(targ, size[0], size[1], animateIt); 
+               setSlideShowDiminsions(targ, size[0], size[1], animateIt);
                return false;
             }
         }
     }
 
     function setSlideShowDiminsions(targ, w, h, animateIt){
-        var borderWidth = Number($('.slideshow .region').css('border-left-width').split('px')[0])+Number($('.slideshow .region').css('border-right-width').split('px')[0]);
+        var borderWidth = Number($('.center-wrap .region').css('border-left-width').split('px')[0])+Number($('.center-wrap .region').css('border-right-width').split('px')[0]);
 
         if(!animateIt){
             if($(targ).hasClass('active')){
-                $('.portfolio-piece .slideshow .slide-band').height(Number(h)+borderWidth);
-                $('.slideshow .region').width(w);
-                $('.slideshow .region').height(h);
-                $('.slideshow').width($('.slideshow .region').outerWidth(true));
+                $('.portfolio-piece .center-wrap .slide-band').height(Number(h)+borderWidth);
+                $('.center-wrap .region').width(w);
+                $('.center-wrap .region').height(h);
+                $('.center-wrap').width($('.center-wrap .region').outerWidth(true));
             }
             $(targ).width(w);
             $(targ).height(h);
         }else{
-            $('.slideshow').stop().animate({'width':Number(w)+borderWidth}, FADE_SPEED);
-            $('.portfolio-piece .slideshow .slide-band').stop().animate({'height':Number(h)+borderWidth}, FADE_SPEED);
-            $('.slideshow .region').stop().animate({'width':w, 'height':h}, FADE_SPEED);
+            $('.center-wrap').stop().animate({'width':Number(w)+borderWidth}, FADE_SPEED);
+            $('.portfolio-piece .center-wrap .slide-band').stop().animate({'height':Number(h)+borderWidth}, FADE_SPEED);
+            $('.center-wrap .region').stop().animate({'width':w, 'height':h}, FADE_SPEED);
 
             if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
-                $('.portfolio-piece .slideshow .under-size-error').css('opacity', 0);
-                $('.portfolio-piece .slideshow .under-size-error').stop().animate({'opacity':1}, FADE_SPEED);
+                $('.portfolio-piece .center-wrap .under-size-error').css('opacity', 0);
+                $('.portfolio-piece .center-wrap .under-size-error').stop().animate({'opacity':1}, FADE_SPEED);
             }
 
             $(targ).stop().animate({'width':w, 'height':h, 'opacity':1}, FADE_SPEED, function(){
@@ -283,25 +283,25 @@ function PortfolioCanvasMedia(link){
     }
 
     function showResizeError(targ){
-        var targHeight = $($('.portfolio-piece .slideshow .slide')[slideIndex]).height();
+        var targHeight = $($('.portfolio-piece .center-wrap .slide')[slideIndex]).height();
 
-        $('.portfolio-piece .slideshow .under-size-error').height(targHeight );
-        $('.portfolio-piece .slideshow .under-size-error').css('display', 'block');
+        $('.portfolio-piece .center-wrap .under-size-error').height(targHeight );
+        $('.portfolio-piece .center-wrap .under-size-error').css('display', 'block');
 
         $('.flashContent', targ).css('display', 'none');
 
         //fitting skull into smaller spaces
-        $('.portfolio-piece .slideshow .under-size-error').removeClass('smaller');
-        $('.portfolio-piece .slideshow .under-size-error').removeClass('smallest');
+        $('.portfolio-piece .center-wrap .under-size-error').removeClass('smaller');
+        $('.portfolio-piece .center-wrap .under-size-error').removeClass('smallest');
         if(targHeight  < 150){
-            $('.portfolio-piece .slideshow .under-size-error').addClass('smallest');
+            $('.portfolio-piece .center-wrap .under-size-error').addClass('smallest');
         }else if(targHeight  < 350){
-            $('.portfolio-piece .slideshow .under-size-error').addClass('smaller');
+            $('.portfolio-piece .center-wrap .under-size-error').addClass('smaller');
         }
     }
 
     function hideResizeError(targ){
-        $('.portfolio-piece .slideshow .under-size-error').css('display', 'none');
+        $('.portfolio-piece .center-wrap .under-size-error').css('display', 'none');
         $('.flashContent', targ).css('display', 'block');
     }
 
@@ -311,7 +311,7 @@ function PortfolioCanvasMedia(link){
     function destroy(){
         TroyBlankCom.trapKeys = false;
         flashRestoreHtml = new Object();
-        
+
         removePermaListeners();
         removeListeners();
 
