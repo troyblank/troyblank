@@ -117,7 +117,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 /* PORTFOLIO CAROUSEL
 ----------------------------------------------------------------------------------------*/
-#portfolioCarousel { position:absolute; top:40px; }
+#portfolioCarousel { position:absolute; top:40px; display:none; }
 #portfolioCarousel > a { width:70%; height:70%; max-width:728px; max-height:530px; border:20px solid #000000; float:left; background:#ffffff; margin-right:45px; 
 	position:relative; overflow:hidden; display:block; }
 #portfolioCarousel > a:last-child{ margin-right:0px; }

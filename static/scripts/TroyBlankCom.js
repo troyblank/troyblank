@@ -382,6 +382,7 @@ var TroyBlankCom = new function(){
         function setStage(){
             TroyBlankCom.scrollVal = TroyBlankCom.SCROLL_PADDING;
             $('#portfolioCarousel').css('left', TroyBlankCom.scrollVal);
+            $('#portfolioCarousel').css('display', 'block');
         }
 
         function addListeners(){
