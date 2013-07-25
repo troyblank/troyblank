@@ -43,7 +43,7 @@ ul li { }
 /* MAIN LAYOUT
 ----------------------------------------------------------------------------------------*/
 html { width:100%; height:100%; }
-body { width:100%; height:100%; overflow:hidden; background:url("../images/backings/backing.jpg") no-repeat; background-size:100% 100%; background-position: center center; position:relative;  }
+body { width:100%; height:100%; overflow:hidden; background-size:100% 100%; background-position: center center; position:relative;  }
 body:after { top:0; left:0; background:url("../images/backings/pattern_backing.png") repeat; width:100%; height:100%; content:""; position:absolute; }
 #content-wrapper { width:100%; height:100%; overflow:hidden; position:absolute; z-index:50; }
 

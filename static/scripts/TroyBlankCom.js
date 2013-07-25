@@ -1,5 +1,7 @@
 var TroyBlankCom = new function(){
 
+    this.standAlone = false;
+
     this.size = 'desktop'; //could be 'desktop' or 'mobile'
     this.device = 'desktop'; //could be 'desktop' or 'mobile'
 
@@ -19,8 +21,14 @@ var TroyBlankCom = new function(){
     this.SCROLL_PADDING = 45;
     var MOBILE_CLOSE_BUTTON_PADDING = 30;
 
+    //backings
+    var GRAPHIC_BACKINGS = ['tea_01.jpg', 'tea_02.jpg', 'tea_03.jpg'];
+    var BACKING_ROOT = '/static/images/backings/';
+
     this.init = function(){
         $('#content-wrapper .nav-left').css('opacity', 0);
+
+        TroyBlankCom.standAlone = $('body.standalone').length > 0;
 
         TroyBlankCom.portfolioLength = $('#portfolioCarousel > a').length;
 
@@ -28,6 +36,7 @@ var TroyBlankCom = new function(){
         TroyBlankCom.determineDevice();
         TroyBlankCom.resizeDom();
         TroyBlankCom.portfolioScroll();
+        TroyBlankCom.addBacking();
 
         preloadPortfolioThumbs.checkPreloadPortfolioThumbs();
 
@@ -41,12 +50,20 @@ var TroyBlankCom = new function(){
         }
     }
 
+    this.addBacking = function(){
+        if(!TroyBlankCom.standAlone){
+            var backgroundURL = BACKING_ROOT+GRAPHIC_BACKINGS[Math.floor(Math.random()*GRAPHIC_BACKINGS.length)];
+            console.log(backgroundURL);
+            $('body').css('background', 'url("'+backgroundURL+'") repeat');
+        }
+    }
+
     function addListeners(){
         $(window).resize(resizeHand);
         $(window).focus(resizeHand);
         $(window).scroll(scrollHand);
 
-        if($('body.standalone').length <= 0){
+        if(!TroyBlankCom.standAlone){
             $('header .logo').on('click', homeClickHandler);
             $('header nav a').on('click', mainNavClick);
         }else{
@@ -632,7 +649,7 @@ var TroyBlankCom = new function(){
     }
 
     function homeClickHandler(){
-        if($('body.portfolio-standalone').length <= 0){
+        if(!TroyBlankCom.standAlone){
             TroyBlankCom.changeSection('main');
         }else{
             window.location.href = '/';

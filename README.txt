@@ -6,7 +6,7 @@ Website for Troy Blank's personal portfolio.
 
 //TO DO
 //+++++++++++++++++++++++++++++++++++++++++++++++
-3 backgrounds (http://www.youtube.com/watch?v=nMS3p3syhc0)
+3 backgrounds - using blender with cell frature add on(http://cgcookie.com/blender/lessons/1-getting-started/)
 add direct linking has bangness
 
 //TO ADDS

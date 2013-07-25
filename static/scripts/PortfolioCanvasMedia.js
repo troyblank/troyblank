@@ -1,4 +1,4 @@
-
+console.log('eh')
 function PortfolioCanvasMedia(link){
 
     var slideIndex = 0;
@@ -22,6 +22,7 @@ function PortfolioCanvasMedia(link){
         checkForTrapKeys();
 
         addPagination();
+        console.log('INITIT')
         sizeAllContent();
         sizeAllContent();
         addListeners();
@@ -194,6 +195,7 @@ function PortfolioCanvasMedia(link){
     //DYNAMIC SIZING
     //-------------------------------------------------------------------------------------------------------------------------------------
     function sizeAllContent(){
+        console.log('size all content')
         var i = $('.portfolio-piece .resizeable').length-1;
         while(i >= 0){
             sizeContent($('.portfolio-piece .resizeable')[i]);
@@ -202,6 +204,7 @@ function PortfolioCanvasMedia(link){
     }
 
     function sizeContent(targ, animateIt){
+        console.log('size')
         animateIt == animateIt == undefined ? false : true;
 
         var targ_w = $(targ).attr('data-width');
@@ -255,6 +258,7 @@ function PortfolioCanvasMedia(link){
     }
 
     function setSlideShowDiminsions(targ, w, h, animateIt){
+        console.log('set slide show dim')
         var borderWidth = Number($('.center-wrap .region').css('border-left-width').split('px')[0])+Number($('.center-wrap .region').css('border-right-width').split('px')[0]);
 
         if(!animateIt){
