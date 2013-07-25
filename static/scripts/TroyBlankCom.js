@@ -48,12 +48,16 @@ var TroyBlankCom = new function(){
         }else if($('body.standalone #contact-form').length > 0){
             new Contact();
         }
+
+        //hash bang history
+        if(!TroyBlankCom.standalone){
+            HashBangHistory.init();
+        }
     }
 
     this.addBacking = function(){
         if(!TroyBlankCom.standAlone){
             var backgroundURL = BACKING_ROOT+GRAPHIC_BACKINGS[Math.floor(Math.random()*GRAPHIC_BACKINGS.length)];
-            console.log(backgroundURL);
             $('body').css('background', 'url("'+backgroundURL+'") repeat');
         }
     }
