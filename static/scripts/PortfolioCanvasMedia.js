@@ -1,9 +1,8 @@
-function PortfolioCanvasMedia(link){
+function PortfolioCanvasMedia(){
 
     var slideIndex = 0;
     var preloader = null;
 
-    var link = link;
     var animating = false;
 
     var flashRestoreHtml = new Object();

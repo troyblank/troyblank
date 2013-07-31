@@ -6,6 +6,7 @@ var TroyBlankCom = new function(){
     this.device = 'desktop'; //could be 'desktop' or 'mobile'
 
     this.section = 'main'; //could be 'main', portfolio', 'about', or 'contact'
+    this.currentLink = ''; //link for hasbang purposes
     this.trapKeys = false; //used to stop keys from triggering navigation on media that uses them
 
     this.portfolio_display_index = 0;
@@ -75,6 +76,7 @@ var TroyBlankCom = new function(){
         }
 
         TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, sectionChangeHand);
+        TroyBlankCom.addEventListener(TroyBlankCom.ON_HASH_NAV_CHANGE, onhashNavChange);
     }
 
     function addStandaloneLinks(){
@@ -121,6 +123,8 @@ var TroyBlankCom = new function(){
     this.ON_RESIZE = 'onResize';
     this.ON_CONTENT_READY = 'onSpecimenReady';
     this.ON_MEDIA_FLUSH_REQUEST = 'onMediaFlushRequest';
+    this.ON_HASH_NAV_CHANGE = 'onHashNavChange';
+    this.NAV_INTERACTION_MADE = 'navInteractionMade';
 
     this.addEventListener = function(type, handler){
         if(TroyBlankCom.eventDispatcher[type] == undefined){
@@ -140,11 +144,11 @@ var TroyBlankCom = new function(){
         }
     }
 
-    this.dispatchEvent = function(type){
+    this.dispatchEvent = function(type, data){
         if(TroyBlankCom.eventDispatcher[type] != undefined){
             var callList = TroyBlankCom.eventDispatcher[type].slice(0);
             for(var i = 0; i<callList.length; i++){
-                callList[i].call();
+                callList[i].apply(this, [data]);
             }
         }
     }
@@ -175,6 +179,7 @@ var TroyBlankCom = new function(){
         var resizeActive = false;
         var assetURL = assetURL;
         var canvasID = canvasID;
+        TroyBlankCom.currentLink = assetURL;
 
         function init(){
             addListeners();
@@ -186,12 +191,20 @@ var TroyBlankCom = new function(){
         //RELOAD
         this.reloadContent = function(newURL){
             assetURL = newURL
+            TroyBlankCom.currentLink = assetURL;
 
             removeListeners();
             if($('.fade-wrapper', canvasID).length <= 0){
                 $(canvasID).wrapInner('<div class="fade-wrapper" />')
             }
-            $('.fade-wrapper', canvasID).stop().animate({'opacity':0}, 300, fadeOnNewContent);
+
+            if(TroyBlankCom.size == 'desktop'){
+                $('.fade-wrapper', canvasID).stop().animate({'opacity':0}, 300, fadeOnNewContent);
+            }else{
+                $(canvasID, '.mask').empty();
+                addListeners();
+                addContent();
+            }
         }
 
         function fadeOnNewContent(){
@@ -279,6 +292,8 @@ var TroyBlankCom = new function(){
 
         //DESTROY
         function exit(){
+            TroyBlankCom.dispatchEvent(TroyBlankCom.NAV_INTERACTION_MADE);
+
             removeListeners();
             removePreloader();
             animateSectionOff(canvasID);
@@ -329,6 +344,7 @@ var TroyBlankCom = new function(){
                     break;
                 case 'mainNavContent':
                     postLoadMainNavInit();
+                    TroyBlankCom.dispatchEvent(TroyBlankCom.ON_CONTENT_READY);
                     break;
             }
         }
@@ -402,6 +418,8 @@ var TroyBlankCom = new function(){
 
         function addPermaListeners(){
             TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, onSectionChangeHand);
+            TroyBlankCom.addEventListener(TroyBlankCom.ON_HASH_NAV_CHANGE, onhashNavChange);
+
         }
 
         function removeListeners(){
@@ -505,7 +523,14 @@ var TroyBlankCom = new function(){
         }
 
         //HANDLERS
+        function onhashNavChange(data){
+            if(data.section == 'portfolio'){
+                showPortfolioCanvas(data.targ);
+            }
+        }
+
         function portfolioClickHand(){
+            TroyBlankCom.dispatchEvent(TroyBlankCom.NAV_INTERACTION_MADE);
             showPortfolioCanvas(this);
         }
 
@@ -654,6 +679,11 @@ var TroyBlankCom = new function(){
     }
 
     function homeClickHandler(){
+        TroyBlankCom.dispatchEvent(TroyBlankCom.NAV_INTERACTION_MADE);
+        goHomeAction();
+    }
+
+    function goHomeAction(){
         if(!TroyBlankCom.standAlone){
             TroyBlankCom.changeSection('main');
         }else{
@@ -663,11 +693,27 @@ var TroyBlankCom = new function(){
 
     function mainNavClick(){
         if(!$(this).hasClass('active')){
-            TroyBlankCom.removeMainNavActives();
-            $(this).addClass('active');
-            showMainNavContent($(this).attr('data-href'));
+            TroyBlankCom.dispatchEvent(TroyBlankCom.NAV_INTERACTION_MADE);
+            showMainNavCanvas(this);
         }
     }
+
+    function showMainNavCanvas(targ){
+        if(!$(targ).hasClass('active')){
+            TroyBlankCom.removeMainNavActives();
+            $(targ).addClass('active');
+            showMainNavContent($(targ).attr('data-href'));
+        }
+    }
+
+    function onhashNavChange(data){
+        if(data.section == 'mainNavContent'){
+            showMainNavCanvas(data.targ);
+        }else if(data.section == 'main'){
+            goHomeAction();
+        }
+    }
+
 
     //PRELOAD PORTFOLIO THUMBS
     //---------------------------------------------------------------------------------------------

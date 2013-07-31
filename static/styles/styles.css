@@ -143,7 +143,8 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 /* CONTACT FORM
 ----------------------------------------------------------------------------------------*/
-#contact-form { width:530px; height:370px; position:absolute; top:40%; left:50%; margin-top:-185px; margin-left:-265px; }
+#contact-form { height:100%; padding:0; position:relative; }
+#contact-form > div { width:530px; height:370px; position:absolute; top:40%; left:50%; margin-top:-75px; margin-left:-265px; }
 #contact-form input, #contact-form textarea { width:100%; margin-bottom:15px; display:inline-block; background:#000000; border:none; color:#ffffff; text-transform:uppercase; padding:4px 0px 0 10px; font-size:24px; -webkit-appearance: none; }
 #contact-form input { height:36px; border-radius:0; -webkit-appearance: none; }
 #contact-form textarea { height:207px; resize:none; border-radius:0; }
@@ -173,7 +174,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 	/* MAIN LAYOUT */
 	html { height:inherit; }
-	body { overflow:inherit; background:#f6f6eb; }
+	body { overflow:inherit; background:#f6f6eb !important; }
 	body:after { background:none; position:static; }
 	#content-wrapper { overflow:inherit; position:static; }
 
@@ -206,7 +207,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 
 	/* CONTACT FORM
 	----------------------------------------------------------------------------------------*/
-	#contact-form { width:100%; height:370px; position:static; top:0; left:0; margin-top:0px; margin-left:0px; }
+	#contact-form > div { width:100%; height:370px; position:static; top:0; left:0; margin-top:20px; margin-left:0px; }
 
 	#contact-form form { display:block; width:85%; margin:0 auto; }
 	#contact-form .thank-you, #contact-form .error { margin-top:75px;}
