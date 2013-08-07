@@ -26,6 +26,8 @@ var TroyBlankCom = new function(){
     var GRAPHIC_BACKINGS = ['tea_01.jpg', 'tea_02.jpg', 'tea_03.jpg'];
     var BACKING_ROOT = '/static/images/backings/';
 
+    var root = this;
+
     this.init = function(){
         $('#content-wrapper .nav-left').css('opacity', 0);
 
@@ -57,7 +59,7 @@ var TroyBlankCom = new function(){
     }
 
     this.addBacking = function(){
-        if(!TroyBlankCom.standAlone){
+        if(!TroyBlankCom.standAlone && this.device != 'mobile'){
             var backgroundURL = BACKING_ROOT+GRAPHIC_BACKINGS[Math.floor(Math.random()*GRAPHIC_BACKINGS.length)];
             $('body').css('background', 'url("'+backgroundURL+'") repeat');
         }
@@ -280,7 +282,9 @@ var TroyBlankCom = new function(){
             if(TroyBlankCom.size == 'desktop'){
                 $(sectionID).stop().animate({'top':$(window).height()}, 300, function(){
                     $(this).css('display', 'none');
-                    TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
+                    if(root.section == 'main'){
+                        TroyBlankCom.dispatchEvent(TroyBlankCom.ON_MEDIA_FLUSH_REQUEST);
+                    }
                 });
             }else{
                 $(sectionID).css('display', 'none');
