@@ -9,6 +9,8 @@ var HashBangHistory = new function(){
 
 		if(hasHashBang()){
 			changeSectionBasedOnHashbang();
+		}else{
+			$(window)[0].location.href = '#';
 		}
 	}
 
@@ -32,7 +34,12 @@ var HashBangHistory = new function(){
 	}
 
 	function changeSectionBasedOnHashbang(){
-		var bang = $(window)[0].location.href.split('#')[1].split(':');
+		var bang = '';
+		if(hasHashBang()){
+			bang = $(window)[0].location.href.split('#')[1].split(':');
+		}else{
+			bang = ['main', '#']
+		}
 		var section = bang[0];
 		var link = bang[1];
 
