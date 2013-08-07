@@ -22,6 +22,8 @@ var TroyBlankCom = new function(){
     this.SCROLL_PADDING = 45;
     var MOBILE_CLOSE_BUTTON_PADDING = 30;
 
+    var IS_DEVICE_IPAD = navigator.userAgent.match(/iPad/i) != null;
+
     //backings
     var GRAPHIC_BACKINGS = ['tea_01.jpg', 'tea_02.jpg', 'tea_03.jpg'];
     var BACKING_ROOT = '/static/images/backings/';
@@ -79,6 +81,10 @@ var TroyBlankCom = new function(){
 
         TroyBlankCom.addEventListener(TroyBlankCom.ON_SECTION_CHANGE, sectionChangeHand);
         TroyBlankCom.addEventListener(TroyBlankCom.ON_HASH_NAV_CHANGE, onhashNavChange);
+
+        if(IS_DEVICE_IPAD && !TroyBlankCom.standAlone){
+            document.ontouchmove = function(e) {e.preventDefault()}; 
+        }
     }
 
     function addStandaloneLinks(){
@@ -248,7 +254,9 @@ var TroyBlankCom = new function(){
 
         function addScrollBar(){
             $(canvasID+' .scrollBar .thumb').css('top', 0);
-            scrollbar = new ScrollBar($(canvasID), 60);
+            if(root.device != 'mobile'){
+                scrollbar = new ScrollBar($(canvasID), 60);
+            }
         }
 
         function keydownHand(e){
