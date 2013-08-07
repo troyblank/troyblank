@@ -88,7 +88,7 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 
 .portfolio-piece .stand-alone .slide-band { background:#efeee4; }
 
-.portfolio-piece .body > a { display:block; color:#ffffff; text-align:center; background:#7f0000; padding:10px 0; text-transform: uppercase; }
+.portfolio-piece .body > a { display:block; color:#ffffff; text-align:center; background:#7f0000; padding:10px 0; text-transform: uppercase; margin-bottom:10px; }
 
 #portfolioCanvas { display:none; overflow:hidden; height:100%; position:absolute; }
 #portfolioCanvas .content { position:absolute; }

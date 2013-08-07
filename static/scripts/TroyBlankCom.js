@@ -1157,7 +1157,7 @@ function ScrollBar(frame, choke){
 
     this.touchY = null;
 
-    this.SCROLL_WHEEL_AMOUNT = 30;
+    this.SCROLL_WHEEL_AMOUNT = 20;
     this.MIN_THUMB_HEIGHT = 20;
 
     //-------------------------------------------

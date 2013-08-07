@@ -4,7 +4,7 @@
     <section class="content-cnt portfolio-piece">
         <div class="content">
             <h1>Ferd-O-Vision</h1><br />
-            <h2>Python | ID 014 | 2013</h2>
+            <h2>Python | ID 015 | 2013</h2>
             <div class="body">
                 <div class="slideshow center-wrap">
                     <nav></nav>
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                 </div>
-                <p>The past few years I have become enamored with electronics, Ferd-O-Vision is a production piece has touched a lot of new ground for me, jumping a lot of the gaps between programming and electronics. Ferd-O-Vision is essentially a way to monitor a specific chamelion named Ferdinand Jackson that resides at my home in real life at real time using three placed cameras, although it could be used to monitor just about anything. Using a combination of Python, Raspberry Pi, socketIO, Redis, gevent, and Beaglebone Black I was able to have a web service accessible from only inside my home network show real time data from video cameras controlled by a microcontroler within my house to the outside world via a simple web page utliziing concurrent connections via socketIO like Node.js offers. What this solution had to offer as opposed to just buying a webcam and using some online services to monitor was I was able to customize the experience in a much greater way. The advantages I got were many but the big ones were that I could use very low profile cameras that I could fit in places a web cam could not, also I could restrict the amount of data coming out of the cameras, because chameleons are pretty slow I was able to send only one image per 10 seconds allowing the webpage to be low bandwidth and easy to view on something like a mobile phone satelite connection.</p>
+                <p>The past few years I have become enamored with electronics, Ferd-O-Vision is a production piece has touched a lot of new ground for me, jumping a lot of the gaps between programming and electronics. Ferd-O-Vision is essentially a way to monitor a specific chamelion named Ferdinand Jackson that resides at my home in real life at real time using three placed cameras, although it could be used to monitor just about anything. Using a combination of Raspberry Pi, socketIO, Redis, gevent, and Beaglebone Black and the Python language to glue it all togthere programatically I was able to have a web service accessible from only inside my home network show real time data from video cameras controlled by a microcontroler within my house to the outside world via a simple web page utliziing concurrent connections via socketIO like Node.js offers. What this solution had to offer as opposed to just buying a webcam and using some online services to monitor was I was able to customize the experience in a much greater way. The advantages I got were many but the big ones were that I could use very low profile cameras that I could fit in places a web cam could not, as well as have the potential to send notifications based on movement detection. Also I could restrict the amount of data coming out of the cameras, because chameleons are pretty slow I was able to send only one image per 10 seconds allowing the webpage to be low bandwidth and easy to view on something like a mobile phone satelite connection.</p>
                 <div class="stand-alone center-wrap">
                     <div class="slide-band"></div>
                     <div class="region">
@@ -28,10 +28,19 @@
                         </div>
                     </div>
                 </div>
-                <p>The first piece to solve my lizard viewing problem was solve by using a <a href="http://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> running Debian as a home web server. This allowed me to run Redis and Django togthere through gevent so I could not only serve the images from the cameras but allow real time events from the server to notify the client side when an image was taken from one of the three cameras. This is a much more efficent method than using ajax to constantly check the status of data. To get the data I made a web service to be ready to take information on the beaglebone connected wirelessly on my network.</p>
-                <p>Near the lizard encolsure I have a <a href="http://beagleboard.org/Products/BeagleBone%20Black" target="_blank">Beaglebone Black</a> also running Debian, I orginally tried to use and Arduino but the network cababilities of running linux provided far greater ability to pull off what I needed to do. The main purpose of the Beaglebone is to act as a trigger for the cameras, via a uart serial connection and then grab and store the image data. From here the Beaglebone simply calls the webservice provided by the Raspberry Pi and tells it where it can find the image to use on the Ferd-O-Vision website. Overall a pretty simple concept but given the amount of technologies that I had to get working togthere it was definetly a very fun and rewarding project.</p>
-                <p>Below you will find a schematic for the cameras so you can see how it is built. All cameras are <a href="http://www.adafruit.com/products/397" target="_blank">Adafruit TTL Serial Jpeg Cameras</a></p>
-                 <a target="_blank" href="http://v2.troyblank.com">View Website</a>
+                <p>The first piece to solve my lizard viewing problem was solved by using a <a href="http://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> running Debian as a home web server. This allowed me to run Redis and Django togthere using gevent so I could not only serve the images from the cameras but allow real time events from the server to notify the client side when an image was taken from one of the three cameras. This is a much more efficent method than using ajax to constantly check the status of data. To get the data I made a web service to be ready to take information on the beaglebone connected wirelessly on my local network. It was import to make sure these services were only accesible locally so the rest of the world would not have access to the cameras and be able to suprise me with unwanted but interesting images.</p>
+                <p>Near the lizard encolsure I have a water proofed <a href="http://beagleboard.org/Products/BeagleBone%20Black" target="_blank">Beaglebone Black</a> also running Debian, I orginally tried to use and Arduino but the network cababilities of running linux provided far greater ability to pull off what I needed to do. The main purpose of the Beaglebone is to act as a trigger for the cameras, via a uart serial connection and then grab and store the image data. From here the Beaglebone simply calls the webservice provided by the Raspberry Pi and tells it where it can find the image to use on the Ferd-O-Vision website. Overall a pretty simple concept but given the amount of technologies that I had to get working togthere combined with the pyshical aspect of the stimuli it was definetly a very challenging, fun and rewarding project.</p>
+                <div class="stand-alone center-wrap">
+                    <div class="slide-band"></div>
+                    <div class="region">
+                        <div class="resizeable image" data-width="1050" data-height="362" data-resizeable="true" >
+                            <img src="{{ STATIC_URL }}specimens/2011/troyblankcomV2/images/troyblankcomV2.jpg" alt="Chiefs Zone" />
+                        </div>
+                    </div>
+                </div>
+                <p>Above you will find a schematic for the camera system so you can see how it is built. All cameras are <a href="http://www.adafruit.com/products/397" target="_blank">Adafruit TTL Serial Jpeg Cameras</a> Also for any electronic geeks using <a href="http://fritzing.org/" target="_blank">Fritzing</a> I have supplied the schematics below for download.</p>
+                <a target="_blank" href="http://troyblank.no-ip.biz/ferd-o-vision/">View Website</a>
+                <a target="_blank" href="{ STATIC_URL }}specimens/2013/ferdOVision/doc/ferdoVision.fzz">Download Fritzing Schematic</a>
             </div>
         </div>
     </section>

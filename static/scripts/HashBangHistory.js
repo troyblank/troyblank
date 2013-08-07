@@ -9,7 +9,7 @@ var HashBangHistory = new function(){
 
 		if(hasHashBang()){
 			changeSectionBasedOnHashbang();
-		}else{
+		}else if(!TroyBlankCom.standAlone){
 			$(window)[0].location.href = '#';
 		}
 	}
