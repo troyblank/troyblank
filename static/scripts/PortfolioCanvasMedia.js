@@ -192,14 +192,23 @@ function PortfolioCanvasMedia(){
     //DYNAMIC SIZING
     //-------------------------------------------------------------------------------------------------------------------------------------
     function sizeAllContent(){
-        var i = $('.portfolio-piece .resizeable').length-1;
+        //slideshows
+        var i = $('.portfolio-piece .slideshow .resizeable').length-1;
         while(i >= 0){
-            sizeContent($('.portfolio-piece .resizeable')[i]);
+            sizeContent($('.portfolio-piece .slideshow .resizeable')[i]);
             i--;
+        }
+
+        //standalones
+        var j = $('.portfolio-piece .stand-alone .resizeable').length-1;
+        while(j >= 0){
+            sizeContent($('.portfolio-piece .stand-alone .resizeable')[j]);
+            j--;
         }
     }
 
     function sizeContent(targ, animateIt){
+        var wrap = $(targ).closest('.center-wrap');
         animateIt == animateIt == undefined ? false : true;
 
         var targ_w = $(targ).attr('data-width');
@@ -209,20 +218,20 @@ function PortfolioCanvasMedia(){
 
         if(cur_w > targ_w){
             // normal set
-            setSlideShowDiminsions(targ, targ_w, targ_h, animateIt);
+            setSlideShowDiminsions(targ, wrap, targ_w, targ_h, animateIt);
 
             if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
-                hideResizeError(targ);
+                hideResizeError(targ, wrap);
             }
         }else{
             if($(targ).attr('data-resizeable') != 'tiered'){
-                setSlideShowDiminsions(targ, cur_w, Math.round(targ_h*cur_w/targ_w), animateIt);
+                setSlideShowDiminsions(targ, wrap, cur_w, Math.round(targ_h*cur_w/targ_w), animateIt);
 
                 if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
-                    showResizeError(targ);
+                    showResizeError(targ, wrap);
                 }
             }else{
-                setTieredSize(targ, cur_w, animateIt);
+                setTieredSize(targ, wrap, cur_w, animateIt);
             }
         }
 
@@ -231,47 +240,47 @@ function PortfolioCanvasMedia(){
             if($(targ).attr('data-resizeable') == 'tiered'){
                 var otherSizes = $(targ).attr('data-alternative-size').split(',');
                 var size = otherSizes[otherSizes.length-1].split('x');
-                setSlideShowDiminsions(targ, size[0], size[1], animateIt);
+                setSlideShowDiminsions(targ, wrap, size[0], size[1], animateIt);
             }
         }
 
         if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'true'){
-            hideResizeError(targ);
+            hideResizeError(targ, wrap);
         }
     }
 
-    function setTieredSize(targ, cur_w, animateIt){
+    function setTieredSize(targ, wrap, cur_w, animateIt){
         var otherSizes = $(targ).attr('data-alternative-size').split(',');
 
         for(var i = 0; i<otherSizes.length; i++){
             var size = otherSizes[i].split('x');
             if(cur_w > size[0] || otherSizes.length-1 == i){
-               setSlideShowDiminsions(targ, size[0], size[1], animateIt);
+               setSlideShowDiminsions(targ, wrap, size[0], size[1], animateIt);
                return false;
             }
         }
     }
 
-    function setSlideShowDiminsions(targ, w, h, animateIt){
+    function setSlideShowDiminsions(targ, wrap, w, h, animateIt){
         var borderWidth = Number($('.center-wrap .region').css('border-left-width').split('px')[0])+Number($('.center-wrap .region').css('border-right-width').split('px')[0]);
 
         if(!animateIt){
             if($(targ).hasClass('active')){
-                $('.portfolio-piece .center-wrap .slide-band').height(Number(h)+borderWidth);
-                $('.center-wrap .region').width(w);
-                $('.center-wrap .region').height(h);
-                $('.center-wrap').width($('.center-wrap .region').outerWidth(true));
+                $('.slide-band', wrap).height(Number(h)+borderWidth);
+                $('.region', wrap).width(w);
+                $('.region', wrap).height(h);
+                $(wrap).width($('.region', wrap).outerWidth(true));
             }
             $(targ).width(w);
             $(targ).height(h);
         }else{
-            $('.center-wrap').stop().animate({'width':Number(w)+borderWidth}, FADE_SPEED);
-            $('.portfolio-piece .center-wrap .slide-band').stop().animate({'height':Number(h)+borderWidth}, FADE_SPEED);
-            $('.center-wrap .region').stop().animate({'width':w, 'height':h}, FADE_SPEED);
+            $(wrap).stop().animate({'width':Number(w)+borderWidth}, FADE_SPEED);
+            $('.slide-band', wrap).stop().animate({'height':Number(h)+borderWidth}, FADE_SPEED);
+            $('.region', wrap).stop().animate({'width':w, 'height':h}, FADE_SPEED);
 
             if($(targ).hasClass('active') && $(targ).attr('data-resizeable') == 'false'){
-                $('.portfolio-piece .center-wrap .under-size-error').css('opacity', 0);
-                $('.portfolio-piece .center-wrap .under-size-error').stop().animate({'opacity':1}, FADE_SPEED);
+                $('.under-size-error', wrap).css('opacity', 0);
+                $('.under-size-error', wrap).stop().animate({'opacity':1}, FADE_SPEED);
             }
 
             $(targ).stop().animate({'width':w, 'height':h, 'opacity':1}, FADE_SPEED, function(){
@@ -280,26 +289,26 @@ function PortfolioCanvasMedia(){
         }
     }
 
-    function showResizeError(targ){
-        var targHeight = $($('.portfolio-piece .center-wrap .slide')[slideIndex]).height();
+    function showResizeError(targ, wrap){
+        var targHeight = $($('.slide', wrap)[slideIndex]).height();
 
-        $('.portfolio-piece .center-wrap .under-size-error').height(targHeight );
-        $('.portfolio-piece .center-wrap .under-size-error').css('display', 'block');
+        $('.under-size-error', wrap).height(targHeight );
+        $('.under-size-error', wrap).css('display', 'block');
 
         $('.flashContent', targ).css('display', 'none');
 
         //fitting skull into smaller spaces
-        $('.portfolio-piece .center-wrap .under-size-error').removeClass('smaller');
-        $('.portfolio-piece .center-wrap .under-size-error').removeClass('smallest');
+        $('.under-size-error', wrap).removeClass('smaller');
+        $('.under-size-error', wrap).removeClass('smallest');
         if(targHeight  < 150){
-            $('.portfolio-piece .center-wrap .under-size-error').addClass('smallest');
+            $('.under-size-error', wrap).addClass('smallest');
         }else if(targHeight  < 350){
-            $('.portfolio-piece .center-wrap .under-size-error').addClass('smaller');
+            $('.under-size-error', wrap).addClass('smaller');
         }
     }
 
-    function hideResizeError(targ){
-        $('.portfolio-piece .center-wrap .under-size-error').css('display', 'none');
+    function hideResizeError(targ, wrap){
+        $('.under-size-error', wrap).css('display', 'none');
         $('.flashContent', targ).css('display', 'block');
     }
 
