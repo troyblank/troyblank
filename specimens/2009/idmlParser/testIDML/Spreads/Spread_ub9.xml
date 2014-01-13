@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Spread xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<Spread Self="ub9" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" FlattenerOverride="Default" ShowMasterItems="true" PageCount="1" BindingLocation="0" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0">
+		<FlattenerPreference LineArtAndTextResolution="300" GradientAndMeshResolution="150" ClipComplexRegions="false" ConvertAllStrokesToOutlines="false" ConvertAllTextToOutlines="false">
+			<Properties>
+				<RasterVectorBalance type="double">50</RasterVectorBalance>
+			</Properties>
+		</FlattenerPreference>
+		<Page Self="ube" Name="1" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" AppliedMaster="uc0" OverrideList="" TabOrder="" GridStartingPoint="TopOutside" UseMasterGrid="true">
+			<Properties>
+				<Descriptor type="list">
+					<ListItem type="string"></ListItem>
+					<ListItem type="enumeration">Arabic</ListItem>
+					<ListItem type="boolean">true</ListItem>
+					<ListItem type="boolean">false</ListItem>
+					<ListItem type="long">1</ListItem>
+					<ListItem type="string"></ListItem>
+				</Descriptor>
+			</Properties>
+			<MarginPreference ColumnCount="1" ColumnGutter="12" Top="36" Bottom="36" Left="36" Right="36" ColumnDirection="Horizontal" ColumnsPositions="0 678"/>
+			<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
+				<Properties>
+					<AppliedFont type="string">Times New Roman</AppliedFont>
+				</Properties>
+			</GridDataInformation>
+		</Page>
+		<Rectangle Self="u106" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 0 0">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-375 -250" LeftDirection="-375 -250" RightDirection="-375 -250"/>
+							<PathPointType Anchor="-375 250" LeftDirection="-375 250" RightDirection="-375 250"/>
+							<PathPointType Anchor="375 250" LeftDirection="375 250" RightDirection="375 250"/>
+							<PathPointType Anchor="375 -250" LeftDirection="375 -250" RightDirection="375 -250"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u17d" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -375 -250">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="750" Bottom="500"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u105" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/galleryBacking.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951008595242049 25810" LinkImportModificationTime="2009-08-18T15:27:39" LinkImportTime="2009-08-18T15:28:48"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<TextFrame Self="ue1" ParentStory="ucf" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -206.5 -159.75">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-143.5 -65.25" LeftDirection="-143.5 -65.25" RightDirection="-143.5 -65.25"/>
+							<PathPointType Anchor="-143.5 -41.25" LeftDirection="-143.5 -41.25" RightDirection="-143.5 -41.25"/>
+							<PathPointType Anchor="490.7857142857142 -41.25" LeftDirection="490.7857142857142 -41.25" RightDirection="490.7857142857142 -41.25"/>
+							<PathPointType Anchor="490.7857142857142 -65.25" LeftDirection="490.7857142857142 -65.25" RightDirection="490.7857142857142 -65.25"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="634.2857142857142"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="ufa" ParentStory="ue8" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -202.75 -148.95">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-147.25 -41.95000000000002" LeftDirection="-147.25 -41.95000000000002" RightDirection="-147.25 -41.95000000000002"/>
+							<PathPointType Anchor="-147.25 -31.55000000000002" LeftDirection="-147.25 -31.55000000000002" RightDirection="-147.25 -31.55000000000002"/>
+							<PathPointType Anchor="413.74999999999994 -31.55000000000002" LeftDirection="413.74999999999994 -31.55000000000002" RightDirection="413.74999999999994 -31.55000000000002"/>
+							<PathPointType Anchor="413.74999999999994 -41.95000000000002" LeftDirection="413.74999999999994 -41.95000000000002" RightDirection="413.74999999999994 -41.95000000000002"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="561"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u150" ParentStory="u153" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub6" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -202.75 162.45">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-147.25 -41.94999999999999" LeftDirection="-147.25 -41.94999999999999" RightDirection="-147.25 -41.94999999999999"/>
+							<PathPointType Anchor="-147.25 53.55000000000001" LeftDirection="-147.25 53.55000000000001" RightDirection="-147.25 53.55000000000001"/>
+							<PathPointType Anchor="537.25 53.55000000000001" LeftDirection="537.25 53.55000000000001" RightDirection="537.25 53.55000000000001"/>
+							<PathPointType Anchor="537.25 -41.94999999999999" LeftDirection="537.25 -41.94999999999999" RightDirection="537.25 -41.94999999999999"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="684.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<Rectangle Self="u58e" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u580" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u58a" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u58d" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135487772049 11549" LinkImportModificationTime="2009-08-18T18:59:08" LinkImportTime="2009-08-18T19:04:02"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u5ef" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u5a4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u5eb" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u5ee" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_02.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135648382049 30863" LinkImportModificationTime="2009-08-18T18:59:24" LinkImportTime="2009-08-18T19:09:04"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u5f5" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u5b1" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u5f1" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u5f4" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_03.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135783332049 32301" LinkImportModificationTime="2009-08-18T18:59:38" LinkImportTime="2009-08-18T19:09:24"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u605" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u5c3" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u600" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u603" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136154422049 27960" LinkImportModificationTime="2009-08-18T19:00:15" LinkImportTime="2009-08-18T19:11:14"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u5fd" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u5ba" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u5f8" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u5fb" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_04.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136035552049 13821" LinkImportModificationTime="2009-08-18T19:00:03" LinkImportTime="2009-08-18T19:10:58"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u60c" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u5cc" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u608" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u60b" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_06.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136319862049 31777" LinkImportModificationTime="2009-08-18T19:00:31" LinkImportTime="2009-08-18T19:11:33"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u616" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u5d5" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u612" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u615" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_07.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136443642049 25235" LinkImportModificationTime="2009-08-18T19:00:44" LinkImportTime="2009-08-18T19:12:07"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u652" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u621" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u64c" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u64f" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_08.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136568262049 23036" LinkImportModificationTime="2009-08-18T19:00:56" LinkImportTime="2009-08-18T19:13:57"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u65a" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u62d" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u654" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u657" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_09.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136721362049 18730" LinkImportModificationTime="2009-08-18T19:01:12" LinkImportTime="2009-08-18T19:14:12"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Polygon Self="u667" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u63a" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u661" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/None</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u664" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_10.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136847392049 12580" LinkImportModificationTime="2009-08-18T19:01:24" LinkImportTime="2009-08-18T19:14:55"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Polygon>
+		<Rectangle Self="u6e4" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6db" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6e5" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6e6" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135487772049 11549" LinkImportModificationTime="2009-08-18T18:59:08" LinkImportTime="2009-08-18T19:04:02"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Polygon Self="u6d6" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6cd" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="19.5 -40" LeftDirection="39.39359605911335 -40.000087918310754" RightDirection="-10.551211453243077 -39.999867190841755"/>
+							<PathPointType Anchor="-24.645812807881725 -1.1253118716424098" LeftDirection="-24.645812807881725 -21.32786013366656" RightDirection="-24.645812807881725 23.007115235791545"/>
+							<PathPointType Anchor="13.777832512315285 37.74937625671518" LeftDirection="-8.75 37.74937625671518" RightDirection="40.37881841560329 37.74937625671518"/>
+							<PathPointType Anchor="58 -5.5" LeftDirection="58.0000742066611 21.979802955665036" RightDirection="57.99993453031736 -29.7443731038541"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6d7" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6d8" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_02.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135648382049 30863" LinkImportModificationTime="2009-08-18T18:59:24" LinkImportTime="2009-08-18T19:09:04"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Polygon>
+		<Rectangle Self="u6c9" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6c0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6ca" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6cb" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_03.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135783332049 32301" LinkImportModificationTime="2009-08-18T18:59:38" LinkImportTime="2009-08-18T19:09:24"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u6bd" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6b4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6be" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6bf" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136154422049 27960" LinkImportModificationTime="2009-08-18T19:00:15" LinkImportTime="2009-08-18T19:11:14"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u6b0" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6a7" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6b2" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6b3" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_04.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136035552049 13821" LinkImportModificationTime="2009-08-18T19:00:03" LinkImportTime="2009-08-18T19:10:58"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u6a3" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u69a" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6a4" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6a5" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_06.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136319862049 31777" LinkImportModificationTime="2009-08-18T19:00:31" LinkImportTime="2009-08-18T19:11:33"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u697" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u68e" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u698" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u699" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_07.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136443642049 25235" LinkImportModificationTime="2009-08-18T19:00:44" LinkImportTime="2009-08-18T19:12:07"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u68b" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u682" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u68c" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u68d" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_08.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136568262049 23036" LinkImportModificationTime="2009-08-18T19:00:56" LinkImportTime="2009-08-18T19:13:57"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u67f" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u676" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u680" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u681" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_09.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136721362049 18730" LinkImportModificationTime="2009-08-18T19:01:12" LinkImportTime="2009-08-18T19:14:12"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u673" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u66a" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 1 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u674" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u675" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_10.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136847392049 12580" LinkImportModificationTime="2009-08-18T19:01:24" LinkImportTime="2009-08-18T19:14:55"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u769" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u760" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u76b" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u76c" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_01.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135487772049 11549" LinkImportModificationTime="2009-08-18T18:59:08" LinkImportTime="2009-08-18T19:04:02"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u75b" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u752" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u75c" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u75d" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_02.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135648382049 30863" LinkImportModificationTime="2009-08-18T18:59:24" LinkImportTime="2009-08-18T19:09:04"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u74f" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u746" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u750" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u751" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_03.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951135783332049 32301" LinkImportModificationTime="2009-08-18T18:59:38" LinkImportTime="2009-08-18T19:09:24"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u743" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u73a" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u744" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u745" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_05.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136154422049 27960" LinkImportModificationTime="2009-08-18T19:00:15" LinkImportTime="2009-08-18T19:11:14"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Polygon Self="u736" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u72d" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-45.5 -23.5" LeftDirection="-22 -41" RightDirection="-69 -6"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="35 21.285714285714278" LeftDirection="10.5 49.268965517241384" RightDirection="59.5 -6.697536945812828"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u737" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u738" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_04.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136035552049 13821" LinkImportModificationTime="2009-08-18T19:00:03" LinkImportTime="2009-08-18T19:10:58"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Polygon>
+		<Rectangle Self="u72a" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u721" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u72b" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u72c" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_06.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136319862049 31777" LinkImportModificationTime="2009-08-18T19:00:31" LinkImportTime="2009-08-18T19:11:33"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u71e" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u715" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u71f" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u720" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_07.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136443642049 25235" LinkImportModificationTime="2009-08-18T19:00:44" LinkImportTime="2009-08-18T19:12:07"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u711" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u708" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u712" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u713" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_08.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136568262049 23036" LinkImportModificationTime="2009-08-18T19:00:56" LinkImportTime="2009-08-18T19:13:57"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u705" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6fc" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u706" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u707" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_09.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136721362049 18730" LinkImportModificationTime="2009-08-18T19:01:12" LinkImportTime="2009-08-18T19:14:12"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<Rectangle Self="u6f8" StoryTitle="$ID/" ContentType="GraphicType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u6ef" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 243 -54">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-71.5 -47.5" LeftDirection="-71.5 -47.5" RightDirection="-71.5 -47.5"/>
+							<PathPointType Anchor="-71.5 47.5" LeftDirection="-71.5 47.5" RightDirection="-71.5 47.5"/>
+							<PathPointType Anchor="71.5 47.5" LeftDirection="71.5 47.5" RightDirection="71.5 47.5"/>
+							<PathPointType Anchor="71.5 -47.5" LeftDirection="71.5 -47.5" RightDirection="71.5 -47.5"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+			<Image Self="u6f9" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="72 72" ImageRenderingIntent="UseColorSettings" LocalDisplaySetting="Default" ImageTypeName="$ID/Portable Network Graphics (PNG)" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -71.5 -47.5">
+				<Properties>
+					<Profile type="string">$ID/Use Document Default</Profile>
+					<GraphicBounds Left="0" Top="0" Right="143" Bottom="95"/>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+					</Properties>
+					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/"/>
+				</TextWrapPreference>
+				<Link Self="u6fa" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:S:/Desktop/indesign%20IDML%20Test/links/pictureFrame_10.png" LinkResourceFormat="$ID/Portable Network Graphics (PNG)" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 128951136847392049 12580" LinkImportModificationTime="2009-08-18T19:01:24" LinkImportTime="2009-08-18T19:14:55"/>
+				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1"/>
+				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/"/>
+			</Image>
+		</Rectangle>
+		<TextFrame Self="u799" ParentStory="u79c" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u77a" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -222.92857142857144 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u7b0" ParentStory="u7b4" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u783" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -222.92857142857144 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u7c8" ParentStory="u7cb" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u78c" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -222.92857142857144 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u802" ParentStory="u805" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u7f9" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -222.92857142857144 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u8b0" ParentStory="u8b3" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u835" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -222.92857142857144 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u875" ParentStory="u878" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u86c" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -222.92857142857144 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u972" ParentStory="u975" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u969" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 20.571428571428555 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u952" ParentStory="u955" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u949" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 20.571428571428555 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u932" ParentStory="u935" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u929" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 20.571428571428555 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u912" ParentStory="u915" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u909" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 20.571428571428555 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u8f2" ParentStory="u8f5" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u8e9" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 20.571428571428555 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u8d2" ParentStory="u8d5" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u8c9" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 20.571428571428555 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="ua3d" ParentStory="ua40" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ua34" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 266.07142857142856 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="ua1d" ParentStory="ua20" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ua14" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 266.07142857142856 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u9fd" ParentStory="ua00" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u9f4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 266.07142857142856 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u9dd" ParentStory="u9e0" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u9d4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 266.07142857142856 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u9bd" ParentStory="u9c0" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u9b4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 266.07142857142856 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+		<TextFrame Self="u99d" ParentStory="u9a0" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u994" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 266.07142857142856 65.5">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-87.07142857142856 -12" LeftDirection="-87.07142857142856 -12" RightDirection="-87.07142857142856 -12"/>
+							<PathPointType Anchor="-87.07142857142856 -1.6000000000000045" LeftDirection="-87.07142857142856 -1.6000000000000045" RightDirection="-87.07142857142856 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -1.6000000000000045" LeftDirection="45.42857142857145 -1.6000000000000045" RightDirection="45.42857142857145 -1.6000000000000045"/>
+							<PathPointType Anchor="45.42857142857145 -12" LeftDirection="45.42857142857145 -12" RightDirection="45.42857142857145 -12"/>
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnFixedWidth="132.5"/>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0"/>
+				</Properties>
+			</TextWrapPreference>
+		</TextFrame>
+	</Spread>
+</idPkg:Spread>

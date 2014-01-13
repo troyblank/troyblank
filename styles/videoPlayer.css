@@ -1,0 +1,59 @@
+/* --------------------------------------------------------------------------------------------- */
+/* VIDEO PLAYER */
+/* --------------------------------------------------------------------------------------------- */
+.video-player { width:1024px; position:relative; overflow:hidden; margin: auto; background:#000000; }
+.video-player video {  width:1024px; height:576px; display: block; }
+
+.video-player .overlays { width:100%; height:576px; position:absolute; top:0; left:0; }
+.video-player .overlays .buffer { width:100%; height:100%; background:rgba(0,0,0,0.75); display:none; }
+.video-player .overlays .big-play-btn { width:100%; height:100%; background:rgba(0,0,0,0.5); cursor:pointer; position:relative; }
+.video-player .overlays .big-play-btn:after { position:absolute; top:50%; left:50%; width:200px; height:200px; margin:-100px 0 0 -100px; background:url('../images/videoPlayer/big-play-btn-desktop.svg') 0px 0px no-repeat; content:""; }
+
+.video-player .control-bar { height:16px; background:#000000; border-top: 1px solid #ffffff; }
+.video-player .control-bar > a, .video-player .control-bar > div { display:block; height:100%; cursor:pointer; float:left; border-right: 1px solid #ffffff; color:#ffffff; font-size:12px; text-align:center; font-family:Courier, monospace; }
+.video-player .control-bar > a:last-child, .video-player .control-bar > div:last-child { border: none; }
+.video-player .control-bar a.rewind-btn { width:32px; background:url('../images/videoPlayer/rewind-btn.svg') 8px 4px no-repeat; }
+.video-player .control-bar a.play-pause-btn { width:32px; background:url('../images/videoPlayer/play-btn.svg') 12px 0px no-repeat; }
+.video-player .control-bar a.play-pause-btn.active { background:url('../images/videoPlayer/pause-btn.svg') 11px 4px no-repeat; }
+.video-player .control-bar .scrub-bar { width:660px; background:#444444; cursor:default; position:relative; }
+.video-player .control-bar .scrub-bar .load-bar { width:0%; height:100%; background:#000000; position:absolute; cursor:pointer; }
+.video-player .control-bar .scrub-bar .progress-bar  { width:0%; height:100%; background:#7f0000; position:absolute; pointer-events:none; }
+.video-player .control-bar .cursor { width:20px; height:16px; position: relative; left:0%; position:absolute; cursor:ew-resize; margin-left: -7px; } 
+.video-player .control-bar .cursor:after { bottom: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; } 
+.video-player .control-bar .cursor:after { border-color: rgba(255, 255, 255, 0); border-bottom-color: #ffffff; border-width: 7px; left:0; bottom:0px; }
+.video-player .control-bar .volume-bar { width:190px; position:relative; }
+.video-player .control-bar .volume-bar .icon { width:100%; height:100%; background:url('../images/videoPlayer/volume-scrub.svg') 6px 3px no-repeat; position:absolute; }
+.video-player .control-bar .volume-bar .status-bar { width:100%; height:100%; background:#1d1d1d; position:absolute; }
+.video-player .control-bar .volume-bar .cursor { left:100%; }
+.video-player .control-bar .timer { width:54px; cursor:default; }
+.video-player .control-bar .timer span { display:block; padding-top:2px; }
+.video-player .control-bar .full-screen-btn { width:51px; background:url('../images/videoPlayer/full-screen-btn.svg') 16px 4px no-repeat; }
+
+/* Custom Buffer */
+.video-player .overlays .buffer .atomic_buffer { position:absolute; top:50%; left:50%; width:65px; height:65px; margin:-33px 0 0 -33px; }
+
+/* MEDIA QUERIES
+----------------------------------------------------------------------------------------*/
+/* TABLET */
+@media only screen and (max-width: 1154px){
+	.video-player { width:600px; }
+	.video-player video { width:600px; height:338px; }
+
+	.video-player .overlays { height:338px; }
+	.video-player .overlays .big-play-btn:after { margin:-75px 0 0 -75px; background:url('../images/videoPlayer/big-play-btn-tablet.svg') 0px 0px no-repeat; }
+
+	.video-player .control-bar .scrub-bar { width:300px; }
+	.video-player .control-bar .volume-bar { width:125px; }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 730px), (max-height: 600px){
+	.video-player { width:275px; }
+	.video-player video { width:275px; height:155px; }
+
+	.video-player .overlays { height:155px; }
+	.video-player .overlays .big-play-btn:after { margin:-50px 0 0 -50px; background:url('../images/videoPlayer/big-play-btn-mobile.svg') 0px 0px no-repeat; }
+
+	.video-player .control-bar .scrub-bar { width:102px; }
+	.video-player .control-bar .volume-bar { display:none; }
+}

@@ -1,0 +1,222 @@
+/* RESET
+----------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* UTILITY
+----------------------------------------------------------------------------------------*/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; clear: both; }
+
+.left { float:left; }
+.right { float:right; }
+
+/* FONTS
+----------------------------------------------------------------------------------------*/
+body { font-family: 'Ropa Sans', sans-serif; font-size:12px; color:#000; }
+p { font-size:14px; line-height:20px; margin-bottom:20px; }
+h1, h2, h3, h4 { display:inline-block; color:#ffffff; }
+h1 { font-size:36px; text-transform:uppercase; background:#7f0000; padding:13px 10px 13px 25px; }
+h2 { font-size:14px; background:#000000; padding: 6px 10px; }
+h3 { }
+h4 { }
+
+a { cursor:pointer; color:#7F0000; text-decoration:none; }
+a:hover { }
+
+ul { }
+ul li { }
+
+/* ROPA SANS */
+#contact-form input, #contact-form textarea { font-family: 'Ropa Sans' }
+
+/* MAIN LAYOUT
+----------------------------------------------------------------------------------------*/
+html { width:100%; height:100%; }
+body { width:100%; height:100%; overflow:hidden; background:url("../images/backings/backing.jpg") no-repeat; background-size:100% 100%; background-position: center center; position:relative;  }
+body:after { top:0; left:0; background:url("../images/backings/pattern_backing.png") repeat; width:100%; height:100%; content:""; position:absolute; }
+#content-wrapper { width:100%; height:100%; overflow:hidden; position:absolute; z-index:50; }
+
+/* scroll bar */
+#content-wrapper .scrollBar { width:23px; height:100%; background:#bfbfbf; position:absolute; right:0; display:none; }
+#content-wrapper .thumb { width:20px; min-height:100px; background:#ffffff; cursor:pointer; margin-left:2px; position:absolute; }
+#content-wrapper .thumb:after { width:5px; height:10px; content:""; position:absolute; background:url("../images/thumbGrip.png"); top:50%; margin-top:-5px; left:8px; }
+
+
+.content-cnt { width:100%; height: inherit; background:#f6f6eb; z-index:145; display:block; overflow: auto; }
+.content-cnt .close-btn { display:none; background:url('../images/close_btn.png') no-repeat; width:53px; height:56px; position:fixed; top:175px; right:0px; z-index:50; }
+.content-cnt .mask { position:absolute; width:100%; height:100%; }
+.content-cnt .content { width:100%; padding:20px 0 80px 0; }
+.content-cnt h1 { padding:6px 40px 6px 15px; margin-bottom:4px; margin:0 0 4px 0; font-size:30px; }
+.content-cnt h2 { margin:0 0 33px 0; padding:6px 10px 6px 15px; }
+.content-cnt .body { padding:0 65px; margin:0 auto; position:relative; }
+
+.content-cnt .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
+
+/* PORTFOLIO CANVAS
+----------------------------------------------------------------------------------------*/
+.portfolio-piece .slideshow nav { overflow:hidden; margin-bottom:12px; display:none; }
+.portfolio-piece .slideshow nav a { display:block; width:24px; height:19px; background:url('../images/slideNav_black.png') no-repeat; float:left;
+	color:#ffffff; padding-top:5px; text-align:center; margin-right:7px; }
+.portfolio-piece .slideshow nav a.active { background:url('../images/slideNav_red.png') no-repeat; }
+.portfolio-piece .slideshow { margin:0 auto 20px auto; }
+.portfolio-piece .slideshow .region { position:relative; border:4px dashed #7f7f7f; background:#ffffff; }
+.portfolio-piece .slideshow .slide { width:100%; position:relative; position:absolute; display:none; }
+.portfolio-piece .slideshow .under-size-error { position:absolute; z-index:10; color:#ffffff;  background:#7F0000; text-align:center; font-size:20px; width:100%; display:none; }
+.portfolio-piece .slideshow .under-size-error img { max-width: 100%; }
+.portfolio-piece .slideshow .under-size-error div { padding:60px 50px; }
+.portfolio-piece .slideshow .under-size-error.smaller img { max-width:50%; }
+.portfolio-piece .slideshow .under-size-error.smaller div { padding:25px; }
+.portfolio-piece .slideshow .under-size-error.smallest img { max-width:40%; }
+.portfolio-piece .slideshow .under-size-error.smallest div { padding:10px; }
+.portfolio-piece .slideshow .image img { width:100%; height:100%; }
+.portfolio-piece .slideshow .slide-band { width:100%; height:400px; background:url('../images/slide_band.png') repeat; position:absolute; left:0; }
+
+.portfolio-piece .body > a { display:block; color:#ffffff; text-align:center; background:#7f0000; padding:10px 0; text-transform: uppercase; }
+
+#portfolioCanvas { display:none; overflow:hidden; height:100%; position:absolute; }
+#portfolioCanvas .content { position:absolute; }
+
+
+/* PORTFOLIO CONTENT
+----------------------------------------------------------------------------------------*/
+/* FLASH */
+.portfolio-piece .region .flashContent { height:100%; }
+.portfolio-piece .region .flashReplacementDiv { height:100%; }
+.portfolio-piece .region .flashAlternativeContent { text-align:center; padding:0; font-size:14px; background:#7F0000; height:100%; color:#ffffff; }
+.portfolio-piece .region .flashAlternativeContent > div { padding:50px; }
+
+/* MAIN NAV CONTENT
+----------------------------------------------------------------------------------------*/
+.nav-content { width:100%; height: inherit; background:#f6f6eb; z-index:145; display:block; overflow: auto; }
+
+#mainNavContent { display:none; overflow:hidden; height:100%; position:absolute; }
+#mainNavContent .content { position:absolute; }
+
+/* HEADER
+----------------------------------------------------------------------------------------*/
+header { width:100%; height:50px; border-bottom:10px solid #7f0000; background:#000000; padding-top:10px; position:absolute; z-index:100; }
+header .logo { width:32px; height:40px; background:url("../images/logo.png") no-repeat; display:block; margin-left:15px; float:left; }
+header nav { float:right; margin:24px 15px 0 0; }
+header nav li { float:left; margin-left:20px; }
+header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
+
+/* PORTFOLIO CAROUSEL
+----------------------------------------------------------------------------------------*/
+#portfolioCarousel { position:absolute; top:40px; }
+#portfolioCarousel > a { width:70%; height:70%; max-width:728px; max-height:530px; border:20px solid #000000; float:left; background:#ffffff; margin-right:45px; 
+	position:relative; overflow:hidden; display:block; }
+#portfolioCarousel > a:last-child{ margin-right:0px; }
+#portfolioCarousel > a:after { content:""; position:absolute; left:0; right:0; width:100%; height:100%; box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25) inset; z-index:10; }
+#portfolioCarousel > a img { position:absolute; }
+#portfolioCarousel .headers { position:absolute; right:0; bottom:30px; z-index:20; }
+#portfolioCarousel h1, #portfolioCarousel h2 { float:right; clear:both; }
+#portfolioCarousel h1 { margin-bottom:3px; padding-left:40px; }
+#portfolioCarousel .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
+
+/* ARROW NAV BTNS
+----------------------------------------------------------------------------------------*/
+#content-wrapper .nav { position:absolute; width:92px; height:100%; }
+#content-wrapper .nav .btn { width:92px; height:164px; display:block; top:50%; position:absolute; margin-top:-82px; z-index:99; }
+#content-wrapper .nav-right { right:0; box-shadow: inset -50px 0px 50px -50px #000000; }
+#content-wrapper .nav-left { left:0; box-shadow: inset 50px 0px 50px -50px #000000; display:none; opacity:0; }
+#content-wrapper .nav-down { width:100%; height:39px; bottom:0; }
+#content-wrapper .nav-up { width:100%; height:39px; top:0; }
+#content-wrapper .nav-right .btn { background: url('../images/navigate_right_btn.png') no-repeat; }
+#content-wrapper .nav-left .btn { background: url('../images/navigate_left_btn.png') no-repeat; }
+#content-wrapper .nav-down .btn { width:69px; height:39px; background: url('../images/navigate_down_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-37px; }
+#content-wrapper .nav-up .btn { width:69px; height:39px; background: url('../images/navigate_up_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-37px; }
+
+/* CONTACT FORM
+----------------------------------------------------------------------------------------*/
+#contact-form { width:530px; height:370px; position:absolute; top:40%; left:50%; margin-top:-185px; margin-left:-265px; }
+#contact-form input, #contact-form textarea { width:100%; margin-bottom:15px; display:inline-block; background:#000000; border:none; color:#ffffff; text-transform:uppercase; padding:4px 0px 0 10px; font-size:24px; -webkit-appearance: none; }
+#contact-form input { height:36px; border-radius:0; -webkit-appearance: none; }
+#contact-form textarea { height:207px; resize:none; border-radius:0; }
+#contact-form input[type=submit] { width:auto; display:block; cursor:pointer; float:right; padding:4px 10px; margin-right:-10px; }
+#contact-form ul.errorlist { color:#7F0000; text-align:right; padding-bottom:4px; }
+
+#contact-form .thank-you, #contact-form .error { margin-top:175px; }
+
+/* ABOUT
+----------------------------------------------------------------------------------------*/
+#about > div { padding:75px 55px 0 80px; }
+#about p { font-size:18px; }
+#about .title-1 { font-size:115px; display:block; text-transform: uppercase; margin-left:-6px; }
+#about .title-2 { font-size:25px; display:block; text-transform: uppercase; margin-top:-18px; }
+#about h2 { font-size:48px; text-transform: uppercase; padding:5px;}
+#about a.resume-btn { display:inline-block; background:#000000; color:#ffffff; float:right; text-transform:uppercase; padding:5px 10px; font-size:14px; }
+
+/* MEDIA QUERIES
+----------------------------------------------------------------------------------------*/
+/*@media only screen and (min-width: X) {
+}*/
+
+/* MOBILE */
+@media only screen and (max-width: 600px), (max-height: 600px) {
+	/* FONTS */
+	h1 { font-size:20px; padding:5px 25px; }
+
+	/* MAIN LAYOUT */
+	html { height:inherit; }
+	body { overflow:inherit; background:#f6f6eb; }
+	body:after { background:none; position:static; }
+	#content-wrapper { overflow:inherit; position:static; }
+
+	/* PORTFOLIO CANVAS */
+	#portfolioCanvas, #mainNavContent, .content-cnt { position:static; height:inherit; }
+	.portfolio-piece .close-btn { display:block; }
+	.portfolio-piece .mask { position:static; height:inherit; }
+	#portfolioCanvas .content, .portfolio-piece .mask .content { position:static; padding:40px 0; }
+	.portfolio-piece .scrollBar { display:none; }
+	.portfolio-piece .body { padding:0 20px; margin:0 auto; }
+	.portfolio-piece .slideshow .under-size-error div { padding:20px 50px; font-size:15px; }
+	.portfolio-piece .slideshow .under-size-error.smaller div { padding:20px 50px; }
+	.portfolio-piece .slideshow .under-size-error.smallest div { padding:10px 25px; }
+	.portfolio-piece .slideshow .slide-band { display:none; }
+
+	/* HEADER */
+	header { position:inherit; height:inherit; padding:0; }
+	header .logo { float:inherit; margin:0; height:60px; width:100%; background-position:center center;}
+	header nav { float:inherit; margin:0; }
+	header nav li { float:inherit; width:100%; margin:0; text-align:center; border-top:2px solid #7f0000; }
+	header nav li a { display:block; height:25px; width:100%; padding-top:10px; }
+
+	/* PORTFOLIO CAROUSEL */
+	#portfolioCarousel { position:static; }
+	#portfolioCarousel > a { float:none; height:40px; max-width:none; border:inherit; border-right:inherit; border-bottom:5px solid #000000; }
+	#portfolioCarousel .headers { bottom:5px; }
+	#portfolioCarousel h1 { padding-left:30px; }
+
+	#content-wrapper .nav { display:none !important; }
+
+	/* CONTACT FORM
+	----------------------------------------------------------------------------------------*/
+	#contact-form { width:100%; height:370px; position:static; top:0; left:0; margin-top:0px; margin-left:0px; }
+
+	#contact-form form { display:block; width:85%; margin:0 auto; }
+	#contact-form .thank-you, #contact-form .error { margin-top:75px;}
+	#contact-form input[type=submit] { margin:0; }
+
+	/* ABOUT
+	----------------------------------------------------------------------------------------*/
+	#about > div { padding:25px 15px 0 20px; }
+	#about .title-1 { font-size:60px; margin-left:-3px; }
+	#about .title-2 { font-size:14px; margin-top:-10px; }
+	#about h2 { font-size:20px; }
+	
+	/* PORTFOLIO CONTENT
+	----------------------------------------------------------------------------------------*/
+	/* FLASH */
+	.portfolio-piece .region .flashAlternativeContent > div { padding:30px; }
+}
