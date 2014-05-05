@@ -49,6 +49,7 @@
             <script src="{{ STATIC_URL }}scripts/VideoPlayer.js"></script>
             <script src="{{ STATIC_URL }}scripts/PortfolioCanvasMedia.js"></script>
             <script src="{{ STATIC_URL }}scripts/Contact.js"></script>
+            {% block scripts %}{% endblock %}
         {% endcompress %}
         <script>
           var _gaq = _gaq || [];

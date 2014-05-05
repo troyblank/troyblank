@@ -417,7 +417,7 @@ var TroyBlankCom = new function() {
 
             function init() {
                 setStage();
-                addListeners();
+                refreshListeners();
                 addPermaListeners();
             }
 
@@ -425,6 +425,22 @@ var TroyBlankCom = new function() {
                 TroyBlankCom.scrollVal = TroyBlankCom.SCROLL_PADDING;
                 $('#portfolioCarousel').css('left', TroyBlankCom.scrollVal);
                 $('#portfolioCarousel').css('display', 'block');
+            }
+
+            function refreshListeners() {
+                removeListeners();
+                addListeners();
+            }
+
+            function removeListeners() {
+                $('#content-wrapper').off('mousewheel', onMouseWheel);
+                $(window).off('scroll', scrollHand);
+                $(document).off('keydown', keydownHand);
+
+                $('#content-wrapper .nav-left > a').off('click', navClickHand);
+                $('#content-wrapper .nav-right > a').off('click', navClickHand);
+
+                $('#portfolioCarousel > a').off('click', portfolioClickHand);
             }
 
             function addListeners() {
@@ -601,7 +617,7 @@ var TroyBlankCom = new function() {
 
             function onSectionChangeHand() {
                 if (TroyBlankCom.section == 'main') {
-                    addListeners();
+                    refreshListeners();
                 } else {
                     removeListeners();
                 }
