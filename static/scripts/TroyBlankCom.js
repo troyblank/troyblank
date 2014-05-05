@@ -413,7 +413,7 @@ var TroyBlankCom = new function() {
         //---------------------------------------------------------------------------------------------
         this.portfolioScroll = function() {
 
-            var SCROLL_MULTIPLIER = 100;
+            var SCROLL_MULTIPLIER = 150;
 
             function init() {
                 setStage();
@@ -1208,7 +1208,7 @@ function ScrollBar(frame, choke) {
 
     this.touchY = null;
 
-    this.SCROLL_WHEEL_AMOUNT = 15;
+    this.SCROLL_WHEEL_AMOUNT = 30;
     this.MIN_THUMB_HEIGHT = 20;
 
     //-------------------------------------------
