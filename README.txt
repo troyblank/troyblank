@@ -4,16 +4,16 @@
 
 Website for Troy Blank's personal portfolio.
 
-//TO DO
+//NOTES
 //+++++++++++++++++++++++++++++++++++++++++++++++
-3 backgrounds - using blender with cell frature add on(http://cgcookie.com/blender/lessons/1-getting-started/)
-add direct linking has bangness
+3 backgrounds useblender with cell frature add on (http://cgcookie.com/blender/lessons/1-getting-started/)
 
 //TO ADDS
 //+++++++++++++++++++++++++++++++++++++++++++++++
-FerdOVision
-Leps Logo
 Pretty Morbid
+Food How
+Dwolla progress animation
+Dwolla bees
 
 //ISSUES
 //+++++++++++++++++++++++++++++++++++++++++++++++
