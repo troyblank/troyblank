@@ -392,6 +392,8 @@ function PortfolioCanvasMedia() {
         removeListeners();
         removeAnyDynamicAssets();
 
+        destroySlide($('.portfolio-piece .slideshow .slide')[slideIndex]);
+
         $('#portfolioCanvas .content').empty();
     }
 
