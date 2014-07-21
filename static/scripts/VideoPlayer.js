@@ -26,7 +26,7 @@
 //http://www.longtailvideo.com/html5/buffering/
 //http://stackoverflow.com/questions/11403202/html5-video-waiting-event-not-firing
 //http://tiffanybbrown.com/2010/07/05/the-html5-video-progress-event/
-function VideoPlayer(targ, autoPlay){
+function VideoPlayer(targ, autoPlay) {
 
     var targ = targ;
 
@@ -45,16 +45,16 @@ function VideoPlayer(targ, autoPlay){
     var DEBUG_MODE = false;
     var REFRESH_RATE = 350;
 
-    var IS_BROWSER_IE = Boolean($.browser.msie);
+    var IS_IE_LT_11 = navigator.userAgent.toLowerCase().indexOf("msie") > 0;
     var IS_BROWER_SAFARI = navigator.userAgent.toLowerCase().indexOf("safari") > 0;
     var IS_BROWER_CHROME = navigator.userAgent.toLowerCase().indexOf("chrome") > 0;
 
-    function init(){
+    function init() {
         addListeners();
         invokeBrowserAcceptions();
     }
 
-    function addListeners(){
+    function addListeners() {
         //VIDEO STATUS LISTENERS
         video.addEventListener("playing", videoPlayingHand, false);
         video.addEventListener('progress', videoProgressHand, false);
@@ -69,7 +69,7 @@ function VideoPlayer(targ, autoPlay){
         $('.rewind-btn', targ).on('click', onRewindHand);
         $('.play-pause-btn', targ).on('click', onPlayPauseHand);
         $('.full-screen-btn', targ).on('click', onFullScreenHand);
-        $('.scrub-bar .load-bar', targ ).on('click', loadBarClickHand);
+        $('.scrub-bar .load-bar', targ).on('click', loadBarClickHand);
         $('.scrub-bar .cursor', targ).on('mousedown', videoCursorDownHand);
         $('.scrub-bar', targ).on('mousemove', scrubingVideoMoveHand);
         $('.volume-bar .cursor', targ).on('mousedown', audioCursorDownHand);
@@ -79,65 +79,65 @@ function VideoPlayer(targ, autoPlay){
         $(window).on('mouseup', cursorUpHand);
     }
 
-    function invokeBrowserAcceptions(){
-        if(IS_BROWSER_IE){
+    function invokeBrowserAcceptions() {
+        if (IS_IE_LT_11) {
             $('.full-screen-btn', targ).css('display', 'none');
-            $('.scrub-bar .progress-bar', targ ).on('click', loadBarClickHand);
-            $('.control-bar', targ ).css('margin-top', Number($('.control-bar', targ ).css('margin'))-1);
+            $('.scrub-bar .progress-bar', targ).on('click', loadBarClickHand);
+            $('.control-bar', targ).css('margin-top', Number($('.control-bar', targ).css('margin')) - 1);
 
             //style
-            $('.scrub-bar .progress-bar', targ ).css('cursor', 'pointer');
-        }else if(IS_BROWER_CHROME){
+            $('.scrub-bar .progress-bar', targ).css('cursor', 'pointer');
+        } else if (IS_BROWER_CHROME) {
             $('.video-player .control-bar .scrub-bar .cursor').off('mousedown', videoCursorDownHand);
             $('.video-player .control-bar .scrub-bar').off('mousemove', scrubingVideoMoveHand);
-        }else if(IS_BROWER_SAFARI){
+        } else if (IS_BROWER_SAFARI) {
             $('.full-screen-btn', targ).css('display', 'none');
             $('.volume-bar', targ).css('display', 'none');
         }
     }
 
-    function startTicker(){
+    function startTicker() {
         endTicker();
         ticker = setTimeout(tickHand, REFRESH_RATE);
     }
 
-    function endTicker(){
+    function endTicker() {
         clearTimeout(ticker);
     }
 
-    function updateDisplay(){
+    function updateDisplay() {
         //BUFFER
         toggleBuffer(isVideoBuffering());
 
-        if(!isNaN(video.duration)){
-            var duratationPercent = (video.currentTime/video.duration)*100;
+        if (!isNaN(video.duration)) {
+            var duratationPercent = (video.currentTime / video.duration) * 100;
             //var bufferEnd = video.buffered.end(video.buffered.length-1);
             var bufferEnd = video.buffered.end(0);
-            var loadPercent = (bufferEnd/video.duration)*100;
+            var loadPercent = (bufferEnd / video.duration) * 100;
 
             //CONTROL BAR
-            $('.video-player .control-bar .scrub-bar .cursor').css('left', String(duratationPercent)+'%');
-            $('.video-player .control-bar .scrub-bar .progress-bar').css('width', String(duratationPercent)+'%');
+            $('.video-player .control-bar .scrub-bar .cursor').css('left', String(duratationPercent) + '%');
+            $('.video-player .control-bar .scrub-bar .progress-bar').css('width', String(duratationPercent) + '%');
 
             //if(!canPlayThrough){
-                $('.video-player .control-bar .scrub-bar .load-bar').css('width', String(loadPercent)+'%');
+            $('.video-player .control-bar .scrub-bar .load-bar').css('width', String(loadPercent) + '%');
             //}else{
-                //$('.video-player .control-bar .scrub-bar .load-bar').css('width', '100%');
+            //$('.video-player .control-bar .scrub-bar .load-bar').css('width', '100%');
             //}
         }
     }
 
-    function isVideoBuffering(){
+    function isVideoBuffering() {
         //0 = HAVE_NOTHING - no information whether or not the audio/video is ready
         //1 = HAVE_METADATA - metadata for the audio/video is ready
         //2 = HAVE_CURRENT_DATA - data for the current playback position is available, but not enough data to play next frame/millisecond
         //3 = HAVE_FUTURE_DATA - data for the current and at least the next frame is available
         //4 = HAVE_ENOUGH_DATA - enough data available to start playing
-        if(video_scrub_dragging){
+        if (video_scrub_dragging) {
             return false;
-        }else if(video.readyState >=3 ){
+        } else if (video.readyState >= 3) {
             return false
-        }else{
+        } else {
             return true;
         }
     }
@@ -145,48 +145,48 @@ function VideoPlayer(targ, autoPlay){
     //-----------------------------------------------------------------------------------------
     //VIDEO
     //-----------------------------------------------------------------------------------------
-    function setTime(time){
-      video.currentTime = time;  
+    function setTime(time) {
+        video.currentTime = time;
     }
 
-    function rewind(){
+    function rewind() {
         setTime(0);
         updateDisplay();
     }
 
-    function updateTime(){
-        if($('.timer', targ).length > 0){
-           var seconds = Math.floor(video.currentTime);
-           var minutes = Math.floor(seconds/60);
-           seconds = seconds - (minutes*60);
+    function updateTime() {
+        if ($('.timer', targ).length > 0) {
+            var seconds = Math.floor(video.currentTime);
+            var minutes = Math.floor(seconds / 60);
+            seconds = seconds - (minutes * 60);
 
-           $('.timer span', targ).html(addLeadingZeros(String(minutes), 2)+':'+addLeadingZeros(String(seconds), 2));
+            $('.timer span', targ).html(addLeadingZeros(String(minutes), 2) + ':' + addLeadingZeros(String(seconds), 2));
         }
 
-        function addLeadingZeros(string, spots){
-            if (string.length < spots){
+        function addLeadingZeros(string, spots) {
+            if (string.length < spots) {
                 var zeros = "";
                 var amountToFill = spots - string.length;
-                for(var i = 0; i<amountToFill; i++){
+                for (var i = 0; i < amountToFill; i++) {
                     zeros += "0";
                 }
-                string = zeros+string;
+                string = zeros + string;
             }
             return string;
         }
     }
 
-    function toggleBuffer(state){
-        if(state){
+    function toggleBuffer(state) {
+        if (state) {
             $('.overlays .buffer', targ).css('display', 'block');
-        }else{
+        } else {
             $('.overlays .buffer', targ).css('display', 'none');
         }
         root.bufferState = state;
         dispatchEvent(root.ON_BUFFER_CHANGE);
     }
 
-    function seekToBarClickTime(clickSetTime){
+    function seekToBarClickTime(clickSetTime) {
         setTime(clickSetTime);
         updateDisplay();
     }
@@ -205,60 +205,65 @@ function VideoPlayer(targ, autoPlay){
     //-----------------------------------------------------------------------------------------
     //VOLUME
     //-----------------------------------------------------------------------------------------
-    function setVolume(vol){
+    function setVolume(vol) {
         video.volume = vol;
     }
 
-    function updateVolume(){
-        var percent = (video.volume*100)+'%';
-        $('.video-player .volume-bar .status-bar').css('width', (video.volume*100)+'%');
-        $('.video-player .volume-bar .cursor').css('left', (video.volume*100)+'%');
+    function updateVolume() {
+        var percent = (video.volume * 100) + '%';
+        $('.video-player .volume-bar .status-bar').css('width', (video.volume * 100) + '%');
+        $('.video-player .volume-bar .cursor').css('left', (video.volume * 100) + '%');
     }
     //-----------------------------------------------------------------------------------------
     //HANDLERS - VIDEO STATUS
     //-----------------------------------------------------------------------------------------
-    function videoPlayingHand(){
+    function videoPlayingHand() {
         //toggleBuffer(false);
         startTicker();
         logEvent('>>> playing event');
     }
-    function videoWaitingHand(){
+
+    function videoWaitingHand() {
         //toggleBuffer(true);
         //endTicker();
         logEvent('>>> waiting event');
     }
-    function videoSuspendHand(){
+
+    function videoSuspendHand() {
         logEvent('>>> suspend event');
     }
-    function videoProgressHand(e){
-        if(!video.paused){
+
+    function videoProgressHand(e) {
+        if (!video.paused) {
             updateDisplay();
         }
         logEvent('>>> video progress event');
     }
-    function videoEndedHand(){
+
+    function videoEndedHand() {
         endTicker();
         rewind();
         $('.play-pause-btn', targ).removeClass('active');
         logEvent('>>> video stopped');
     }
-    function timeUpdateHand(){
+
+    function timeUpdateHand() {
         updateTime();
         logEvent('>>> time update event');
     }
 
-    function canPlayHand(){
-        logEvent('>>> can play event'); 
+    function canPlayHand() {
+        logEvent('>>> can play event');
     }
 
-    function canPlayThroughHand(){
+    function canPlayThroughHand() {
         canPlayThrough = true;
         toggleBuffer(false);
-        logEvent('>>> can play through event'); 
+        logEvent('>>> can play through event');
     }
 
-    function logEvent(str){
-        if(DEBUG_MODE){
+    function logEvent(str) {
+        if (DEBUG_MODE) {
             console.log(str);
         }
     }
@@ -266,101 +271,101 @@ function VideoPlayer(targ, autoPlay){
     //-----------------------------------------------------------------------------------------
     //HANDLERS
     //-----------------------------------------------------------------------------------------
-    function onRewindHand(){
+    function onRewindHand() {
         rewind();
     }
 
-    function onBigPlayPauseHand(){
+    function onBigPlayPauseHand() {
         $('.big-play-btn', targ).css('display', 'none');
         $('.play-pause-btn', targ).addClass('active');
         video.play();
     }
 
-    function onPlayPauseHand(){
+    function onPlayPauseHand() {
         //active means playing
-        if($(this).hasClass('active')){
+        if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             video.pause();
-        }else{
+        } else {
             $('.big-play-btn', targ).css('display', 'none');
             $(this).addClass('active');
             video.play();
         }
     }
 
-    function onFullScreenHand(){
+    function onFullScreenHand() {
         //var fsArea = $('.full-screen-area', targ)[0];
         //$(document)[0].onfullscreenchange = onFullScreenChange;
 
-        if(video.requestFullScreen){
-           // fsArea.requestFullScreen();
-           video.requestFullScreen();
-        }else if(video.mozRequestFullScreen){
+        if (video.requestFullScreen) {
+            // fsArea.requestFullScreen();
+            video.requestFullScreen();
+        } else if (video.mozRequestFullScreen) {
             //fsArea.mozRequestFullScreen();
             video.mozRequestFullScreen();
-        }else if (video.webkitRequestFullscreen) {
+        } else if (video.webkitRequestFullscreen) {
             //fsArea.webkitRequestFullscreen();
             video.webkitRequestFullscreen();
         }
     }
 
-    function onFullScreenChange(){
+    function onFullScreenChange() {
         //$('.full-screen-area', targ).css('width', '100%');
         //$('.full-screen-area', targ).css('height', '100%');
         //$('video', targ).css('width', '100%');
         //$('video', targ).css('height', '100%');
     }
 
-    function tickHand(){
+    function tickHand() {
         updateDisplay();
         startTicker();
     }
 
-    function loadBarClickHand(e){
-        var clickSetTime = TROYBLANK_UTILS.getMouseCords(e, $(this)).x/$('.video-player .control-bar .scrub-bar').width()*video.duration;
+    function loadBarClickHand(e) {
+        var clickSetTime = TROYBLANK_UTILS.getMouseCords(e, $(this)).x / $('.video-player .control-bar .scrub-bar').width() * video.duration;
         seekToBarClickTime(clickSetTime);
     }
 
-    function volumeBarClickHand(e){
-        var clickSetVol = TROYBLANK_UTILS.getMouseCords(e, $(this)).x/$('.video-player .control-bar .volume-bar').width();
+    function volumeBarClickHand(e) {
+        var clickSetVol = TROYBLANK_UTILS.getMouseCords(e, $(this)).x / $('.video-player .control-bar .volume-bar').width();
         setVolume(clickSetVol);
         updateVolume();
     }
 
-    function videoCursorDownHand(){
+    function videoCursorDownHand() {
         video_scrub_dragging = true;
         return false;
     }
 
-    function audioCursorDownHand(e){
+    function audioCursorDownHand(e) {
         audio_scrub_dragging = true;
         return false;
     }
 
-    function cursorUpHand(){
-        if(video_scrub_dragging){
+    function cursorUpHand() {
+        if (video_scrub_dragging) {
             video_scrub_dragging = false;
         }
-        if(audio_scrub_dragging){
+        if (audio_scrub_dragging) {
             audio_scrub_dragging = false;
         }
     }
 
-    function scrubingVideoMoveHand(e){
-        if(video_scrub_dragging){
+    function scrubingVideoMoveHand(e) {
+        if (video_scrub_dragging) {
             var xVal = TROYBLANK_UTILS.getMouseCords(e, $(this)).x;
-            if(xVal > $('.video-player .control-bar .scrub-bar .load-bar').width()){
+            if (xVal > $('.video-player .control-bar .scrub-bar .load-bar').width()) {
                 xVal = $('.video-player .control-bar .scrub-bar .load-bar').width();
             }
 
-            var clickSetTime = xVal/$('.video-player .control-bar .scrub-bar').width()*video.duration;
+            var clickSetTime = xVal / $('.video-player .control-bar .scrub-bar').width() * video.duration;
             seekToBarClickTime(clickSetTime);
         }
     }
 
-    function scrubingAudioMoveHand(e){
-        if(audio_scrub_dragging){
-            var clickSetVol = TROYBLANK_UTILS.getMouseCords(e, $(this)).x/$('.video-player .control-bar .volume-bar').width();
+    function scrubingAudioMoveHand(e) {
+        if (audio_scrub_dragging) {
+            var clickSetVol = TROYBLANK_UTILS.getMouseCords(e, $(this)).x / $('.video-player .control-bar .volume-bar').width();
             setVolume(clickSetVol);
             updateVolume();
         }
@@ -368,19 +373,20 @@ function VideoPlayer(targ, autoPlay){
     //-----------------------------------------------------------------------------------------
     //DISTRUCTION
     //-----------------------------------------------------------------------------------------
-    this.destroy = function(){
+    this.destroy = function() {
+        console.log('DESTORY!')
         endTicker();
         removeListeners();
         killVideo();
         resetDisplay();
     }
 
-    function killVideo(){
+    function killVideo() {
         video.pause();
         setTime(0);
     }
 
-    function resetDisplay(){
+    function resetDisplay() {
         toggleBuffer(false);
         $('.big-play-btn', targ).css('display', 'block');
         $('.play-pause-btn', targ).removeClass('active');
@@ -391,7 +397,7 @@ function VideoPlayer(targ, autoPlay){
         $('.video-player .control-bar .scrub-bar .load-bar').css('width', '0%');
     }
 
-    function removeListeners(){
+    function removeListeners() {
         //VIDEO STATUS LISTENERS
         video.removeEventListener("playing", videoPlayingHand, false);
         video.removeEventListener('progress', videoProgressHand, false);
@@ -403,7 +409,7 @@ function VideoPlayer(targ, autoPlay){
         $('.rewind-btn', targ).off('click', onRewindHand);
         $('.play-pause-btn', targ).off('click', onPlayPauseHand);
         $('.full-screen-btn', targ).off('click', onFullScreenHand);
-        $('.scrub-bar .load-bar', targ ).off('click', loadBarClickHand);
+        $('.scrub-bar .load-bar', targ).off('click', loadBarClickHand);
         $('.scrub-bar .cursor', targ).off('mousedown', videoCursorDownHand);
         $('.scrub-bar', targ).off('mousemove', scrubingVideoMoveHand);
         $('.volume-bar .cursor', targ).off('mousedown', audioCursorDownHand);
@@ -419,27 +425,31 @@ function VideoPlayer(targ, autoPlay){
     var eventDispatcher = new Object();
     this.ON_BUFFER_CHANGE = 'onBufferChange';
 
-    this.addEventListener = function(type, handler){
-        if(eventDispatcher[type] == undefined){
-           eventDispatcher[type] = new Array();
+    this.addEventListener = function(type, handler) {
+        if (eventDispatcher[type] == undefined) {
+            eventDispatcher[type] = new Array();
         }
         eventDispatcher[type].push(handler);
     }
-    this.removeEventListener = function (type, handler){
-        var i = eventDispatcher[type].length-1;
-        while(i >= 0){
-            if(eventDispatcher[type][i] == handler){
+    this.removeEventListener = function(type, handler) {
+        var i = eventDispatcher[type].length - 1;
+        while (i >= 0) {
+            if (eventDispatcher[type][i] == handler) {
                 eventDispatcher[type].splice(i, 1);
                 return;
             }
             i--;
         }
     }
-    function dispatchEvent(type){
-        if(eventDispatcher[type] != undefined){
+
+    function dispatchEvent(type) {
+        if (eventDispatcher[type] != undefined) {
             var callList = eventDispatcher[type].slice(0);
-            for(var i = 0; i<callList.length; i++){
-                callList[i].call(this, {'target':root, 'display':targ});
+            for (var i = 0; i < callList.length; i++) {
+                callList[i].call(this, {
+                    'target': root,
+                    'display': targ
+                });
             }
         }
     }
