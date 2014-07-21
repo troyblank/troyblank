@@ -1,0 +1,19 @@
+[
+{"template_name": "Weekday Template", "template_fields": [
+{"one": "$9.99"}, {"two": "$8.49"}, {"three": "$7.32"}, {"four": "$9.80"}, {"five": "$6.69"}, {"six": "$11.25"}, {"seven": "$10.00"}, {"eight": "$8.23"}, 
+{"sideOne": "$2.50"}, {"sideTwo": "$2.50"}, {"sideThree": "$3.50"}, {"sideFour": "$1.25"}, {"sideFive": "$1.99"}, {"sideSix": "$3.00"}, {"sideSeven": "$2.33"}, {"sideEight": "$2.20"}, {"sideNine": "$2.20"}, 
+{"sideTen": "$0.99"}, {"sideEleven": "$1.20"}
+]
+}, 
+{"template_name": "WeekEnd Template", "template_fields": [
+{"one": "$5.99"}, {"two": "$11.89"}, {"three": "$6.30"}, {"four": "$8.00"}, {"five": "$9.99"}, {"six": "$16.60"}, {"seven": "$5.40"}, {"eight": "$9.32"}, 
+{"sideOne": "$2.23"}, {"sideTwo": "$3.00"}, {"sideThree": "$0.99"}, {"sideFour": "$1.33"}, {"sideFive": "$2.25"}, {"sideSix": "$3.10"}, {"sideSeven": "$2.50"}, {"sideEight": "$2.50"}, {"sideNine": "$1.80"}, 
+{"sideTen": "$2.20"}, {"sideEleven": "$1.70"}
+]
+},
+{"template_name": "Neat Template", "template_fields": [{"one": "$1.00"}, {"two": "$2.00"}, {"three": "$3.00"}, {"four": "$4.00"}, {"five": "$5.00"}, {"six": "$6.00"}, {"seven": "$7.00"}, {"eight": "$8.00"}, 
+{"sideOne": "$1.00"}, {"sideTwo": "$2.00"}, {"sideThree": "$3.00"}, {"sideFour": "$4.00"}, {"sideFive": "$5.00"}, {"sideSix": "$6.00"}, {"sideSeven": "$7.00"}, {"sideEight": "$8.00"}, {"sideNine": "$9.00"}, 
+{"sideTen": "$10.00"}, {"sideEleven": "$11.00"}
+]
+}
+]

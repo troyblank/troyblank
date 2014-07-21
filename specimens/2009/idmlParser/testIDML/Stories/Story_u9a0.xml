@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<Story Self="u9a0" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection"/>
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+		<XMLElement Self="di2i5c" MarkupTag="XMLTag/copy_frameThree" XMLContent="u9a0">
+			<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" Justification="CenterAlign">
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<Properties>
+						<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+					</Properties>
+					<Content>Yes, Flash Rules</Content>
+				</CharacterStyleRange>
+			</ParagraphStyleRange>
+		</XMLElement>
+	</Story>
+</idPkg:Story>
