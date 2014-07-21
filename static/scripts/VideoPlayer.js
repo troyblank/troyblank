@@ -374,7 +374,6 @@ function VideoPlayer(targ, autoPlay) {
     //DISTRUCTION
     //-----------------------------------------------------------------------------------------
     this.destroy = function() {
-        console.log('DESTORY!')
         endTicker();
         removeListeners();
         killVideo();
