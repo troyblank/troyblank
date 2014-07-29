@@ -310,7 +310,10 @@ function VideoPlayer(targ, autoPlay) {
         } else if (video.webkitRequestFullscreen) {
             //fsArea.webkitRequestFullscreen();
             video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
         }
+
     }
 
     function onFullScreenChange() {

@@ -3,23 +3,14 @@
 Website for Troy Blank's personal portfolio.
 
 ##REPRODUCTION NOTES
-###FFMPEG Video Compression
-webm vp8 / Ogg Vorbis (webkit browsers)
-
-    ffmpeg -i in.avi -threads 6 -vcodec libvpx -s 520x285 -r 30 -b 1000k -ss 00:00:00 -acodec libvorbis -ab 128k -ar 44100 out.webm
-    
-theora.ogv / Ogg Vorbis (firefox)
-
-    ffmpeg -i in.avi -threads 6 -vcodec libtheora -s 520x285 -r 30 -b 1000k -ss 00:00:00 -acodec libvorbis -ab 128k -ar 44100 out.ogv
-    
-h264 / AAC (the rest)
+###FFMPEG Video Compression (h264 / AAC)
 
     ffmpeg -i in.avi -threads 6 -vcodec libx264 -s 520x284 -r 30 -b 1000k -ss 00:00:00 -vpre slow -acodec libfaac -ab 128k -ar 44100 out.mp4
 
 
 ###Backgrounds
 
-To make backgrounds useblender with cell frature add on (http://cgcookie.com/blender/lessons/1-getting-started/)
+To make backgrounds useblender with cell frature add on This is [CG Cookie](http://cgcookie.com/blender/lessons/1-getting-started/ "CG Cookie tut").
 
 ##TO ADDS
 * Pretty Morbid
