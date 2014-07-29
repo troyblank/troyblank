@@ -537,9 +537,9 @@ var TroyBlankCom = new function() {
             var newDisplayIndex = null;
 
             if (TroyBlankCom.size == 'desktop') {
-                newDisplayIndex = Math.floor(TroyBlankCom.scrollVal * -1 / TroyBlankCom.portfolioThumbWidth);
+                newDisplayIndex = Math.round(TroyBlankCom.scrollVal * -1 / TroyBlankCom.portfolioThumbWidth);
             } else {
-                newDisplayIndex = Math.floor(($(window).scrollTop() - $('header').height()) / $('#portfolioCarousel > a').height());
+                newDisplayIndex = Math.round(($(window).scrollTop() - $('header').height()) / $('#portfolioCarousel > a').height());
             }
 
             setPortfolioDisplayIndex(newDisplayIndex);
