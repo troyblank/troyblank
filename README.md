@@ -5,7 +5,7 @@ Website for Troy Blank's personal portfolio.
 ##REPRODUCTION NOTES
 ###FFMPEG Video Compression (h264 / AAC)
 
-    ffmpeg -i in.avi -threads 6 -vcodec libx264 -s 520x284 -r 30 -b 1000k -ss 00:00:00 -vpre slow -acodec libfaac -ab 128k -ar 44100 out.mp4
+    ffmpeg -i in.avi -c:v libx264 -pix_fmt yuv420p -b 1000k out.mp4
 
 
 ###Backgrounds
