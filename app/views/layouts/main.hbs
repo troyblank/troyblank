@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{title}}</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- mobile meta datas -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
+    
+    <link href="{{ STATIC_URL }}styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}styles/videoPlayer.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet" type="text/css">
+
+    <body class="{{ bodyclass }}">
+        <header>
+            <a class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a data-href="/about/">About</a></li>
+                    <li><a data-href="/contact/">Contact</a></li>
+                </li>
+            </na>
+        </header>
+        <div id="content-wrapper">
+            {{{body}}}
+        </div>
+        <footer></footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+        {% compress js %}
+            <script src="{{ STATIC_URL }}scripts/jquery.mousewheel.js"></script>
+            <script src="{{ STATIC_URL }}scripts/raphael-min.js"></script>
+            <script src="{{ STATIC_URL }}scripts/HashBangHistory.js"></script>
+            <script src="{{ STATIC_URL }}scripts/TroyBlankCom.js"></script>
+            <script src="{{ STATIC_URL }}scripts/VideoPlayer.js"></script>
+            <script src="{{ STATIC_URL }}scripts/PortfolioCanvasMedia.js"></script>
+            <script src="{{ STATIC_URL }}scripts/Contact.js"></script>
+        {% endcompress %}
+        <script>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-10725275-2']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'application/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
+</head>

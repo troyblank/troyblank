@@ -1,0 +1,25 @@
+{
+    "name": "Troyblank.com",
+    "version": "0.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server"
+    },
+    "dependencies": {
+        "colors": "1.1.2",
+        "compression": "1.5.0",
+        "connect-flash": "0.1.1",
+        "body-parser": "1.12.4",
+        "express": "4.12.3",
+        "express-handlebars": "2.0.1",
+        "express-session": "1.11.3",
+        "mongoose": "4.0.6",
+        "morgan": "1.5.3"
+    },
+    "devDependencies": {
+        "grunt": "0.4.5",
+        "load-grunt-config": "0.17.1"
+    },
+    "author": "Troy Blank",
+    "license": "BSD-3-Clause"
+}
