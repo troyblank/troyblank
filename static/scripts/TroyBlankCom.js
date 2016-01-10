@@ -26,7 +26,7 @@ var TroyBlankCom = new function() {
 
     //backings
     var GRAPHIC_BACKINGS = ['tea_01.jpg', 'tea_02.jpg', 'tea_03.jpg'];
-    var BACKING_ROOT = '/static/images/backings/';
+    var BACKING_ROOT = '/images/backings/';
 
     var root = this;
 

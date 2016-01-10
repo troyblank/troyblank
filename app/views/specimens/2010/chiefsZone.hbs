@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <section class="content-cnt portfolio-piece">
+        <div class="content">
+            <h1>Chiefs Zone</h1><br />
+            <h2>Django | ID 009 | Sports Radio 810 WHB | 2010</h2>
+            <div class="body">
+                <div class="slideshow center-wrap">
+                    <nav></nav>
+                    <div class="slide-band"></div>
+                    <div class="region">
+                        <div class="under-size-error">
+                            <div>The size of your browser is too small to properly display this content.</div>
+                            <img src="{{ STATIC_URL }}images/skull.png" />
+                        </div>
+                        <div class="slide resizeable image" data-width="752" data-height="600" data-resizeable="true" >
+                            <img src="{{ STATIC_URL }}specimens/2010/chiefsZone/images/810ChiefsZone_1.jpg" alt="Chiefs Zone" />
+                        </div>
+                        <div class="slide resizeable image" data-width="752" data-height="600" data-resizeable="true" >
+                            <img src="{{ STATIC_URL }}specimens/2010/chiefsZone/images/810ChiefsZone_2.jpg" alt="Chiefs Zone" />
+                        </div>
+                        <div class="slide resizeable image" data-width="752" data-height="600" data-resizeable="true" >
+                            <img src="{{ STATIC_URL }}specimens/2010/chiefsZone/images/810ChiefsZone_3.jpg" alt="Chiefs Zone" />
+                        </div>
+                    </div>
+                </div>
+                 <p>The "Chiefs Zone" is a special off-shoot of 810 Sports Radio WHB's main site that is dedicated to news and information for the Kansas City Chiefs. The site is socially fueled and structured around the team's week by week schedule. This site was my introduction to the amazing speed and flexibility of using Django running on a Linux server. While having an admin that allows the client to update site content seems like pretty standard fare, the instant gratification of having the power to upload virtually any video or audio file, independent of type, and to have the server encode and push to a streaming server for public consumption via Flash with no downtime and completely hands-off is an incredible tool to have in my digital toolbox. Getting to show-off my first Django powered site to the world is just icing on the cake.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
