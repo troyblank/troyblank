@@ -26,7 +26,8 @@ module.exports = function () {
 
     app.use(flash());
 
-    app.use(express.static(__dirname + '/../static'));
+    app.use(express.static(__dirname + '/../app/static'));
+    app.use(express.static(__dirname + '/../app/public'));
 
     require('../app/routes/index.routes')(app);
     require('../app/routes/specimen.routes')(app);
