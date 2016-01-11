@@ -31,5 +31,11 @@ module.exports = function () {
 
     require('../app/routes/index.routes')(app);
     require('../app/routes/specimen.routes')(app);
+
+    // Custom error pages
+    app.use(function(req, res) {
+        res.status(404);
+        res.render('404');
+    });
     return app;
 };
