@@ -6,7 +6,8 @@ var compress = require('compression'),
     express = require('express'),
     flash = require('connect-flash'),
     handlebars = require('express-handlebars'),
-    morgan = require('morgan');
+    morgan = require('morgan'),
+    path = require('path');
 
 module.exports = function () {
     var app = express();
@@ -37,7 +38,7 @@ module.exports = function () {
     // Custom error pages
     app.use(function(req, res) {
         res.status(404);
-        res.render('404');
+        res.sendFile(path.resolve(__dirname + '/../app/static/errors/404.html'));
     });
     return app;
 };
