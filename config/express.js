@@ -3,11 +3,11 @@
 var compress = require('compression'),
     config = require('./config'),
     bodyParser = require('body-parser'),
+    errorPages = require('./errorPages'),
     express = require('express'),
     flash = require('connect-flash'),
     handlebars = require('express-handlebars'),
-    morgan = require('morgan'),
-    path = require('path');
+    morgan = require('morgan');
 
 module.exports = function () {
     var app = express();
@@ -37,8 +37,8 @@ module.exports = function () {
 
     // Custom error pages
     app.use(function(req, res) {
-        res.status(404);
-        res.sendFile(path.resolve(__dirname + '/../app/static/errors/404.html'));
+        errorPages.show404(res);
     });
+    
     return app;
 };
