@@ -44,7 +44,7 @@ function Contact(){
 	}
 
 	function callWebService(){
-		var url = '/contact/send_email/';
+		var url = '/contact/';
 		var data = {'name':$('#id_name').val(), 'email':$('#id_email').val(), 'message':$('#id_message').val()}
 
 		$.ajax({
@@ -63,7 +63,6 @@ function Contact(){
 	}
 
 	function callFailure(xhr, status, errorThrown){
-		//console.log(status+' - '+xhr.status);
 		removePreloader();
 		$('#contact-form .error').css('display', 'block');
 		if(HAS_COOKIES_DISABLED){

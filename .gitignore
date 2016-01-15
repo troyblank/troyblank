@@ -21,3 +21,5 @@ ehthumbs.db
 Thumbs.db
 
 app/public
+config/auth/*.js
+!config/auth/*_example.js

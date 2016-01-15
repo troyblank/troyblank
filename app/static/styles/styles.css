@@ -42,7 +42,7 @@ textarea { overflow: auto; }
 /* ROPA SANS */
 #contact-form input, #contact-form textarea { font-family: 'Ropa Sans' }
 
-/* MAIN LAYOUT
+/* MAIN LAYOUT.
 ----------------------------------------------------------------------------------------*/
 html { width:100%; height:100%; }
 body { width:100%; height:100%; overflow:hidden; background-size:100% 100%; background-position: center center; position:relative;  }
@@ -64,6 +64,7 @@ body:after { top:0; left:0; background:url("../images/backings/pattern_backing.p
 .content-cnt .body { padding:0 65px; margin:0 auto; position:relative; }
 
 .content-cnt .atomic-preloader { position:absolute; top:50%; left:50%; margin-left:-33px; margin-top:-33px; }
+.content-cnt .atomic-preloader svg { left: 50%; margin-left: -32px; }
 
 /* PORTFOLIO CANVAS
 ----------------------------------------------------------------------------------------*/
@@ -153,7 +154,7 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 #contact-form input[type=submit] { width:auto; display:block; cursor:pointer; float:right; padding:4px 10px; margin-right:-10px; }
 #contact-form ul.errorlist { color:#7F0000; text-align:right; padding-bottom:4px; }
 
-#contact-form .thank-you, #contact-form .error { margin-top:175px; }
+#contact-form .thank-you, #contact-form .error { margin-top: 175px; display: none; }
 
 /* ABOUT
 ----------------------------------------------------------------------------------------*/
