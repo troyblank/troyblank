@@ -7,7 +7,7 @@ var nodemailer = require('nodemailer'),
         service: 'Gmail',
         auth: {
             user: emailAuth.user,
-            pass: emailAuth.password
+            pass: emailAuth.pass
         }
     }),
     email = {
@@ -42,6 +42,6 @@ exports.send = function (req, res) {
             return res.sendStatus(400);
         }
 
-        res.json({'success': true});
+        res.json({success: true});
     });
 }
