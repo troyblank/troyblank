@@ -22,6 +22,17 @@ In order to run the project:
 
     node server
 
+## Development
+    
+To push current master using [grunt-shell](https://www.npmjs.com/package/grunt-shell) you must make a config file
+
+    cp ssh/config.json.sample ssh/config.json
+    
+Then fill out all information, and commands you want. Also copy your id_rsa private key inside the credentials folder then run:
+
+    npm run deploy
+
+
 ## REPRODUCTION NOTES
 ### FFMPEG Video Compression (h264 / AAC)
 
