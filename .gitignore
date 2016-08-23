@@ -22,4 +22,6 @@ Thumbs.db
 
 app/public
 config/auth/*.js
+ssh/**/*
+!ssh/config.json.sample
 !config/auth/*_example.js
