@@ -1,6 +1,6 @@
 {
     "name": "Troyblank.com",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "main": "server.js",
     "scripts": {
         "start": "node server",
@@ -14,7 +14,6 @@
         "express": "4.12.3",
         "express-handlebars": "2.0.1",
         "morgan": "1.5.3",
-        "nodemailer": "2.0.0",
         "prompt": "0.2.14"
     },
     "devDependencies": {

@@ -5,7 +5,7 @@ var TroyBlankCom = new function() {
     this.size = 'desktop'; //could be 'desktop' or 'mobile'
     this.device = 'desktop'; //could be 'desktop' or 'mobile'
 
-    this.section = 'main'; //could be 'main', portfolio', 'about', or 'contact'
+    this.section = 'main'; //could be 'main', portfolio', or 'about'
     this.currentLink = ''; //link for hasbang purposes
     this.trapKeys = false; //used to stop keys from triggering navigation on media that uses them
 
@@ -50,8 +50,6 @@ var TroyBlankCom = new function() {
         //page standalones
         if ($('body.standalone .portfolio-piece').length > 0) {
             new PortfolioCanvasMedia();
-        } else if ($('body.standalone #contact-form').length > 0) {
-            new Contact();
         }
 
         //hash bang history
@@ -377,12 +375,6 @@ var TroyBlankCom = new function() {
         function trackPageWithGoogleAnalytics() {
             if (_gaq != undefined) {
                 _gaq.push(['_trackPageview', assetURL])
-            }
-        }
-
-        function postLoadMainNavInit() {
-            if ($('#contact-form').length > 0) {
-                new Contact();
             }
         }
 
