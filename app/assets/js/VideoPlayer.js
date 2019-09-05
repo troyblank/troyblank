@@ -425,7 +425,6 @@ function VideoPlayer(targ, autoPlay) {
         $('.volume-bar', targ).off('click', volumeBarClickHand);
         $('.big-play-btn', targ).off('click', onBigPlayPauseHand);
         $(window).off('mouseup', cursorUpHand);
-        //$(document).unbind();
     }
     //-----------------------------------------------------------------------------------------
     //DISPATCHER

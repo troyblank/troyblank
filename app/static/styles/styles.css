@@ -39,9 +39,6 @@ ul li { }
 
 textarea { overflow: auto; }
 
-/* ROPA SANS */
-#contact-form input, #contact-form textarea { font-family: 'Ropa Sans' }
-
 /* MAIN LAYOUT.
 ----------------------------------------------------------------------------------------*/
 html { width:100%; height:100%; }
@@ -144,18 +141,6 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 #content-wrapper .nav-down .btn { width:69px; height:39px; background: url('../images/navigate_down_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-37px; }
 #content-wrapper .nav-up .btn { width:69px; height:39px; background: url('../images/navigate_up_btn.png') no-repeat; margin-top:0; top:0; left:50%; margin-left:-37px; }
 
-/* CONTACT FORM
-----------------------------------------------------------------------------------------*/
-#contact-form { height:100%; padding:0; position:relative; }
-#contact-form > div { width:530px; height:370px; position:absolute; top:40%; left:50%; margin-top:-75px; margin-left:-265px; }
-#contact-form input, #contact-form textarea { width:100%; margin-bottom:15px; display:inline-block; background:#000000; border:none; color:#ffffff; text-transform:uppercase; padding:4px 0px 0 10px; font-size:24px; -webkit-appearance: none; }
-#contact-form input { height:36px; border-radius:0; -webkit-appearance: none; }
-#contact-form textarea { height:207px; resize:none; border-radius:0; }
-#contact-form input[type=submit] { width:auto; display:block; cursor:pointer; float:right; padding:4px 10px; margin-right:-10px; }
-#contact-form ul.errorlist { color:#7F0000; text-align:right; padding-bottom:4px; }
-
-#contact-form .thank-you, #contact-form .error { margin-top: 175px; display: none; }
-
 /* ABOUT
 ----------------------------------------------------------------------------------------*/
 #about > div { padding:75px 55px 0 80px; }
@@ -207,15 +192,6 @@ header nav li a { color:#ffffff; font-size:14px; text-transform:uppercase; }
 	#portfolioCarousel h1 { padding-left:30px; }
 
 	#content-wrapper .nav { display:none !important; }
-
-	/* CONTACT FORM
-	----------------------------------------------------------------------------------------*/
-	#contact-form { height:auto; }
-	#contact-form > div { width:100%; height:370px; position:static; top:0; left:0; margin:20px 0; }
-
-	#contact-form form { display:block; width:85%; margin:0 auto; }
-	#contact-form .thank-you, #contact-form .error { margin-top:75px;}
-	#contact-form input[type=submit] { margin:0; }
 
 	/* ABOUT
 	----------------------------------------------------------------------------------------*/

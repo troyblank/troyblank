@@ -12,8 +12,7 @@ module.exports = {
                 'app/assets/js/HashBangHistory.js',
                 'app/assets/js/TroyBlankCom.js',
                 'app/assets/js/VideoPlayer.js',
-                'app/assets/js/PortfolioCanvasMedia.js',
-                'app/assets/js/Contact.js'
+                'app/assets/js/PortfolioCanvasMedia.js'
             ]
         }
     }
