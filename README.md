@@ -1,37 +1,22 @@
-# TROYBLANK .COM
+# TROYBLANK.COM
+
+[![Build Status](https://travis-ci.org/troyblank/troyblank.svg?branch=master)](https://travis-ci.org/troyblank/troyblank)
+[![Coverage Status](https://coveralls.io/repos/github/troyblank/troyblank/badge.svg?branch=master)](https://coveralls.io/github/troyblank/troyblank?branch=master)
 
 Website for Troy Blank's personal portfolio.
 
-## Requirements
-* Node >= 4.2.2
-
 ## Setup
-First thing you want to do is install all node packages:
+First thing you want to do is install all node packages run:
 
     npm install
-    
-You will need to create the gmail auth file to allow the contact page to work:
 
-    node genauth
-    
-To build all front end assets run:
+In order to build and run the project run:
 
-    grunt build
-  
-In order to run the project:
+    npm start
 
-    node server
+## Test
 
-## Development
-    
-To push current master using [grunt-shell](https://www.npmjs.com/package/grunt-shell) you must make a config file
-
-    cp ssh/config.json.sample ssh/config.json
-    
-Then fill out all information, and commands you want. Also copy your id_rsa private key inside the credentials folder then run:
-
-    npm run deploy
-
+    npm test
 
 ## REPRODUCTION NOTES
 ### FFMPEG Video Compression (h264 / AAC)
@@ -42,13 +27,6 @@ Then fill out all information, and commands you want. Also copy your id_rsa priv
 ### Backgrounds
 
 To make backgrounds useblender with cell frature add on This is [CG Cookie](http://cgcookie.com/blender/lessons/1-getting-started/ "CG Cookie tut").
-
-## TO ADDS
-* Pretty Morbid
-* Dwolla bees
-
-## ISSUES
-* On static specimen html pages browser scroll bar jacks with responive calulation, possible solution to add custom scroll bar to even static html pages.
 
 ## License
 
