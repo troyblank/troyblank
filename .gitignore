@@ -10,6 +10,15 @@ npm-debug.log
 .sass-cache
 *.css.map
 
+# NEXT #
+########
+.next
+out
+
+# NYC#
+######
+coverage
+
 # OS GENERATED FILES #
 ######################
 .DS_Store
