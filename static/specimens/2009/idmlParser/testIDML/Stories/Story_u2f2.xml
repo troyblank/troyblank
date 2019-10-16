@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<Story Self="u2f2" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection"/>
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+		<XMLElement Self="di2id" MarkupTag="XMLTag/Story" XMLContent="u2f2">
+			<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+				<Properties>
+					<TabList type="list">
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">170</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">252</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">280</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">308</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">336</Position>
+						</ListItem>
+					</TabList>
+				</Properties>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>California Spring Roll</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Medium" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Br/>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>Tender, mild tilapia crusted with panko garlic bread crumbs topped with lemon-butter sauce. With fresh, steamed broccoli and brown-rice pilaf.</Content>
+					<Br/>
+				</CharacterStyleRange>
+			</ParagraphStyleRange>
+			<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/[No paragraph style]" HyphenateLadderLimit="0" Hyphenation="false" HyphenationZone="0">
+				<Properties>
+					<TabList type="list">
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">170</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">252</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">280</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">308</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">336</Position>
+						</ListItem>
+					</TabList>
+				</Properties>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Medium" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>Pork, or Seafood	</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="MediumItalic" PointSize="8" Capitalization="AllCaps">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>Serves 5–7</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Medium" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Br/>
+					<Br/>
+				</CharacterStyleRange>
+			</ParagraphStyleRange>
+			<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+				<Properties>
+					<TabList type="list">
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">170</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">252</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">280</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">308</Position>
+						</ListItem>
+						<ListItem type="record">
+							<Alignment type="enumeration">LeftAlign</Alignment>
+							<AlignmentCharacter type="string">.</AlignmentCharacter>
+							<Leader type="string"></Leader>
+							<Position type="unit">336</Position>
+						</ListItem>
+					</TabList>
+				</Properties>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>Parmesan Chicken Pasta</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Medium" PointSize="8">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Br/>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>Large breaded, golden-brown chicken breast over pasta tossed in Parmesan cream sauce and topped with </Content>
+					<Br/>
+					<Content>marinara and Swiss cheese.	</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="MediumItalic" PointSize="8" Capitalization="AllCaps">
+					<Properties>
+						<Leading type="unit">9</Leading>
+						<AppliedFont type="string">DINOT</AppliedFont>
+					</Properties>
+					<Content>Serves 5–7</Content>
+				</CharacterStyleRange>
+			</ParagraphStyleRange>
+		</XMLElement>
+	</Story>
+</idPkg:Story>

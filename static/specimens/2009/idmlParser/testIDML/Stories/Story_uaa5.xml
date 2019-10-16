@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="6.0">
+	<Story Self="uaa5" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection"/>
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false"/>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenationZone="34.930763999999996" RuleAboveLineWeight="0.9702989999999999" RuleBelowLineWeight="0.9702989999999999">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" PointSize="11.643588" StrokeWeight="0.9702989999999999" MiterLimit="3.8811959999999996" RubyFontSize="-0.9702989999999999" KentenFontSize="-0.9702989999999999">
+				<Properties>
+					<AppliedFont type="string">ITC Avant Garde Gothic Std</AppliedFont>
+				</Properties>
+				<Content>And Goodbye.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

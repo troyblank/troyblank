@@ -6,7 +6,7 @@ module.exports = {
     },
     deploy: {
         files: {
-            'app/public/js/troyblank.js': [
+            'static/compiled/troyblank.js': [
                 'app/assets/js/jquery.mousewheel.js',
                 'app/assets/js/raphael-min.js',
                 'app/assets/js/HashBangHistory.js',

@@ -26,7 +26,7 @@ var TroyBlankCom = new function() {
 
     //backings
     var GRAPHIC_BACKINGS = ['tea_01.jpg', 'tea_02.jpg', 'tea_03.jpg'];
-    var BACKING_ROOT = '/images/backings/';
+    var BACKING_ROOT = '/static/images/backings/';
 
     var root = this;
 
@@ -257,7 +257,7 @@ var TroyBlankCom = new function() {
         }
 
         function addScrollBar() {
-            $(canvasID + ' .scrollBar .thumb').css('top', 0);
+            $(canvasID + ' .scroll-bar .thumb').css('top', 0);
             if (root.device != 'mobile') {
                 scrollbar = new ScrollBar($(canvasID), 60);
             }
@@ -768,7 +768,8 @@ var TroyBlankCom = new function() {
 
         this.checkPreloadPortfolioThumbs = function() {
             if (!TroyBlankCom.done_loadingThumbs) {
-                addPreloadGraphics();
+                // timeout hacky hack to let next.js load first :/
+                setTimeout(addPreloadGraphics, 500);
             }
         }
 
@@ -1211,7 +1212,7 @@ function ScrollBar(frame, choke) {
     this.refreshDisplay = function() {
 
         if (!this.isScrollable()) {
-            $('.scrollBar', this.frame).css('display', 'none');
+            $('.scroll-bar', this.frame).css('display', 'none');
             $('.content', this.frame).css('top', 0);
             this.removeListeners();
         } else {
@@ -1288,7 +1289,7 @@ function ScrollBar(frame, choke) {
     this.constrainThumb = function() {
         var bar_y = $('.thumb', this.frame).position().top;
         var bar_height = $('.thumb', this.frame).getHiddenDimensions().outerHeight;
-        var track_height = $('.scrollBar', this.frame).getHiddenDimensions().outerHeight;
+        var track_height = $('.scroll-bar', this.frame).getHiddenDimensions().outerHeight;
 
         if ((bar_y + bar_height) > track_height) {
             //over bounds
@@ -1303,15 +1304,15 @@ function ScrollBar(frame, choke) {
     //-------------------------------------------
     this.setStage = function() {
         if (!this.isScrollable()) {
-            $('.scrollBar', this.frame).css('display', 'none');
+            $('.scroll-bar', this.frame).css('display', 'none');
         } else if (TroyBlankCom.size == 'desktop') {
-            $('.scrollBar', this.frame).css('display', 'block');
+            $('.scroll-bar', this.frame).css('display', 'block');
         }
     }
 
     this.setThumbSize = function() {
         var contentDisplayRatio = $('.mask', this.frame).getHiddenDimensions().outerHeight / $('.content', this.frame).getHiddenDimensions().outerHeight;
-        var barHeight = Math.floor($('.scrollBar', this.frame).getHiddenDimensions().outerHeight * contentDisplayRatio);
+        var barHeight = Math.floor($('.scroll-bar', this.frame).getHiddenDimensions().outerHeight * contentDisplayRatio);
         barHeight > this.MIN_THUMB_HEIGHT ? $('.thumb', this.frame).height(barHeight) : $('.thumb', this.frame).height(this.MIN_THUMB_HEIGHT);
     }
 
@@ -1319,7 +1320,7 @@ function ScrollBar(frame, choke) {
         var bar_y = $('.thumb', this.frame).position().top;
 
         var contentDisplayArea = $('.content', this.frame).outerHeight() - $('.mask', this.frame).getHiddenDimensions().outerHeight;
-        var barDisplayArea = $('.scrollBar', this.frame).height() - $('.thumb', this.frame).getHiddenDimensions().outerHeight;
+        var barDisplayArea = $('.scroll-bar', this.frame).height() - $('.thumb', this.frame).getHiddenDimensions().outerHeight;
         var moveRatio = contentDisplayArea / barDisplayArea;
 
         var yPos = bar_y * -1 * moveRatio;

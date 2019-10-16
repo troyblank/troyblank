@@ -182,8 +182,8 @@ function PortfolioCanvasMedia() {
         function onBufferChangeHand(e) {
             if (e.target.bufferState) {
                 if (e.target.customBuffer == null) {
-                    $('.buffer', e.display).append('<div id="atomic_buffer" class="atomic_buffer"></div>');
-                    e.target.customBuffer = new atomicPreloader('atomic_buffer', '#ffffff', true);
+                    $('.buffer', e.display).append('<div id="atomic-buffer" class="atomic-buffer"></div>');
+                    e.target.customBuffer = new atomicPreloader('atomic-buffer', '#ffffff', true);
                 }
             } else if (e.target.customBuffer != null) {
                 e.target.customBuffer.destroy();
@@ -194,8 +194,8 @@ function PortfolioCanvasMedia() {
     }
 
     function addFlash(targ) {
-        var divId = $('.flashReplacementDiv', targ).attr('id');
-        flashRestoreHtml[divId] = $('.flashContent', targ).html();
+        var divId = $('.flash-replacement-div', targ).attr('id');
+        flashRestoreHtml[divId] = $('.flash-content', targ).html();
 
         var flashAttrs = new Object();
         flashAttrs["vars"] = {};
@@ -364,7 +364,7 @@ function PortfolioCanvasMedia() {
         $('.under-size-error', wrap).height(targHeight);
         $('.under-size-error', wrap).css('display', 'block');
 
-        $('.flashContent', targ).css('display', 'none');
+        $('.flash-content', targ).css('display', 'none');
 
         //fitting skull into smaller spaces
         $('.under-size-error', wrap).removeClass('smaller');
@@ -378,7 +378,7 @@ function PortfolioCanvasMedia() {
 
     function hideResizeError(targ, wrap) {
         $('.under-size-error', wrap).css('display', 'none');
-        $('.flashContent', targ).css('display', 'block');
+        $('.flash-content', targ).css('display', 'block');
     }
 
     //-------------------------------------------------------------------------------------------------------------------------------------
@@ -427,8 +427,8 @@ function PortfolioCanvasMedia() {
             }
         }
 
-        $('.flashContent', targ).empty();
-        $('.flashContent', targ).html(flashRestoreHtml[flashID]);
+        $('.flash-content', targ).empty();
+        $('.flash-content', targ).html(flashRestoreHtml[flashID]);
     }
 
     function removePermaListeners() {
