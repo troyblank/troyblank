@@ -1,3 +1,3 @@
 module.exports = {
-    public: ['app/public']
+    public: ['static/compiled']
 };

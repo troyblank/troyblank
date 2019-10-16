@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+@import '../../sass/styles.scss';
+@import '../../sass/videoPlayer.scss';
+
 input:focus {
     outline: none;
+}
+
+input:focus-visible {
+    outline: dashed 1px;
 }
