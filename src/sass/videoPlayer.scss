@@ -1,0 +1,245 @@
+@import './vars/colors';
+
+// ---------------------------------------------------------------------------------------------
+// VIDEO PLAYER
+// ---------------------------------------------------------------------------------------------
+.video-player {
+    position: relative;
+    width: 1024px;
+    margin: auto;
+    background: $color-black;
+    overflow: hidden;
+}
+
+.video-player video {
+    display: block;
+    width: 1024px;
+    height: 576px;
+}
+
+.video-player .overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 576px;
+}
+
+.video-player .overlays .buffer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: $color-transparent-black-75;
+}
+
+.video-player .overlays .big-play-btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $color-transparent-black-50;
+    cursor: pointer;
+}
+
+.video-player .overlays .big-play-btn:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    background: url('/static/images/videoPlayer/big-play-btn-desktop.svg') 0 0 no-repeat;
+    content: '';
+}
+
+.video-player .control-bar {
+    height: 16px;
+    border-top: 1px solid $color-white;
+    background: $color-black;
+}
+
+.video-player .control-bar > a, .video-player .control-bar > div {
+    display: block;
+    height: 100%;
+    float: left;
+    border-right: 1px solid $color-white;
+    color: $color-white;
+    font-family: Courier, monospace;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.video-player .control-bar > a:last-child, .video-player .control-bar > div:last-child {
+    border: 0;
+}
+
+.video-player .control-bar a {
+    &.rewind-btn {
+        width: 32px;
+        background: url('/static/images/videoPlayer/rewind-btn.svg') 8px 4px no-repeat;
+    }
+
+    &.play-pause-btn {
+        width: 32px;
+        background: url('/static/images/videoPlayer/play-btn.svg') 12px 0 no-repeat;
+    }
+
+    &.play-pause-btn.active {
+        background: url('/static/images/videoPlayer/pause-btn.svg') 11px 4px no-repeat;
+    }
+}
+
+.video-player .control-bar .scrub-bar {
+    position: relative;
+    width: 660px;
+    background: $color-grey-1;
+    cursor: default;
+}
+
+.video-player .control-bar .scrub-bar .load-bar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: $color-black;
+    cursor: pointer;
+}
+
+.video-player .control-bar .scrub-bar .progress-bar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: $color-red;
+    pointer-events: none;
+}
+
+.video-player .control-bar .cursor {
+    position: relative;
+    left: 0%;
+    width: 20px;
+    height: 16px;
+    margin-left: -7px;
+    cursor: ew-resize;
+}
+
+.video-player .control-bar .cursor:after {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 7px;
+    border-color: $color-transparent-white-0;
+    border-bottom-color: $color-white;
+    content: '';
+    pointer-events: none;
+}
+
+.video-player .control-bar .volume-bar {
+    position: relative;
+    width: 190px;
+}
+
+.video-player .control-bar .volume-bar .icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/static/images/videoPlayer/volume-scrub.svg') 6px 3px no-repeat;
+}
+
+.video-player .control-bar .volume-bar .status-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $color-grey-2;
+}
+
+.video-player .control-bar .volume-bar .cursor {
+    left: 100%;
+}
+
+.video-player .control-bar .timer {
+    width: 54px;
+    cursor: default;
+}
+
+.video-player .control-bar .timer span {
+    display: block;
+    padding-top: 2px;
+}
+
+.video-player .control-bar .full-screen-btn {
+    width: 51px;
+    background: url('/static/images/videoPlayer/full-screen-btn.svg') 16px 4px no-repeat;
+}
+
+// Custom Buffer
+.video-player .overlays .buffer .atomic-buffer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65px;
+    height: 65px;
+    margin: -33px 0 0 -33px;
+}
+
+//----------------------------------------------------------------------------------------
+// MEDIA QUERIES
+//----------------------------------------------------------------------------------------
+// TABLET
+@media only screen and (max-width: 1154px) {
+    .video-player {
+        width: 600px;
+    }
+
+    .video-player video {
+        width: 600px;
+        height: 338px;
+    }
+
+    .video-player .overlays {
+        height: 338px;
+    }
+
+    .video-player .overlays .big-play-btn:after {
+        margin: -75px 0 0 -75px;
+        background: url('/static/images/videoPlayer/big-play-btn-tablet.svg') 0 0 no-repeat;
+    }
+
+    .video-player .control-bar .scrub-bar {
+        width: 300px;
+    }
+
+    .video-player .control-bar .volume-bar {
+        width: 125px;
+    }
+}
+
+// MOBILE
+@media only screen and (max-width: 730px), (max-height: 600px) {
+    .video-player {
+        width: 275px;
+    }
+
+    .video-player video {
+        width: 275px;
+        height: 155px;
+    }
+
+    .video-player .overlays {
+        height: 155px;
+    }
+
+    .video-player .overlays .big-play-btn:after {
+        margin: -50px 0 0 -50px;
+        background: url('/static/images/videoPlayer/big-play-btn-mobile.svg') 0 0 no-repeat;
+    }
+
+    .video-player .control-bar .scrub-bar {
+        width: 102px;
+    }
+
+    .video-player .control-bar .volume-bar {
+        display: none;
+    }
+}

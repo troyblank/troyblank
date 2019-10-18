@@ -1,0 +1,735 @@
+@import '../../node_modules/reset-css/sass/reset';
+@import './vars/colors';
+
+// UTILITY
+//---------------------------------------------------------------------------------------
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+// FONTS
+//---------------------------------------------------------------------------------------
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h1, h2, h3, h4 {
+    display: inline-block;
+    color: $color-white;
+}
+
+h1 {
+    padding: 13px 10px 13px 25px;
+    background: $color-red;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding: 6px 10px;
+    background: $color-black;
+    font-size: 14px;
+}
+
+a {
+    color: $color-red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    overflow: auto;
+}
+
+// MAIN LAYOUT.
+//---------------------------------------------------------------------------------------
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: $color-black;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('/static/images/backings/pattern_backing.png') repeat;
+        content: '';
+    }
+}
+
+#content-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 50;
+}
+
+// scroll bar
+#content-wrapper .scroll-bar {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 23px;
+    height: 100%;
+    background: $color-grey-0;
+}
+
+#content-wrapper .thumb {
+    position: absolute;
+    width: 20px;
+    min-height: 100px;
+    margin-left: 2px;
+    background: $color-white;
+    cursor: pointer;
+}
+
+#content-wrapper .thumb:after {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    margin-top: -5px;
+    background: url('/static/images/thumbGrip.png');
+    content: '';
+}
+
+.content-cnt {
+    display: block;
+    width: 100%;
+    height: inherit;
+    background: $color-light-yellow;
+    overflow: auto;
+    z-index: 145;
+}
+
+.content-cnt .close-btn {
+    display: none;
+    top: 175px;
+    right: 0;
+    width: 53px;
+    height: 56px;
+    background: url('/static/images/close_btn.png') no-repeat;
+    z-index: 50;
+}
+
+.content-cnt .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content-cnt .content {
+    width: 100%;
+    padding: 20px 0 80px;
+}
+
+.content-cnt h1 {
+    margin: 0 0 4px;
+    padding: 6px 40px 6px 15px;
+    font-size: 30px;
+}
+
+.content-cnt h2 {
+    margin: 0 0 33px;
+    padding: 6px 10px 6px 15px;
+}
+
+.content-cnt .body {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 65px;
+}
+
+.content-cnt .atomic-preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -33px;
+}
+
+.content-cnt .atomic-preloader svg {
+    left: 50%;
+    margin-left: -32px;
+}
+
+
+// PORTFOLIO CANVAS
+//---------------------------------------------------------------------------------------
+.portfolio-piece .center-wrap {
+    margin: 0 auto 20px;
+}
+
+.portfolio-piece .center-wrap .slide-band {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.portfolio-piece .region {
+    position: relative;
+    border: 4px dashed $color-grey-0;
+    background: $color-white;
+}
+
+.portfolio-piece .region .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-piece .slideshow nav {
+    display: none;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.portfolio-piece .slideshow nav a {
+    display: block;
+    width: 24px;
+    height: 19px;
+    margin-right: 7px;
+    padding-top: 5px;
+    float: left;
+    background: url('/static/images/slideNav_black.png') no-repeat;
+    color: $color-white;
+    text-align: center;
+}
+
+.portfolio-piece .slideshow nav a.active {
+    background: url('/static/images/slideNav_red.png') no-repeat;
+}
+
+.portfolio-piece .slideshow {
+    margin: 0 auto 20px;
+}
+
+.portfolio-piece .slideshow .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.portfolio-piece .slideshow .under-size-error {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: $color-red;
+    color: $color-white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+.portfolio-piece .slideshow .under-size-error img {
+    max-width: 100%;
+}
+
+.portfolio-piece .slideshow .under-size-error div {
+    padding: 60px 50px;
+}
+
+.portfolio-piece .slideshow .under-size-error.smaller img {
+    max-width: 50%;
+}
+
+.portfolio-piece .slideshow .under-size-error.smaller div {
+    padding: 25px;
+}
+
+.portfolio-piece .slideshow .under-size-error.smallest img {
+    max-width: 40%;
+}
+
+.portfolio-piece .slideshow .under-size-error.smallest div {
+    padding: 10px;
+}
+
+.portfolio-piece .stand-alone .slide-band {
+    background: $color-light-yellow;
+}
+
+.portfolio-piece .body > a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: $color-red;
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#portfolioCanvas {
+    display: none;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+#portfolioCanvas .content {
+    position: absolute;
+}
+
+// PORTFOLIO CONTENT
+//---------------------------------------------------------------------------------------
+// FLASH
+.portfolio-piece .region .flash-content {
+    height: 100%;
+}
+
+.portfolio-piece .region .flash-replacement-div {
+    height: 100%;
+}
+
+.portfolio-piece .region .flash-alternative-content {
+    height: 100%;
+    padding: 0;
+    background: $color-red;
+    color: $color-white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.portfolio-piece .region .flash-alternative-content > div {
+    padding: 50px;
+}
+
+// MAIN NAV CONTENT
+//---------------------------------------------------------------------------------------
+.nav-content {
+    display: block;
+    width: 100%;
+    height: inherit;
+    background: $color-light-yellow;
+    overflow: auto;
+    z-index: 145;
+}
+
+#mainNavContent {
+    display: none;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+#mainNavContent .content {
+    position: absolute;
+}
+
+// HEADER
+//---------------------------------------------------------------------------------------
+header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 10px solid $color-red;
+    background: $color-black;
+    z-index: 100;
+}
+
+header .logo {
+    display: block;
+    width: 32px;
+    height: 40px;
+    margin-left: 15px;
+    float: left;
+    background: url('/static/images/logo.png') no-repeat;
+}
+
+header nav {
+    margin: 24px 15px 0 0;
+    float: right;
+}
+
+header nav li {
+    margin-left: 20px;
+    float: left;
+}
+
+header nav li a {
+    color: $color-white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+// PORTFOLIO CAROUSEL
+//---------------------------------------------------------------------------------------
+#portfolioCarousel {
+    display: none;
+    position: absolute;
+    top: 40px;
+}
+
+#portfolioCarousel > a {
+    display: block;
+    position: relative;
+    width: 70%;
+    max-width: 728px;
+    height: 70%;
+    max-height: 530px;
+    margin-right: 45px;
+    float: left;
+    border: 20px solid $color-black;
+    background: $color-white;
+    overflow: hidden;
+}
+
+#portfolioCarousel > a:last-child {
+    margin-right: 0;
+}
+
+#portfolioCarousel > a:after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 50px $color-transparent-white-25 inset;
+    content: '';
+    z-index: 10;
+}
+
+#portfolioCarousel > a img {
+    position: absolute;
+}
+
+#portfolioCarousel .headers {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    z-index: 20;
+}
+
+#portfolioCarousel h1,
+#portfolioCarousel h2 {
+    float: right;
+    clear: both;
+}
+
+#portfolioCarousel h1 {
+    margin-bottom: 3px;
+    padding-left: 40px;
+}
+
+#portfolioCarousel .atomic-preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -33px;
+}
+
+// ARROW NAV BTNS
+//---------------------------------------------------------------------------------------
+#content-wrapper .nav {
+    position: absolute;
+    width: 92px;
+    height: 100%;
+}
+
+#content-wrapper .nav .btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 92px;
+    height: 164px;
+    margin-top: -82px;
+    z-index: 99;
+}
+
+#content-wrapper .nav-right {
+    right: 0;
+    box-shadow: inset -50px 0 50px -50px $color-black;
+}
+
+#content-wrapper .nav-left {
+    display: none;
+    left: 0;
+    box-shadow: inset 50px 0 50px -50px $color-black;
+    opacity: 0;
+}
+
+#content-wrapper .nav-down {
+    bottom: 0;
+    width: 100%;
+    height: 39px;
+}
+
+#content-wrapper .nav-up {
+    top: 0;
+    width: 100%;
+    height: 39px;
+}
+
+#content-wrapper .nav-right .btn {
+    background: url('/static/images/navigate_right_btn.png') no-repeat;
+}
+
+#content-wrapper .nav-left .btn {
+    background: url('/static/images/navigate_left_btn.png') no-repeat;
+}
+
+#content-wrapper .nav-down .btn {
+    top: 0;
+    left: 50%;
+    width: 69px;
+    height: 39px;
+    margin-top: 0;
+    margin-left: -37px;
+    background: url('/static/images/navigate_down_btn.png') no-repeat;
+}
+
+#content-wrapper .nav-up .btn {
+    top: 0;
+    left: 50%;
+    width: 69px;
+    height: 39px;
+    margin-top: 0;
+    margin-left: -37px;
+    background: url('/static/images/navigate_up_btn.png') no-repeat;
+}
+
+// ABOUT
+//---------------------------------------------------------------------------------------
+
+#about > div {
+    padding: 75px 55px 0 80px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+#about .title-1 {
+    display: block;
+    margin-left: -6px;
+    font-size: 115px;
+    text-transform: uppercase;
+}
+
+#about .title-2 {
+    display: block;
+    margin-top: -18px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#about h2 {
+    padding: 5px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+#about a.resume-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    float: right;
+    background: $color-black;
+    color: $color-white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+// MEDIA QUERIES
+//---------------------------------------------------------------------------------------
+
+// MOBILE
+@media only screen and (max-width: 600px), (max-height: 600px) {
+    // FONTS
+    h1 {
+        padding: 5px 25px;
+        font-size: 20px;
+    }
+
+    // MAIN LAYOUT
+    html {
+        height: inherit;
+    }
+
+    body {
+        background: $color-light-yellow !important;
+        overflow: inherit;
+     }
+
+    body:after {
+        position: static;
+        background: none;
+    }
+
+    #content-wrapper {
+        position: static;
+        overflow: inherit;
+    }
+
+    // PORTFOLIO CANVAS
+    #portfolioCanvas, #mainNavContent, .content-cnt {
+        position: static;
+        height: inherit;
+    }
+
+    .portfolio-piece .close-btn {
+        display: block;
+    }
+
+    .portfolio-piece .mask {
+        position: static;
+        height: inherit;
+    }
+
+    #portfolioCanvas .content, .portfolio-piece .mask .content {
+        position: static;
+        padding: 40px 0;
+    }
+
+    .portfolio-piece .scroll-bar {
+        display: none;
+    }
+
+    .portfolio-piece .body {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .portfolio-piece .slideshow .under-size-error div {
+        padding: 20px 50px;
+        font-size: 15px;
+    }
+
+    .portfolio-piece .slideshow .under-size-error.smaller div {
+        padding: 20px 50px;
+    }
+
+    .portfolio-piece .slideshow .under-size-error.smallest div {
+        padding: 10px 25px;
+    }
+
+    .portfolio-piece .slideshow .slide-band {
+        display: none;
+    }
+
+    // HEADER
+    header {
+        position: inherit;
+        height: inherit;
+        padding: 0;
+    }
+
+    header .logo {
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        float: inherit;
+        background-position: center center;
+    }
+
+    header nav {
+        margin: 0;
+        float: inherit;
+    }
+
+    header nav li {
+        width: 100%;
+        margin: 0;
+        float: inherit;
+        border-top: 2px solid $color-red;
+        text-align: center;
+    }
+
+    header nav li a {
+        display: block;
+        width: 100%;
+        height: 25px;
+        padding-top: 10px;
+    }
+
+    // PORTFOLIO CAROUSEL
+    #portfolioCarousel {
+        position: static;
+    }
+
+    #portfolioCarousel > a {
+        max-width: none;
+        height: 40px;
+        float: none;
+        border: inherit;
+        border-right: inherit;
+        border-bottom: 5px solid $color-black;
+    }
+
+    #portfolioCarousel .headers {
+        bottom: 5px;
+    }
+
+    #portfolioCarousel h1 {
+        padding-left: 30px;
+    }
+
+    #content-wrapper .nav {
+        display: none !important;
+    }
+
+    // ABOUT
+    //---------------------------------------------------------------------------------------
+
+    #about > div {
+        padding: 25px 15px 0 20px;
+    }
+
+    #about .title-1 {
+        margin-left: -3px;
+        font-size: 60px;
+    }
+
+    #about .title-2 {
+        margin-top: -10px;
+        font-size: 14px;
+    }
+
+    #about h2 {
+        font-size: 20px;
+    }
+
+    // PORTFOLIO CONTENT
+    //---------------------------------------------------------------------------------------
+
+    // FLASH
+    .portfolio-piece .region .flash-alternative-content > div {
+        padding: 30px;
+    }
+}
