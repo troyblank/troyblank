@@ -1,5 +1,4 @@
 function PortfolioCanvasMedia() {
-
     var slideIndex = 0;
     var preloader = null;
 
@@ -13,12 +12,11 @@ function PortfolioCanvasMedia() {
 
     //repeating patterns that span the width of the browser under the portfolio piece
     var GRAPHIC_BANDS = ['guts.png', 'eyes.png', 'teeth.png'];
-    var BAND_ROOT = '/images/bands/';
+    var BAND_ROOT = '/static/images/bands/';
 
     function init() {
         $($('.portfolio-piece .slideshow .slide')[slideIndex]).css('display', 'block');
         checkForTrapKeys();
-
         addPagination();
         sizeAllContent();
         sizeAllContent();
