@@ -3,6 +3,7 @@ const withSass = require('@zeit/next-sass')
 module.exports = withSass({
     exportPathMap: () => ({
         '/': { page: '/' },
+        '/about': { page: '/about' },
         '/specimens/2016/dwollaDashboard': { page: '/2016/dwollaDashboard' },
         '/specimens/2016/dwollaDevDocs': { page: '/2016/dwollaDevDocs' },
         '/specimens/2015/dwollaStyleTiles': { page: '/2015/dwollaStyleTiles' },

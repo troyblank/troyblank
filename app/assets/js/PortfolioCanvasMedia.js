@@ -231,7 +231,7 @@ function PortfolioCanvasMedia() {
         var width = $(targ).attr('data-resizeable') == 'false' ? $(targ).attr('data-width') : '100%';
         var height = $(targ).attr('data-resizeable') == 'false' ? $(targ).attr('data-height') : '100%';
 
-        swfobject.embedSWF($(targ).attr('data-src'), divId, width, height, $(targ).attr('data-version'), "/media/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
+        swfobject.embedSWF($(targ).attr('data-src'), divId, width, height, $(targ).attr('data-version'), "/static/swf/expressInstall.swf", flashAttrs["vars"], flashAttrs["params"], flashAttrs["attributes"]);
     }
 
     function getSWF(movieName) {
