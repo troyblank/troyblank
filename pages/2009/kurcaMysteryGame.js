@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function KurchaMysterGame() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Kurca Mystery Game'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Kurca Murder Mystery Game</h1><br />

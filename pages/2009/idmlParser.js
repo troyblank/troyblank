@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function IDMLParser() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'IDML Parser'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>IDML Parser</h1><br />

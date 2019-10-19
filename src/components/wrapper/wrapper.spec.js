@@ -7,15 +7,16 @@ import Wrapper from './wrapper';
 
 describe('Wrapper', () => {
     const chance = new Chance();
-    const wrapperClassName = chance.word();
 
     it('should render', () => {
+        const wrapperClassName = chance.word();
+        const title = chance.word();
         const child = (<div />);
-        const wrapper = shallow(<Wrapper wrapperClassName={wrapperClassName}>{ child }</Wrapper>);
+        const wrapper = shallow(<Wrapper wrapperClassName={wrapperClassName} title={title}>{ child }</Wrapper>);
 
         assert.isTrue(wrapper.contains(
           <x>
-            <Head />
+            <Head title={title} />
             <header>
               <a className={'logo'} />
               <nav>

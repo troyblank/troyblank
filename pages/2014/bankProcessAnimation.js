@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function BankProcessAnimationPage() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Bank Process Animation'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Bank Process Animation</h1><br />

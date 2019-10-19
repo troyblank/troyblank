@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function DwollaStyleTilesPage() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Dwolla Style Tiles'}>
         <section className={'content-cnt portfolio-piece'}>
           <div className={'content'}>
             <h1>Dwolla Style Tiles</h1><br />

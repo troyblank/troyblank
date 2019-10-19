@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function LepsLogo() {
     return (
-      <Wrapper wrapperclassNameName={'standalone'}>
+      <Wrapper wrapperclassNameName={'standalone'} title={'The Fighting Leprechauns Logo'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>The Fighting Leprechauns Logo</h1><br />

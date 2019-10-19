@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function CubicCurve() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Cubic Curve'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Cubic Curve</h1><br />

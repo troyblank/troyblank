@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function InYourPocketCommercial() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'In Your Pocket Commercial'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>In Your Pocket Commercial</h1><br />

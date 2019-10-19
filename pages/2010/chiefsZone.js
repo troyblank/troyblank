@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function CheifsZone() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Chiefs Zone'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Chiefs Zone</h1><br />

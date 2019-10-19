@@ -5,10 +5,6 @@ module.exports = function (grunt, options) {
             'uglify'
         ],
 
-        deploy: [
-            'sshexec'
-        ],
-
         'default': [
             'build'
         ]

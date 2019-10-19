@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function AidsWalkKickOffVideo() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Aids Walk Kick-Off Video'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Aids Walk Kick-Off Video</h1><br />

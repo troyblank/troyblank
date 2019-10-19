@@ -2,10 +2,10 @@ import React from 'react';
 import Head from '../head/head';
 import Foot from '../foot/foot';
 
-export default function Wrapper({ wrapperClassName, children }) {
+export default function Wrapper({ wrapperClassName, title, children }) {
     return (
       <x>
-        <Head />
+        <Head title={title} />
         <header>
           <a className={'logo'} />
           <nav>
