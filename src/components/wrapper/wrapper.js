@@ -1,5 +1,6 @@
 import React from 'react';
-import { Head, Foot } from '../';
+import Head from '../head/head';
+import Foot from '../foot/foot';
 
 export default function Wrapper({ wrapperClassName, children }) {
     return (

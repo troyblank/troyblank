@@ -33,7 +33,7 @@ var TroyBlankCom = new function() {
     this.init = function() {
         $('#content-wrapper .nav-left').css('opacity', 0);
 
-        TroyBlankCom.standAlone = $('body.standalone').length > 0;
+        TroyBlankCom.standAlone = $('#content-wrapper.standalone').length > 0;
 
         TroyBlankCom.portfolioLength = $('#portfolioCarousel > a').length;
 
@@ -48,7 +48,7 @@ var TroyBlankCom = new function() {
         addListeners();
 
         //page standalones
-        if ($('body.standalone .portfolio-piece').length > 0) {
+        if ($('#content-wrapper.standalone .portfolio-piece').length > 0) {
             new PortfolioCanvasMedia();
         }
 
