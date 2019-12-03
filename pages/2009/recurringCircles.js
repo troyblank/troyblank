@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function RecurringCircles() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Recurring Circles'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Recurring Circles</h1><br />

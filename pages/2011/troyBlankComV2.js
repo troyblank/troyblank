@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function TroyBlankComV2() {
     return (
-      <Wrapper wrapperclassNameName={'standalone'}>
+      <Wrapper wrapperclassNameName={'standalone'} title={'troyblank.com V2'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>troyblank.com V2</h1><br />

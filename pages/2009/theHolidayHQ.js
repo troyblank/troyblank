@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function TheHolidayHQ() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'The Holiday HQ'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>The Holiday HQ</h1><br />

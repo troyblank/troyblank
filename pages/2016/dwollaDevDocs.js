@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function DwollaDevDocs() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Dwolla Dev Docs'}>
         <section className={'content-cnt portfolio-piece'}>
           <div className={'content'}>
             <h1>Dwolla Dev Docs</h1><br />

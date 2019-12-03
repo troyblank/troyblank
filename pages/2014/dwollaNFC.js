@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function DwollaNFCPage() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Dwolla NFC'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Dwolla NFC</h1><br />

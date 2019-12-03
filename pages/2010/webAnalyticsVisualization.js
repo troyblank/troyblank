@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function WebAnalyticsVisualizations() {
     return (
-      <Wrapper wrapperclassNameName={'standalone'}>
+      <Wrapper wrapperclassNameName={'standalone'} title={'Web Analytics Visualization'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Web Analytics Visualization</h1><br />

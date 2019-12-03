@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function ArrowFlashNavigation() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Arrow Flash Navigation'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Arrow Flash Navigation</h1><br />

@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function FoodHowPage() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Food How'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Food How</h1><br />

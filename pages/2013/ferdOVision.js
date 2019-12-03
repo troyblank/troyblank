@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function FerdOVision() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Ferd-O-Vision'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Ferd-O-Vision</h1><br />

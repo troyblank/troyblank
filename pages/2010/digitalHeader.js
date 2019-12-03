@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function DigitalHeader() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Digital Header'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Digital Header</h1><br />

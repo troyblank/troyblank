@@ -3,7 +3,7 @@ import { Wrapper } from '../../src/components';
 
 export default function DemoReel() {
     return (
-      <Wrapper wrapperClassName={'standalone'}>
+      <Wrapper wrapperClassName={'standalone'} title={'Demo Reel'}>
         <section className="content-cnt portfolio-piece">
           <div className="content">
             <h1>Demo Reel</h1><br />
