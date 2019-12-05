@@ -1,0 +1,34 @@
+body {
+    margin:0;
+    padding: 36px 26px 36px 26px;
+    background: #F6F6EB;
+    font-family: Arial;
+    font-size:12px;
+}
+
+img {
+    border:0;
+}
+
+a {
+    text-decoration:none;
+    color:#c40000;
+}
+
+.clear{
+    clear:both;
+}
+
+.periodicImage {
+    float:left;
+    padding-right:22px;
+}
+
+.title {
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+.message {
+    padding-bottom: 18px;
+}
