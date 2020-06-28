@@ -5,7 +5,8 @@
     "scripts": {
         "start": "next -p 8888",
         "preview": "npm run build && cd out && serve -p 8888",
-        "build": "grunt build && next build && next export",
+        "build": "grunt build && next build && next export && npm run copy",
+        "copy": "cp _redirects out/_redirects",
         "clean": "rm -rf .next && rm -rf out",
         "test": "npm run unit && npm run lint",
         "unit": "nyc --reporter=text-summary --reporter=lcov --reporter=cobertura mocha --exit \"./src/**/*.spec.js\"",
