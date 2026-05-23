@@ -1,7 +1,0 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <rect x="0" y="3" width="11" height="6" fill="rgba(255,255,255,1)" />
-  <polygon points="5,3,5,0,16,0,16,7,11,7,11,6,15,6,15,1,6,1,6,3" fill="rgba(255,255,255,1)" />
-</svg>

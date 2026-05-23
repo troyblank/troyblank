@@ -1,36 +1,5 @@
-#name .gitignore
-
-# NODE #
-#########
 node_modules
-npm-debug.log
-package-lock.json
-
-# SASS #
-########
-.sass-cache
-*.css.map
-
-# NEXT #
-########
-.next
-out
-
-# NYC#
-######
-coverage
-
-# OS GENERATED FILES #
-######################
+dist
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-app/public
-ssh/**/*
-!ssh/config.json.sample
-!config/auth/*_example.js
+*.local
+npm-debug.log*
