@@ -6,6 +6,17 @@ export type FieldContext = {
   mouseY: number;
 };
 
+const FIELD_REFERENCE_DIM = 1100;
+
+/** 1 at desktop widths; scales down smoothly on smaller viewports. */
+export function fieldScale(
+  width: number = window.innerWidth,
+  height: number = window.innerHeight,
+): number {
+  const dim = Math.min(width, height);
+  return Math.max(0.45, Math.min(1, dim / FIELD_REFERENCE_DIM));
+}
+
 // All greens, from mossy yellow-green through to deep teal-green, so the
 // population stays cohesive rather than pulling in unrelated hues.
 export function pickHue(): number {

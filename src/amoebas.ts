@@ -3,6 +3,7 @@ import {
   type Amoeba,
   createAmoeba,
   drawAmoeba,
+  scaleAmoeba,
   updateAmoeba,
 } from './organisms/amoeba';
 import {
@@ -10,6 +11,7 @@ import {
   type Difflugia,
   createDifflugia,
   drawDifflugia,
+  scaleDifflugia,
   updateDifflugia,
 } from './organisms/difflugia';
 import {
@@ -17,9 +19,10 @@ import {
   type Euglena,
   createEuglena,
   drawEuglena,
+  scaleEuglena,
   updateEuglena,
 } from './organisms/euglena';
-import { type FieldContext } from './organisms/utils';
+import { type FieldContext, fieldScale } from './organisms/utils';
 
 export class AmoebaField {
   private ctx: CanvasRenderingContext2D;
@@ -31,6 +34,7 @@ export class AmoebaField {
   private mouseX = 0.5;
   private mouseY = 0.5;
   private lastTime: number | null = null;
+  private organismScale = 1;
   private readonly canvas: HTMLCanvasElement;
 
   constructor(canvas: HTMLCanvasElement) {
@@ -55,9 +59,16 @@ export class AmoebaField {
   }
 
   private seed() {
+    this.organismScale = fieldScale();
     this.amoebas = Array.from({ length: AMOEBA_COUNT }, () => createAmoeba());
     this.euglenas = Array.from({ length: EUGLENA_COUNT }, () => createEuglena());
     this.difflugias = Array.from({ length: DIFFLUGIA_COUNT }, () => createDifflugia());
+  }
+
+  private rescaleOrganisms(factor: number) {
+    for (const amoeba of this.amoebas) scaleAmoeba(amoeba, factor);
+    for (const euglena of this.euglenas) scaleEuglena(euglena, factor);
+    for (const difflugia of this.difflugias) scaleDifflugia(difflugia, factor);
   }
 
   private onMouse = (e: MouseEvent) => {
@@ -74,6 +85,13 @@ export class AmoebaField {
     this.canvas.style.width = `${this.width}px`;
     this.canvas.style.height = `${this.height}px`;
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const nextScale = fieldScale(this.width, this.height);
+    const ratio = nextScale / this.organismScale;
+    if (Math.abs(ratio - 1) > 0.01) {
+      this.rescaleOrganisms(ratio);
+      this.organismScale = nextScale;
+    }
   };
 
   tick(time: number) {
@@ -127,7 +145,7 @@ export class AmoebaField {
       height * 0.9,
     );
     vignette.addColorStop(0, 'transparent');
-    vignette.addColorStop(1, 'rgba(4, 8, 6, 0.45)');
+    vignette.addColorStop(1, 'rgba(4, 8, 6, 0.52)');
     ctx.fillStyle = vignette;
     ctx.fillRect(0, 0, width, height);
   }

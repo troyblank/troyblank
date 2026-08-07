@@ -1,4 +1,4 @@
-import { type FieldContext, pickShellHue, wrapPosition } from './utils';
+import { type FieldContext, fieldScale, pickShellHue, wrapPosition } from './utils';
 
 type PodState = 'idle' | 'growing' | 'anchored' | 'retracting';
 
@@ -40,7 +40,8 @@ export type Difflugia = {
 export const DIFFLUGIA_COUNT = 7;
 
 export function createDifflugia(): Difflugia {
-  const length = 34 + Math.random() * 20;
+  const scale = fieldScale();
+  const length = (34 + Math.random() * 20) * scale;
   const podCount = 2 + Math.floor(Math.random() * 2);
   const pods: ShellPod[] = Array.from({ length: podCount }, () => ({
     angle: 0,
@@ -69,16 +70,33 @@ export function createDifflugia(): Difflugia {
     length,
     width: length * (0.6 + Math.random() * 0.14),
     hue: pickShellHue(),
-    sat: 22 + Math.random() * 18,
-    light: 38 + Math.random() * 14,
+    sat: 20 + Math.random() * 16,
+    light: 26 + Math.random() * 10,
     pods,
     grains: Array.from({ length: grainCount }, () => ({
       t: (Math.random() - 0.5) * 1.7,
       s: (Math.random() - 0.5) * 0.85,
-      r: 0.8 + Math.random() * 1.3,
+      r: (0.8 + Math.random() * 1.3) * scale,
       shade: Math.random(),
     })),
   };
+}
+
+export function scaleDifflugia(difflugia: Difflugia, factor: number) {
+  if (factor === 1) return;
+
+  difflugia.length *= factor;
+  difflugia.width *= factor;
+
+  for (const pod of difflugia.pods) {
+    pod.restLen *= factor;
+    pod.reachLen *= factor;
+    pod.protrusionLen *= factor;
+    pod.retractFrom *= factor;
+  }
+  for (const grain of difflugia.grains) {
+    grain.r *= factor;
+  }
 }
 
 // A shell pseudopod only ever reaches out within a narrow cone around the
@@ -236,7 +254,7 @@ export function drawDifflugia(field: FieldContext, d: Difflugia, _time: number) 
       baseY - Math.sin(perp) * baseW,
     );
     ctx.closePath();
-    ctx.fillStyle = `hsla(${d.hue + 30}, ${Math.min(70, d.sat + 20)}%, ${Math.min(62, d.light + 20)}%, 0.88)`;
+    ctx.fillStyle = `hsla(${d.hue + 30}, ${Math.min(70, d.sat + 20)}%, ${Math.min(50, d.light + 14)}%, 0.58)`;
     ctx.fill();
   }
 
@@ -256,9 +274,9 @@ export function drawDifflugia(field: FieldContext, d: Difflugia, _time: number) 
   ctx.quadraticCurveTo(shoulderX - sideX * halfW, shoulderY - sideY * halfW, tailX, tailY);
   ctx.closePath();
 
-  ctx.fillStyle = `hsla(${d.hue}, ${d.sat}%, ${d.light}%, 0.94)`;
+  ctx.fillStyle = `hsla(${d.hue}, ${d.sat}%, ${d.light}%, 0.68)`;
   ctx.fill();
-  ctx.strokeStyle = `hsla(${d.hue + 8}, ${Math.min(100, d.sat + 15)}%, ${Math.max(10, d.light - 24)}%, 0.95)`;
+  ctx.strokeStyle = `hsla(${d.hue + 8}, ${Math.min(100, d.sat + 15)}%, ${Math.max(8, d.light - 24)}%, 0.72)`;
   ctx.lineWidth = 1.5;
   ctx.lineJoin = 'round';
   ctx.stroke();
@@ -271,14 +289,14 @@ export function drawDifflugia(field: FieldContext, d: Difflugia, _time: number) 
     ctx.arc(gx, gy, g.r, 0, Math.PI * 2);
     ctx.fillStyle =
       g.shade > 0.5
-        ? `hsla(${d.hue + 6}, ${Math.max(0, d.sat - 8)}%, ${Math.min(78, d.light + 20)}%, 0.4)`
-        : `hsla(${d.hue - 6}, ${d.sat}%, ${Math.max(8, d.light - 18)}%, 0.4)`;
+        ? `hsla(${d.hue + 6}, ${Math.max(0, d.sat - 8)}%, ${Math.min(62, d.light + 14)}%, 0.28)`
+        : `hsla(${d.hue - 6}, ${d.sat}%, ${Math.max(8, d.light - 18)}%, 0.28)`;
     ctx.fill();
   }
 
   // The aperture opening.
   ctx.beginPath();
   ctx.ellipse(headX, headY, d.width * 0.13, d.width * 0.09, d.facing, 0, Math.PI * 2);
-  ctx.fillStyle = `hsla(${d.hue - 10}, 30%, ${Math.max(8, d.light - 32)}%, 0.85)`;
+  ctx.fillStyle = `hsla(${d.hue - 10}, 30%, ${Math.max(8, d.light - 32)}%, 0.6)`;
   ctx.fill();
 }
