@@ -11,7 +11,7 @@ One-page portfolio site for Troy Blank.
 
 ```bash
 npm install
-npm run dev
+npm start
 ```
 
 ## Build

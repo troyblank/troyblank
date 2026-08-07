@@ -1,4 +1,4 @@
-import { type FieldContext, pickHue, wrapPosition } from './utils';
+import { type FieldContext, fieldScale, pickHue, wrapPosition } from './utils';
 
 type MembranePoint = {
   angle: number;
@@ -81,7 +81,8 @@ export function createAmoeba(): Amoeba {
     };
   });
 
-  const radius = 9 + Math.random() * 8;
+  const scale = fieldScale();
+  const radius = (9 + Math.random() * 8) * scale;
   const lobeCount = 5 + Math.floor(Math.random() * 3);
   const lobes: Lobe[] = Array.from({ length: lobeCount }, () => ({
     angle: Math.random() * Math.PI * 2,
@@ -111,8 +112,8 @@ export function createAmoeba(): Amoeba {
     membrane,
     lobes,
     hue: pickHue(),
-    sat: 40 + Math.random() * 30,
-    light: 38 + Math.random() * 16,
+    sat: 36 + Math.random() * 24,
+    light: 26 + Math.random() * 12,
     nucleus: {
       ox: (Math.random() - 0.5) * radius * 0.3,
       oy: (Math.random() - 0.5) * radius * 0.3,
@@ -121,14 +122,40 @@ export function createAmoeba(): Amoeba {
     vacuoles: Array.from({ length: vacuoleCount }, () => ({
       ox: (Math.random() - 0.5) * radius * 0.85,
       oy: (Math.random() - 0.5) * radius * 0.85,
-      r: 0.7 + Math.random() * 1.2,
+      r: (0.7 + Math.random() * 1.2) * scale,
     })),
     speckle: Array.from({ length: 2 + Math.floor(Math.random() * 3) }, () => ({
       ox: (Math.random() - 0.5) * radius * 0.7,
       oy: (Math.random() - 0.5) * radius * 0.7,
-      r: 0.35 + Math.random() * 0.6,
+      r: (0.35 + Math.random() * 0.6) * scale,
     })),
   };
+}
+
+export function scaleAmoeba(amoeba: Amoeba, factor: number) {
+  if (factor === 1) return;
+
+  amoeba.radius *= factor;
+  amoeba.nucleus.ox *= factor;
+  amoeba.nucleus.oy *= factor;
+  amoeba.nucleus.r *= factor;
+
+  for (const v of amoeba.vacuoles) {
+    v.ox *= factor;
+    v.oy *= factor;
+    v.r *= factor;
+  }
+  for (const s of amoeba.speckle) {
+    s.ox *= factor;
+    s.oy *= factor;
+    s.r *= factor;
+  }
+  for (const lobe of amoeba.lobes) {
+    lobe.restLen *= factor;
+    lobe.reachLen *= factor;
+    lobe.protrusionLen *= factor;
+    lobe.retractFrom *= factor;
+  }
 }
 
 // Drives one pseudopod lobe through grow -> hold -> retract. Nothing here
@@ -329,10 +356,10 @@ export function drawAmoeba(field: FieldContext, amoeba: Amoeba, time: number) {
 
   const { hue, sat, light } = amoeba;
 
-  ctx.fillStyle = `hsla(${hue}, ${sat}%, ${light}%, 0.92)`;
+  ctx.fillStyle = `hsla(${hue}, ${sat}%, ${light}%, 0.68)`;
   ctx.fill();
 
-  ctx.strokeStyle = `hsla(${hue + 14}, ${Math.min(100, sat + 18)}%, ${Math.max(12, light - 26)}%, 0.95)`;
+  ctx.strokeStyle = `hsla(${hue + 14}, ${Math.min(100, sat + 18)}%, ${Math.max(10, light - 26)}%, 0.72)`;
   ctx.lineWidth = 1.75;
   ctx.lineJoin = 'round';
   ctx.stroke();
@@ -343,23 +370,23 @@ export function drawAmoeba(field: FieldContext, amoeba: Amoeba, time: number) {
 
   ctx.beginPath();
   ctx.arc(nx, ny, nr, 0, Math.PI * 2);
-  ctx.fillStyle = `hsla(${hue - 18}, 35%, 28%, 0.75)`;
+  ctx.fillStyle = `hsla(${hue - 18}, 35%, 22%, 0.55)`;
   ctx.fill();
-  ctx.strokeStyle = `hsla(${hue - 10}, 30%, 18%, 0.9)`;
+  ctx.strokeStyle = `hsla(${hue - 10}, 30%, 14%, 0.65)`;
   ctx.lineWidth = 0.75;
   ctx.stroke();
 
   ctx.beginPath();
   ctx.arc(nx - nr * 0.2, ny - nr * 0.2, nr * 0.35, 0, Math.PI * 2);
-  ctx.fillStyle = `hsla(${hue - 8}, 28%, 38%, 0.45)`;
+  ctx.fillStyle = `hsla(${hue - 8}, 28%, 30%, 0.3)`;
   ctx.fill();
 
   for (const v of amoeba.vacuoles) {
     ctx.beginPath();
     ctx.arc(amoeba.x + v.ox, amoeba.y + v.oy, v.r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.35)';
     ctx.fill();
-    ctx.strokeStyle = `hsla(${hue + 30}, 40%, 70%, 0.35)`;
+    ctx.strokeStyle = `hsla(${hue + 30}, 40%, 55%, 0.22)`;
     ctx.lineWidth = 0.5;
     ctx.stroke();
   }
@@ -367,7 +394,7 @@ export function drawAmoeba(field: FieldContext, amoeba: Amoeba, time: number) {
   for (const s of amoeba.speckle) {
     ctx.beginPath();
     ctx.arc(amoeba.x + s.ox, amoeba.y + s.oy, s.r, 0, Math.PI * 2);
-    ctx.fillStyle = `hsla(${hue + 15}, ${sat}%, 70%, 0.25)`;
+    ctx.fillStyle = `hsla(${hue + 15}, ${sat}%, 55%, 0.18)`;
     ctx.fill();
   }
 }

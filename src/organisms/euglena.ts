@@ -1,4 +1,4 @@
-import { type FieldContext, pickHue, wrapPosition } from './utils';
+import { type FieldContext, fieldScale, pickHue, wrapPosition } from './utils';
 
 export type Euglena = {
   x: number;
@@ -22,7 +22,8 @@ export type Euglena = {
 export const EUGLENA_COUNT = 8;
 
 export function createEuglena(): Euglena {
-  const length = 22 + Math.random() * 14;
+  const scale = fieldScale();
+  const length = (22 + Math.random() * 14) * scale;
   const chloroplastCount = 5 + Math.floor(Math.random() * 5);
 
   return {
@@ -31,12 +32,12 @@ export function createEuglena(): Euglena {
     angle: Math.random() * Math.PI * 2,
     turnBias: (Math.random() - 0.5) * 0.3,
     wobblePhase: Math.random() * Math.PI * 2,
-    speed: 26 + Math.random() * 18,
+    speed: (26 + Math.random() * 18) * scale,
     length,
     width: length * (0.34 + Math.random() * 0.08),
     hue: pickHue(),
-    sat: 44 + Math.random() * 26,
-    light: 34 + Math.random() * 14,
+    sat: 38 + Math.random() * 22,
+    light: 24 + Math.random() * 10,
     flagellumPhase: Math.random() * Math.PI * 2,
     flagellumFreq: 1.5 + Math.random() * 0.9,
     flagellumLen: length * (1.3 + Math.random() * 0.7),
@@ -44,9 +45,22 @@ export function createEuglena(): Euglena {
     chloroplasts: Array.from({ length: chloroplastCount }, () => ({
       t: (Math.random() - 0.5) * 1.6,
       s: (Math.random() - 0.5) * 0.7,
-      r: 1 + Math.random() * 1.4,
+      r: (1 + Math.random() * 1.4) * scale,
     })),
   };
+}
+
+export function scaleEuglena(euglena: Euglena, factor: number) {
+  if (factor === 1) return;
+
+  euglena.length *= factor;
+  euglena.width *= factor;
+  euglena.speed *= factor;
+  euglena.flagellumLen *= factor;
+
+  for (const c of euglena.chloroplasts) {
+    c.r *= factor;
+  }
 }
 
 // Euglenids swim rather than crawl: they hold a fairly fixed spindle
@@ -105,7 +119,7 @@ export function drawEuglena(field: FieldContext, e: Euglena, time: number) {
     const offset = Math.sin(f * Math.PI * 2.4 - e.flagellumPhase) * amp;
     ctx.lineTo(flagBaseX + dirX * along + sideX * offset, flagBaseY + dirY * along + sideY * offset);
   }
-  ctx.strokeStyle = `hsla(${e.hue + 8}, ${e.sat}%, ${Math.min(72, e.light + 24)}%, 0.65)`;
+  ctx.strokeStyle = `hsla(${e.hue + 8}, ${e.sat}%, ${Math.min(58, e.light + 20)}%, 0.48)`;
   ctx.lineWidth = 1;
   ctx.stroke();
 
@@ -115,9 +129,9 @@ export function drawEuglena(field: FieldContext, e: Euglena, time: number) {
   ctx.quadraticCurveTo(shoulderX - sideX * halfW, shoulderY - sideY * halfW, tailX, tailY);
   ctx.closePath();
 
-  ctx.fillStyle = `hsla(${e.hue}, ${e.sat}%, ${e.light}%, 0.92)`;
+  ctx.fillStyle = `hsla(${e.hue}, ${e.sat}%, ${e.light}%, 0.68)`;
   ctx.fill();
-  ctx.strokeStyle = `hsla(${e.hue + 14}, ${Math.min(100, e.sat + 18)}%, ${Math.max(12, e.light - 26)}%, 0.95)`;
+  ctx.strokeStyle = `hsla(${e.hue + 14}, ${Math.min(100, e.sat + 18)}%, ${Math.max(10, e.light - 26)}%, 0.72)`;
   ctx.lineWidth = 1.5;
   ctx.lineJoin = 'round';
   ctx.stroke();
@@ -127,7 +141,7 @@ export function drawEuglena(field: FieldContext, e: Euglena, time: number) {
     const cy = e.y + dirY * c.t * length * 0.42 + sideY * c.s * e.width;
     ctx.beginPath();
     ctx.arc(cx, cy, c.r, 0, Math.PI * 2);
-    ctx.fillStyle = `hsla(${e.hue - 12}, ${e.sat}%, ${Math.max(14, e.light - 16)}%, 0.5)`;
+    ctx.fillStyle = `hsla(${e.hue - 12}, ${e.sat}%, ${Math.max(12, e.light - 16)}%, 0.35)`;
     ctx.fill();
   }
 
@@ -137,6 +151,6 @@ export function drawEuglena(field: FieldContext, e: Euglena, time: number) {
   const ey = e.y + dirY * eyeAlong + sideY * eyeSide;
   ctx.beginPath();
   ctx.arc(ex, ey, Math.max(1.3, e.width * 0.1), 0, Math.PI * 2);
-  ctx.fillStyle = 'hsla(8, 65%, 45%, 0.9)';
+  ctx.fillStyle = 'hsla(8, 55%, 36%, 0.7)';
   ctx.fill();
 }
